@@ -3,6 +3,7 @@ import { links } from '@/lib/data';
 import Link from 'next/link';
 import { CgClose } from 'react-icons/cg';
 import { AnimatePresence, motion } from 'framer-motion';
+import Image from 'next/image';
 
 type MobileMenuProps = {
 	handleToggleMenu: () => void;
@@ -36,15 +37,28 @@ const MobileMenu = ({ handleToggleMenu, menuVisible }: MobileMenuProps) => {
 							>
 								<CgClose className='text-2xl hover:text-gray-600 transition' />
 							</button>
-							<ul className='flex flex-col gap-3 text-black text-sm  p-5 mr-2'>
+							<ul className='flex flex-col gap-5 text-black text-sm  p-5 mr-2 mt-10'>
 								{links.map((link) => (
 									<li key={link.hash}>
-										<Link href={link.hash}>
+										<Link
+											href={link.hash}
+											onClick={handleCloseMenu}
+										>
 											{link.name}
 										</Link>
 									</li>
 								))}
 							</ul>
+							<div className='flex justify-center'>
+								<Image
+									src='/image/logo.PNG'
+									alt='logo'
+									width={150}
+									height={150}
+									className='absolute bottom-10'
+									priority
+								/>
+							</div>
 						</motion.div>
 					</motion.div>
 				)}
