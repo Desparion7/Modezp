@@ -24,22 +24,29 @@ const MobileMenu = ({ handleToggleMenu, menuVisible }: MobileMenuProps) => {
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						exit={{ opacity: 0 }}
+						onClick={handleCloseMenu}
 					>
 						<motion.div
-							className='absolute  bg-[#e0f2fe] h-screen w-[200px] right-0'
+							className='absolute  bg-[#e0f2fe] h-screen w-[15rem] right-0 z-[990]'
 							initial={{ x: 100, opacity: 0 }}
 							animate={{ x: 0, opacity: 1 }}
 							exit={{ x: 100, opacity: 0 }}
+							onClick={(event) => {
+								event.stopPropagation();
+							}}
 						>
 							<button
 								className='absolute flex right-0 mr-3 p-2'
 								onClick={handleCloseMenu}
 							>
-								<CgClose className='text-2xl hover:text-gray-600 transition' />
+								<CgClose className='text-2xl hover:text-blue-500 transition' />
 							</button>
 							<ul className='flex flex-col gap-5 text-black text-sm  p-5 mr-2 mt-10'>
 								{links.map((link) => (
-									<li key={link.hash}>
+									<li
+										key={link.hash}
+										className='hover:text-blue-500 transition'
+									>
 										<Link
 											href={link.hash}
 											onClick={handleCloseMenu}
