@@ -4,7 +4,7 @@ import { links } from '@/lib/data';
 import Link from 'next/link';
 import Image from 'next/image';
 import { FiMenu } from 'react-icons/fi';
-import MobileMenu from './MobileMenu';
+import MobileMenu from './mobile-menu';
 import { motion } from 'framer-motion';
 
 const Header = () => {
@@ -24,7 +24,7 @@ const Header = () => {
 		}),
 	};
 	return (
-		<header className='fixed flex justify-center w-[100%] bg-[#e0f2fe] bg-opacity-60 z-10'>
+		<header className='fixed flex justify-center w-[100%] bg-[#e0f2fe] bg-opacity-90 z-10'>
 			<div className='absolute w-screen h-10 gradient t-0'></div>
 			<nav className='container flex justify-between mx-2 py-2 mt-10'>
 				<motion.div

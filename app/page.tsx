@@ -17,13 +17,15 @@ export default function Home() {
 					className='relative uppercase sm:text-xl text-center lg:text-3xl text-white font-bold p-4  bg-black  bg-opacity-60'
 					initial={{ x: 100, scale: 0 }}
 					animate={{ x: 0, scale: 1 }}
+					transition={{ delay: 0.5 }}
 				>
-					Nowoczesne strony dla Twojego biznesu
+					Nowoczesne strony dla Twojego biznesu.
 				</motion.h1>
 				<motion.ul
 					className='relative flex flex-col lg:flex-row text-sm gap-3 lg:gap-6 text-white uppercase'
 					initial={{ x: 100, scale: 0 }}
 					animate={{ x: 0, scale: 1 }}
+					transition={{ delay: 0.5 }}
 				>
 					<li className=' bg-black  bg-opacity-60 p-3 font-semibold'>
 						Wyjątkowe grafiki
