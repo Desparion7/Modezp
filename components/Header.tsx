@@ -26,7 +26,7 @@ const Header = () => {
 	return (
 		<header className='fixed flex justify-center w-[100%] bg-[#e0f2fe] bg-opacity-90 z-10'>
 			<div className='absolute w-screen h-10 gradient t-0'></div>
-			<nav className='container flex justify-between mx-2 py-2 mt-10'>
+			<nav className='container mx-auto flex justify-between  py-2 mt-10'>
 				<motion.div
 					initial={{ opacity: 0, x: -100 }}
 					animate={{ opacity: 1, x: 0 }}

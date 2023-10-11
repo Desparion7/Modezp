@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='pl'>
-			<body className={`${inter.className} bg-[#f0f9ff] h-[99rem]`}>
+			<body className={`${inter.className} bg-[#e0f2fe] h-[99rem]`}>
 					<Header />
 				<main className='pt-[7.45rem] -z-1'>
 					{children}
