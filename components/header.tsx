@@ -7,7 +7,7 @@ import { FiMenu } from 'react-icons/fi';
 import MobileMenu from './mobile-menu';
 import { motion } from 'framer-motion';
 
-const Nav = () => {
+const Header = () => {
 	const [menuVisible, setMenuVisible] = useState(false);
 
 	const handleToggleMenu = () => {
@@ -74,4 +74,4 @@ const Nav = () => {
 	);
 };
 
-export default Nav;
+export default Header;
