@@ -4,11 +4,23 @@ import { links } from '@/lib/data';
 import Link from 'next/link';
 import Image from 'next/image';
 import MobileMenu from './mobile-menu';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import MenuToggleButton from '@/ui/menu-toggle-button';
 
 const Header = () => {
+	const { scrollY } = useScroll();
+
 	const [menuVisible, setMenuVisible] = useState(false);
+	const [hidden, setHidden] = useState(false);
+
+	useMotionValueEvent(scrollY, 'change', (latest) => {
+		const previous = scrollY.getPrevious();
+		if (latest > previous && previous > 150) {
+			setHidden(true);
+		} else {
+			setHidden(false);
+		}
+	});
 
 	const handleToggleMenu = () => {
 		setMenuVisible((prev) => !prev);
@@ -26,7 +38,15 @@ const Header = () => {
 	return (
 		<>
 			<div className='hidden lg:block w-screen h-10 gradient t-0'></div>
-			<header className='sticky flex justify-center w-[100%] bg-[#e0f2fe] bg-opacity-95 z-10 top-0'>
+			<motion.header
+				className='sticky flex justify-center w-[100%] bg-[#e0f2fe] bg-opacity-95 z-10 top-0'
+				variants={{
+					visible: { y: 0 },
+					hidden: { y: -200 },
+				}}
+				animate={hidden ? 'hidden' : 'visible'}
+				transition={{ duration: 0.35, ease: 'easeInOut' }}
+			>
 				<nav className='container mx-auto flex justify-between  py-2 '>
 					<motion.div
 						initial={{ opacity: 0, x: -100 }}
@@ -73,7 +93,7 @@ const Header = () => {
 					handleToggleMenu={handleToggleMenu}
 					menuVisible={menuVisible}
 				/>
-			</header>
+			</motion.header>
 		</>
 	);
 };
