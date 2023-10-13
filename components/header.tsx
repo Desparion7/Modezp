@@ -6,6 +6,7 @@ import Image from 'next/image';
 import MobileMenu from './mobile-menu';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import MenuToggleButton from '@/ui/menu-toggle-button';
+import DarkModeButton from '@/ui/dark-mode-button';
 
 const Header = () => {
 	const { scrollY } = useScroll();
@@ -62,7 +63,7 @@ const Header = () => {
 							/>
 						</Link>
 					</motion.div>
-					<div className='hidden lg:block py-4 px-5 font-semibold'>
+					<div className='hidden lg:flex items-center py-4 px-5 font-semibold'>
 						<motion.ul className='flex gap-6 uppercase'>
 							{links.map((link, index) => (
 								<motion.li
@@ -76,6 +77,7 @@ const Header = () => {
 									<Link href={link.hash}>{link.name} </Link>
 								</motion.li>
 							))}
+							<DarkModeButton />
 						</motion.ul>
 					</div>
 					<motion.div

@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Header from '@/components/header';
+import DarkModeContextProvider from '@/context/dark-mode';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -18,8 +19,10 @@ export default function RootLayout({
 	return (
 		<html lang='pl'>
 			<body className={`${inter.className} bg-[#e0f2fe] h-[99rem]`}>
-				<Header />
-				<main className=' -z-1'>{children}</main>
+				<DarkModeContextProvider>
+					<Header />
+					<main className=' -z-1'>{children}</main>
+				</DarkModeContextProvider>
 			</body>
 		</html>
 	);
