@@ -69,7 +69,7 @@ const Header = () => {
 									key={link.hash}
 									variants={fadeInAnimationVariants}
 									initial='initial'
-									whileInView='animate'
+									animate='animate'
 									custom={index}
 									className='hover:text-blue-500 transition-colors'
 								>
