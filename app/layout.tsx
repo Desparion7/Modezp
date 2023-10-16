@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Header from '@/components/header';
 import DarkModeContextProvider from '@/context/dark-mode';
+import Cookies from '@/components/cookies';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
 				<DarkModeContextProvider>
 					<Header />
 					<main className=' -z-1'>{children}</main>
+					<Cookies />
 				</DarkModeContextProvider>
 			</body>
 		</html>
