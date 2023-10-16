@@ -38,9 +38,9 @@ const Header = () => {
 	};
 	return (
 		<>
-			<div className='hidden lg:block w-screen h-10 gradient t-0'></div>
+			{/* <div className='hidden lg:block h-10 gradient t-0'></div> */}
 			<motion.header
-				className='sticky flex justify-center w-[100%] bg-[#e0f2fe] bg-opacity-95 z-10 top-0'
+				className='sticky flex justify-center w-[100%] bg-[#e0f2fe] bg-opacity-95 z-10 top-0  dark:bg-[#111827] dark:text-white'
 				variants={{
 					visible: { y: 0 },
 					hidden: { y: -200 },
@@ -48,12 +48,12 @@ const Header = () => {
 				animate={hidden ? 'hidden' : 'visible'}
 				transition={{ duration: 0.35, ease: 'easeInOut' }}
 			>
-				<nav className='container mx-auto flex justify-between  py-2 '>
+				<nav className='container mx-auto flex justify-between py-2'>
 					<motion.div
 						initial={{ opacity: 0, x: -100 }}
 						animate={{ opacity: 1, x: 0 }}
 					>
-						<Link href='/'>
+						{/* <Link href='/'>
 							<Image
 								src='/image/logo.PNG'
 								alt='logo'
@@ -61,7 +61,7 @@ const Header = () => {
 								height={200}
 								priority
 							/>
-						</Link>
+						</Link> */}
 					</motion.div>
 					<div className='hidden lg:flex items-center py-4 px-5 font-semibold'>
 						<motion.ul className='flex gap-6 uppercase'>

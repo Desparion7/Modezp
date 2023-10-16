@@ -18,7 +18,9 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='pl'>
-			<body className={`${inter.className} bg-[#e0f2fe] h-[99rem]`}>
+			<body
+				className={`${inter.className} bg-[#e0f2fe] dark:bg-gradient-to-r from-neutral-900 via-sky-900 to-stone-900  dark:text-white h-[99rem]`}
+			>
 				<DarkModeContextProvider>
 					<Header />
 					<main className=' -z-1'>{children}</main>
