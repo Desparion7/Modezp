@@ -1,24 +1,34 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { AnimatePresence, motion } from 'framer-motion';
 
 const Cookies = () => {
 	const [cookies, setCookies] = useState(true);
+
+	useEffect(() => {
+		const cookiesInfo = window.localStorage.getItem('cookies');
+		if (cookiesInfo === 'hide') setCookies(false);
+	}, []);
+
+	const handleCookies = () => {
+		setCookies(false);
+		window.localStorage.setItem('cookies', 'hide');
+	};
 	return (
 		<AnimatePresence>
 			{cookies && (
 				<motion.div
-					className='fixed bg-white text-black mr-10 p-5 right-0 bottom-2 w-[30%] rounded'
+					className='fixed bg-gray-200 text-black mr-10 p-5 right-0 bottom-2 w-[40%] rounded'
 					initial={{ opacity: 0, y: 100 }}
 					animate={{ opacity: 1, y: 0 }}
 					exit={{ opacity: 0, y: 100 }}
 				>
 					<Image
 						src='/image/cookies.PNG'
-						width={100}
-						height={100}
+						width={80}
+						height={80}
 						alt='cookies'
 					/>
 					<p className='text-center lg:text-lg mb-3 font-semibold text-blue-600'>
@@ -37,9 +47,7 @@ const Cookies = () => {
 					</p>
 					<div className='text-center'>
 						<button
-							onClick={() => {
-								setCookies(false);
-							}}
+							onClick={handleCookies}
 							className='m-5 p-3 bg-blue-600 text-white rounded hover:bg-blue-500 transition'
 						>
 							Akceptuje
