@@ -53,7 +53,7 @@ const Header = () => {
 						initial={{ opacity: 0, x: -100 }}
 						animate={{ opacity: 1, x: 0 }}
 					>
-						{/* <Link href='/'>
+						<Link href='/'>
 							<Image
 								src='/image/logo.PNG'
 								alt='logo'
@@ -61,7 +61,7 @@ const Header = () => {
 								height={200}
 								priority
 							/>
-						</Link> */}
+						</Link>
 					</motion.div>
 					<div className='hidden lg:flex items-center py-4 px-5 font-semibold'>
 						<motion.ul className='flex gap-6 uppercase'>
