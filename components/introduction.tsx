@@ -5,11 +5,12 @@ import { motion } from 'framer-motion';
 
 const Introduction = () => {
 	return (
-		<section className='container mx-auto mt-10 flex flex-col md:flex-row justify-between items-center'>
+		<section className='container mx-auto mt-10 flex flex-col md:flex-row justify-between items-center overflow-hidden'>
 			<motion.div
 				className='w-[100%] md:w-[50%] flex flex-col justify-between text-center sm:text-left'
 				initial={{ x: -200, opacity: 0 }}
 				animate={{ x: 0, opacity: 1 }}
+				transition={{ duration: 0.5 }}
 			>
 				<h2 className='text-xl sm:text-2xl md:text-3xl uppercase mb-5'>
 					Strony internetowe
@@ -27,6 +28,7 @@ const Introduction = () => {
 				className='relative w-[100%] md:w-[50%] aspect-video'
 				initial={{ x: 200, opacity: 0 }}
 				animate={{ x: 0, opacity: 1 }}
+				transition={{ duration: 0.5 }}
 			>
 				<Image
 					src='/image/computer.PNG'

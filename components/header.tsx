@@ -46,12 +46,13 @@ const Header = () => {
 					hidden: { y: -200 },
 				}}
 				animate={hidden ? 'hidden' : 'visible'}
-				transition={{ duration: 0.35, ease: 'easeInOut' }}
+				transition={{ duration: 0.5, ease: 'easeInOut' }}
 			>
 				<nav className='container mx-auto flex justify-between py-2'>
 					<motion.div
 						initial={{ opacity: 0, x: -100 }}
 						animate={{ opacity: 1, x: 0 }}
+						transition={{ duration: 0.5 }}
 					>
 						<Link href='/'>
 							<Image
