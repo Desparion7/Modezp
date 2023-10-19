@@ -1,22 +1,11 @@
 'use client';
 import React from 'react';
 import { motion } from 'framer-motion';
+import Path from './svg-path';
 
 type MenuToggleButtonProps = {
 	toggle: React.Dispatch<React.SetStateAction<boolean>>;
 	isMenuVisible: boolean;
-};
-
-const Path = (props: any) => {
-	return (
-		<motion.path
-			fill='transparent'
-			strokeWidth='3'
-			stroke='#0F0F0F'
-			strokeLinecap='round'
-			{...props}
-		/>
-	);
 };
 
 const MenuToggleButton = ({ toggle, isMenuVisible }: MenuToggleButtonProps) => {
