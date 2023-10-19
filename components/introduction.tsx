@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import SectionHeader from '@/components/ui/section-header';
 
 const Introduction = () => {
 	return (
@@ -12,9 +13,7 @@ const Introduction = () => {
 				animate={{ x: 0, opacity: 1 }}
 				transition={{ duration: 0.5 }}
 			>
-				<h2 className='text-xl sm:text-2xl md:text-3xl uppercase mb-5'>
-					Strony internetowe
-				</h2>
+				<SectionHeader>Strony internetowe</SectionHeader>
 				<p className='sm:text-lg md:text-xl tracking-wider mx-2 sm:mx-0'>
 					Tworzymy nowoczesne strony internetowe, które nie tylko
 					zachwycają estetyką, ale również są zoptymalizowane pod

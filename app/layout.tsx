@@ -24,7 +24,7 @@ export default function RootLayout({
 			>
 				<DarkModeContextProvider>
 					<Header />
-					<main className=' -z-1'>{children}</main>
+					<main className='-z-1'>{children}</main>
 					<Cookies />
 				</DarkModeContextProvider>
 			</body>

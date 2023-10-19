@@ -5,8 +5,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import MobileMenu from './mobile-menu';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
-import MenuToggleButton from '@/ui/menu-toggle-button';
-import DarkModeButton from '@/ui/dark-mode-button';
+import MenuToggleButton from '@/components/ui/menu-toggle-button';
+import DarkModeButton from '@/components/ui/dark-mode-button';
 
 const Header = () => {
 	const { scrollY } = useScroll();
