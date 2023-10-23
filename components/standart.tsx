@@ -12,6 +12,11 @@ type StandartProps = {
 
 const Standart = ({ name, imageSrc, text }: StandartProps) => {
 	const [show, setShow] = useState(false);
+
+	// const showDetails = show
+	// 	? 'h-[100%]'
+	// 	: 'h-[0] overflow-hidden transition-all';
+
 	return (
 		<div>
 			<div className='flex'>
@@ -40,10 +45,18 @@ const Standart = ({ name, imageSrc, text }: StandartProps) => {
 					{name}
 				</h3>
 			</div>
-			<div className='flex justify-center gap-3 items-center'>
+			<motion.div
+				className='flex justify-center gap-3 items-center overflow-hidden h-0 mb-5'
+				animate={show ? 'open' : 'closed'}
+				variants={{
+					closed: { height: '0' },
+					open: { height: '100%' },
+				}}
+				transition={{ duration: 0.3 }}
+			>
 				<Image src={imageSrc} width={100} height={100} alt='icon' />
 				<p className='tracking-widest'>{text}</p>
-			</div>
+			</motion.div>
 		</div>
 	);
 };
