@@ -20,7 +20,7 @@ const Cookies = () => {
 		<AnimatePresence>
 			{cookies && (
 				<motion.div
-					className='fixed bg-gray-200 text-black mr-10 p-5 right-0 bottom-0 w-[40%] rounded'
+					className='fixed bg-gray-200 text-black dark:bg-[#111827] dark:text-white p-3 px-20 right-0 bottom-0 w-[30%] rounded'
 					initial={{ opacity: 0, y: 100 }}
 					animate={{ opacity: 1, y: 0 }}
 					exit={{ opacity: 0, y: 100 }}
@@ -45,7 +45,7 @@ const Cookies = () => {
 							</span>
 						</Link>
 					</p>
-					<div className='text-center'>
+					<div className='text-center flex justify-center'>
 						<button
 							onClick={handleCookies}
 							className='m-5 p-3 bg-blue-600 text-white rounded hover:bg-blue-500 transition'
