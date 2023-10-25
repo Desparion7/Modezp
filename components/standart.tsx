@@ -13,9 +13,14 @@ type StandartProps = {
 const Standart = ({ name, imageSrc, text }: StandartProps) => {
 	const [show, setShow] = useState(false);
 
-
 	return (
-		<div>
+		<motion.div
+			className='mb-5'
+			initial={{ x: -200, opacity: 0 }}
+			transition={{ duration: 0.5 }}
+			whileInView={{ x: 0, opacity: 1 }}
+			viewport={{ once: true }}
+		>
 			<div className='flex'>
 				<motion.svg
 					width='40'
@@ -49,12 +54,12 @@ const Standart = ({ name, imageSrc, text }: StandartProps) => {
 					closed: { height: '100%' },
 					open: { height: '0' },
 				}}
-				transition={{ duration: 0.3, ease:'linear' }}
+				transition={{ duration: 0.3, ease: 'linear' }}
 			>
 				<Image src={imageSrc} width={100} height={100} alt='icon' />
 				<p className='tracking-widest'>{text}</p>
 			</motion.div>
-		</div>
+		</motion.div>
 	);
 };
 
