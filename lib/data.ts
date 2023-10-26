@@ -47,3 +47,16 @@ export const standarts = [
 		text: 'Przy oddawaniu strony będziemy korzystać z najnowszych i najstabilniejszych wersji oprogramowania. Dodatkowo, zainstalujemy oprogramowanie antyspamowe oraz certyfikat SSL, co zapewni wyższy poziom bezpieczeństwa. Natychmiast po wdrożeniu strony przeprowadzimy pełną kopię zapasową i przechowamy ją przez okres 12 miesięcy, aby zapewnić ochronę danych.',
 	},
 ];
+
+export const portfolio = [
+	{
+		title: 'WickerLand',
+		img: '/image/WickerLand.PNG',
+		text: 'Sklep oraz blog z wyrobami z wikliny.',
+	},
+	{
+		title: 'CaRent',
+		img: '/image/CaRent.PNG',
+		text: 'Wpożyczalnia luksusowaych samochodów.',
+	},
+];
