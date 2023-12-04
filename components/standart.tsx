@@ -27,8 +27,12 @@ const Standart = ({ name, imageSrc, text }: StandartProps) => {
 					height='40'
 					viewBox='0 0 30 30'
 					fill='none'
+					className='cursor-pointer'
 					xmlns='http://www.w3.org/2000/svg'
 					animate={show ? 'open' : 'closed'}
+					onClick={() => {
+						setShow((prev) => !prev);
+					}}
 				>
 					<Path
 						d='M6 9L12 15L18 9'

@@ -52,11 +52,16 @@ export const portfolio = [
 	{
 		title: 'WickerLand',
 		img: '/image/WickerLand.PNG',
-		text: 'Sklep oraz blog z wyrobami z wikliny.',
+		text: 'Sklep z wyrobami z wikliny.',
 	},
 	{
 		title: 'CaRent',
 		img: '/image/CaRent.PNG',
 		text: 'Wpożyczalnia luksusowaych samochodów.',
+	},
+	{
+		title: 'GymApp',
+		img: '/image/GymApp.PNG',
+		text: 'Aplikacja do zarządzania treningiem',
 	},
 ];
