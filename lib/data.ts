@@ -53,15 +53,18 @@ export const portfolio = [
 		title: 'WickerLand',
 		img: '/image/WickerLand.PNG',
 		text: 'Sklep z wyrobami z wikliny.',
+		page: 'https://wik-land-front.vercel.app/',
 	},
 	{
 		title: 'CaRent',
 		img: '/image/CaRent.PNG',
 		text: 'Wpożyczalnia luksusowaych samochodów.',
+		page: 'https://carent-jade.vercel.app/',
 	},
 	{
 		title: 'GymApp',
 		img: '/image/GymApp.PNG',
 		text: 'Aplikacja do zarządzania treningiem',
+		page: 'https://gym-app-pi-three.vercel.app/',
 	},
 ];

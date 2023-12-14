@@ -8,12 +8,13 @@ const Portfolio = () => {
 		<section className='container mx-auto my-20'>
 			<SectionHeader>Portfolio</SectionHeader>
 			<div className='pb-[200px] flex gap-5 flex-wrap justify-center'>
-				{portfolio.map((page) => (
+				{portfolio.map((project) => (
 					<PortfolioCard
-						key={page.title}
-						title={page.title}
-						text={page.text}
-						img={page.img}
+						key={project.title}
+						title={project.title}
+						text={project.text}
+						img={project.img}
+						page={project.page}
 					/>
 				))}
 			</div>

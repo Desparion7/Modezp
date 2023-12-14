@@ -5,9 +5,10 @@ type PortfolioCardType = {
 	title: string;
 	text: string;
 	img: string;
+	page: string;
 };
 
-const PortfolioCard = ({ title, text, img }: PortfolioCardType) => {
+const PortfolioCard = ({ title, text, img, page }: PortfolioCardType) => {
 	return (
 		<div className='p-5 rounded-lg bg-blue-100 dark:bg-sky-950 transition-all hover:bg-blue-200 shadow-lg text-center'>
 			<h3 className='uppercase text-xl font-semibold mb-3'>{title}</h3>
@@ -24,9 +25,14 @@ const PortfolioCard = ({ title, text, img }: PortfolioCardType) => {
 				<button className='bg-gradient-to-t from-blue-500 via-blue-700 to-sky-500 text-white p-2 rounded-lg shadow-lg transition hover:scale-105'>
 					Wykorzystane technologie
 				</button>
-				<button className='bg-gradient-to-t from-blue-500 via-blue-700 to-sky-500 text-white p-2 rounded-lg shadow-lg  transition hover:scale-105'>
+				<a
+					className='bg-gradient-to-t from-blue-500 via-blue-700 to-sky-500 text-white p-2 rounded-lg shadow-lg  transition hover:scale-105'
+					href={page}
+					target='_blank'
+					rel='noopener noreferrer'
+				>
 					Strona
-				</button>
+				</a>
 			</div>
 		</div>
 	);
