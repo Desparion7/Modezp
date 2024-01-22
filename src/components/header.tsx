@@ -5,8 +5,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import MobileMenu from './mobile-menu';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
-import MenuToggleButton from '@/components/ui/menu-toggle-button';
-import DarkModeButton from '@/components/ui/dark-mode-button';
+import MenuToggleButton from '@/ui/menu-toggle-button';
+import OrangeButton from '@/ui/orange-button';
 
 const Header = () => {
 	const { scrollY } = useScroll();
@@ -38,9 +38,8 @@ const Header = () => {
 	};
 	return (
 		<>
-			{/* <div className='hidden lg:block h-10 gradient t-0'></div> */}
 			<motion.header
-				className='sticky flex justify-center w-[100%] bg-[#e0f2fe] bg-opacity-95 z-10 top-0  dark:bg-[#111827] dark:text-white'
+				className='sticky flex justify-center w-[100%] bg-opacity-95 z-10 top-0  bg-[#111827] text-white'
 				variants={{
 					visible: { y: 0 },
 					hidden: { y: -200 },
@@ -56,7 +55,7 @@ const Header = () => {
 					>
 						<Link href='/'>
 							<Image
-								src='/image/logo.PNG'
+								src='/logo.PNG'
 								alt='logo'
 								width={180}
 								height={200}
@@ -65,7 +64,7 @@ const Header = () => {
 						</Link>
 					</motion.div>
 					<div className='hidden lg:flex items-center py-4 px-5 font-semibold'>
-						<motion.ul className='flex gap-6 uppercase'>
+						<motion.ul className='flex gap-6 uppercase items-center'>
 							{links.map((link, index) => (
 								<motion.li
 									key={link.hash}
@@ -78,11 +77,17 @@ const Header = () => {
 									<Link href={link.hash}>{link.name} </Link>
 								</motion.li>
 							))}
-							<DarkModeButton />
+							<motion.li
+								variants={fadeInAnimationVariants}
+								initial='initial'
+								animate='animate'
+							>
+								<OrangeButton>Darmowa konsultacja</OrangeButton>
+							</motion.li>
 						</motion.ul>
 					</div>
 					<motion.div
-						className='relative lg:hidden py-4 pr-5 sm:pr-3 z-30'
+						className='relative lg:hidden py-4 mr-2 sm:pr-3 z-30'
 						initial={{ opacity: 0, y: -50 }}
 						animate={{ opacity: 1, y: 0 }}
 					>

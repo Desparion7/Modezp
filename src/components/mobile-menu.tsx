@@ -26,7 +26,7 @@ const MobileMenu = ({ handleToggleMenu, menuVisible }: MobileMenuProps) => {
 						onClick={handleCloseMenu}
 					>
 						<motion.div
-							className='absolute  bg-[#e0f2fe] h-screen w-[15rem] right-0 z-[20]'
+							className='absolute bg-[#e0f2fe] h-screen w-[100%] left-0 z-[20]'
 							initial={{ x: 100, opacity: 0 }}
 							animate={{ x: 0, opacity: 1 }}
 							exit={{ x: 100, opacity: 0 }}
@@ -34,7 +34,7 @@ const MobileMenu = ({ handleToggleMenu, menuVisible }: MobileMenuProps) => {
 								event.stopPropagation();
 							}}
 						>
-							<ul className='flex flex-col gap-5 text-black text-sm  p-5 mr-2 mt-10 '>
+							<ul className='flex flex-col gap-5 text-black text-md p-10  mt-10'>
 								{links.map((link) => (
 									<li
 										key={link.hash}
@@ -51,7 +51,7 @@ const MobileMenu = ({ handleToggleMenu, menuVisible }: MobileMenuProps) => {
 							</ul>
 							<div className='flex justify-center'>
 								<Image
-									src='/image/logo.PNG'
+									src='/logo.PNG'
 									alt='logo'
 									width={150}
 									height={150}

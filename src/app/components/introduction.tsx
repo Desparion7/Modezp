@@ -2,11 +2,11 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import SectionHeader from '@/components/ui/section-header';
+import SectionHeader from '@/components/section-header';
 
 const Introduction = () => {
 	return (
-		<section className='container mx-auto mt-10 flex flex-col md:flex-row justify-between items-center overflow-hidden'>
+		<section className='container mx-auto mt-10 flex flex-col md:flex-row justify-between items-center overflow-hidden gap-5'>
 			<motion.div
 				className='w-[100%] md:w-[50%] flex flex-col justify-between text-center sm:text-left'
 				initial={{ x: -200, opacity: 0 }}
@@ -24,16 +24,17 @@ const Introduction = () => {
 				</p>
 			</motion.div>
 			<motion.div
-				className='relative w-[100%] md:w-[50%] aspect-video'
+				className='relative w-[90%] md:w-[40%] aspect-video mx-3'
 				initial={{ x: 200, opacity: 0 }}
 				animate={{ x: 0, opacity: 1 }}
 				transition={{ duration: 0.5 }}
 			>
 				<Image
-					src='/image/computer.PNG'
+					src='/computer.PNG'
 					fill
 					alt='computer'
 					sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+					className='rounded-md'
 				/>
 			</motion.div>
 		</section>

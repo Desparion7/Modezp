@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import React from 'react';
 import { motion } from 'framer-motion';
 
@@ -13,7 +13,7 @@ const SectionHeader = ({ children }: SectionHeaderType) => {
 			whileInView={{ x: 0, opacity: 1 }}
 			viewport={{ once: true }}
 		>
-			<h2 className='text-xl sm:text-2xl md:text-3xl uppercase mb-5 pb-3  border-b-blue-600 border-b-2'>
+			<h2 className='text-xl sm:text-2xl md:text-4xl uppercase mb-5 pb-3 font-semibold  border-b-blue-600 border-b-2 bg-gradient-to-r from-purple-400 to-orange-400 bg-clip-text text-transparent'>
 				{children}
 			</h2>
 		</motion.div>
