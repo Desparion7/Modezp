@@ -13,13 +13,13 @@ type StandartProps = {
 const Standart = ({ name, imageSrc, text }: StandartProps) => {
 	return (
 		<motion.div
-			className='mb-5'
+			className='mb-5 px-2'
 			initial={{ x: -200, opacity: 0 }}
 			transition={{ duration: 0.5 }}
 			whileInView={{ x: 0, opacity: 1 }}
 			viewport={{ once: true }}
 		>
-			<div className='flex'>
+			<div className='flex items-center'>
 				<svg
 					width='40'
 					height='40'
@@ -29,11 +29,20 @@ const Standart = ({ name, imageSrc, text }: StandartProps) => {
 				>
 					<Path d='M6 9L12 15L18 9' />
 				</svg>
-				<h3 className='text-2xl mb-3 '>{name}</h3>
+				<h3 className='text-xl sm:text-2xl mb-3 '>{name}</h3>
 			</div>
-			<div className='flex justify-center gap-3 items-center overflow-hidden  height-[100%]'>
-				<Image src={imageSrc} width={100} height={100} alt='icon' />
-				<p className='tracking-widest '>{text}</p>
+			<div className='flex justify-center flex-col sm:flex-row gap-3 items-center overflow-hidden  height-[100%]'>
+				<div className='relative max-w-[40%] sm:min-w-[10%] h-auto'>
+					<Image
+						src={imageSrc}
+						width={268}
+						height={268}
+						alt='icon'
+					/>
+				</div>
+				<p className='tracking-widest text-center sm:text-start'>
+					{text}
+				</p>
 			</div>
 		</motion.div>
 	);

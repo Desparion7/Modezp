@@ -24,7 +24,7 @@ const Introduction = () => {
 				</p>
 			</motion.div>
 			<motion.div
-				className='relative w-[90%] md:w-[40%] aspect-video mx-3'
+				className='relative block w-[90%] md:w-[40%] aspect-video mx-3'
 				initial={{ x: 200, opacity: 0 }}
 				animate={{ x: 0, opacity: 1 }}
 				transition={{ duration: 0.5 }}
@@ -33,7 +33,7 @@ const Introduction = () => {
 					src='/computer.PNG'
 					fill
 					alt='computer'
-					sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+					sizes='(min-width: 1540px) 614px, (min-width: 1280px) 512px, (min-width: 1040px) 410px, (min-width: 780px) 307px, (min-width: 680px) 576px, calc(85vw + 15px)'
 					className='rounded-md'
 				/>
 			</motion.div>

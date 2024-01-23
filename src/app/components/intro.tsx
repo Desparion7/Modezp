@@ -50,7 +50,7 @@ const Intro = () => {
 				>
 					<OrangeButton>Bezpłatna konsultacja</OrangeButton>
 				</motion.div>
-				<div className='absolute w-[100%] h-[100%] bg-black bg-opacity-50 z-[-2]' />
+				<div className='absolute w-[100%] h-[100%] bg-black bg-opacity-40 z-[-2]' />
 			</div>
 		</section>
 	);

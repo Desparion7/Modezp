@@ -6,19 +6,24 @@ const Footer = () => {
 	const year = new Date().getFullYear();
 	return (
 		<div className='flex justify-around items-center w-[100%] min-h-[5%] bg-opacity-95 z-10 bottom-0  bg-[#111827] text-white'>
-			<Link href='/'>
-				<Image
-					src='/logo.PNG'
-					alt='logo'
-					width={180}
-					height={200}
-					priority
-				/>
-			</Link>
-			<p className='text-sm'>
-				Copyright ©{year} Modezp. All rights reserved
-			</p>
-			<div className='flex justify-between w-[30%]'>
+			<div>
+				<Link href='/'>
+					<div className='w-[180px] h-auto'>
+						<Image
+							src='/logo.PNG'
+							alt='logo'
+							width={480}
+							height={189}
+							priority
+						/>
+					</div>
+				</Link>
+				<div className='flex flex-col sm:flex-row gap-2 text-sm text-center mb-2'>
+					<p>Copyright ©{year} Modezp.</p>
+					<p>All rights reserved</p>
+				</div>
+			</div>
+			<div className='flex flex-col sm:flex-row justify-around text-center w-[50%]'>
 				<Link
 					href='/kontakt'
 					className='hover:text-blue-500 transition-colors'
@@ -26,16 +31,16 @@ const Footer = () => {
 					Kontakt
 				</Link>
 				<Link
-					href='/polityka'
-					className='hover:text-blue-500 transition-colors'
-				>
-					Polityka prywatności
-				</Link>
-				<Link
 					href='/blog'
 					className='hover:text-blue-500 transition-colors'
 				>
 					Blog
+				</Link>
+				<Link
+					href='/polityka'
+					className='hover:text-blue-500 transition-colors'
+				>
+					Polityka prywatności
 				</Link>
 			</div>
 		</div>

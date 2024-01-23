@@ -1,23 +1,23 @@
 export const links = [
 	{
-		name: 'Home',
+		name: 'Strona główna',
 		hash: '/',
 	},
 	{
-		name: 'Portfolio',
-		hash: '#portfolio',
+		name: 'portfolio',
+		hash: '/portfolio',
 	},
 	{
-		name: 'Oferta',
-		hash: '#offert',
+		name: 'uslugi',
+		hash: '/uslugi',
 	},
 	{
 		name: 'O nas',
-		hash: '#about',
+		hash: '/o-nas',
 	},
 	{
 		name: 'Kontakt',
-		hash: '#contact',
+		hash: '/kontakt',
 	},
 ] as const;
 

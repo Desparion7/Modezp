@@ -12,10 +12,11 @@ type MobileMenuProps = {
 const MobileMenu = ({ handleToggleMenu, menuVisible }: MobileMenuProps) => {
 	const handleCloseMenu = () => {
 		handleToggleMenu();
+		document.body.style.overflow = 'auto';
 	};
 
 	return (
-		<nav className='absolute uppercase lg:hidden '>
+		<nav className='absolute uppercase lg:hidden overflow-hidden'>
 			<AnimatePresence>
 				{menuVisible && (
 					<motion.div
