@@ -5,7 +5,7 @@ import React from 'react';
 const Footer = () => {
 	const year = new Date().getFullYear();
 	return (
-		<div className='flex justify-around items-center w-[100%] min-h-[5%] bg-opacity-95 z-10 bottom-0  bg-[#111827] text-white'>
+		<div className='flex justify-around items-center w-[100%] min-h-[5%] bg-opacity-95 z-10 bottom-0  bg-gradient-to-r from-blue-100 to-cyan-100 text-black'>
 			<div>
 				<Link href='/'>
 					<div className='w-[180px] h-auto'>
@@ -23,22 +23,22 @@ const Footer = () => {
 					<p>All rights reserved</p>
 				</div>
 			</div>
-			<div className='flex flex-col sm:flex-row justify-around text-center w-[50%]'>
+			<div className='flex flex-col sm:flex-row justify-around text-center w-[50%] uppercase'>
 				<Link
 					href='/kontakt'
-					className='hover:text-blue-500 transition-colors'
+					className='hover:text-blue-700 transition-colors'
 				>
 					Kontakt
 				</Link>
 				<Link
 					href='/blog'
-					className='hover:text-blue-500 transition-colors'
+					className='hover:text-blue-700 transition-colors'
 				>
 					Blog
 				</Link>
 				<Link
 					href='/polityka'
-					className='hover:text-blue-500 transition-colors'
+					className='hover:text-blue-700 transition-colors'
 				>
 					Polityka prywatności
 				</Link>

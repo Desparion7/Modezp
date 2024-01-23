@@ -17,7 +17,7 @@ const Intro = () => {
 					className='absolute w-screen h-[100%] z-[-3]'
 				/>
 				<motion.h1
-					className='relative uppercase sm:text-xl text-center lg:text-5xl font-bold p-4 mb-2 bg-gradient-to-r from-purple-400 to-orange-400 bg-clip-text text-transparent'
+					className='relative uppercase sm:text-xl text-center lg:text-5xl font-bold p-4 mb-2 text-white '
 					initial={{ scale: 0 }}
 					animate={{ scale: 1 }}
 					transition={{ ease: 'easeOut', duration: 0.5 }}
@@ -50,7 +50,7 @@ const Intro = () => {
 				>
 					<OrangeButton>Bezpłatna konsultacja</OrangeButton>
 				</motion.div>
-				<div className='absolute w-[100%] h-[100%] bg-black bg-opacity-40 z-[-2]' />
+				<div className='absolute w-[100%] h-[100%] bg-black bg-opacity-30 z-[-2]' />
 			</div>
 		</section>
 	);

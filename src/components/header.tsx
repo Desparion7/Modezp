@@ -46,7 +46,7 @@ const Header = () => {
 	return (
 		<>
 			<motion.header
-				className='sticky flex justify-center w-[100%]  z-10 top-0  bg-[#111827] text-white'
+				className='sticky flex justify-center w-[100%]  z-10 top-0  bg-[#e0eef8] text-black'
 				variants={{
 					visible: { y: 0 },
 					hidden: { y: -200 },
@@ -81,7 +81,7 @@ const Header = () => {
 									initial='initial'
 									animate='animate'
 									custom={index}
-									className='hover:text-blue-500 transition-colors'
+									className='hover:text-blue-700 transition-colors'
 								>
 									<Link href={link.hash}>{link.name} </Link>
 								</motion.li>
@@ -121,23 +121,23 @@ const Header = () => {
 											translateY: 0,
 										}}
 										transition={{ duration: 0.5 }}
-										className='absolute flex flex-col gap-3 p-3 pt-5 bg-[#111827]'
+										className='absolute flex flex-col gap-3 p-3 pt-5 bg-[#e0eef8] text-black'
 									>
 										<Link
 											href='/strony-internetowe'
-											className='hover:text-blue-500 transition-colors'
+											className='hover:text-blue-700 transition-colors'
 										>
 											Strony internetowe
 										</Link>
 										<Link
 											href='/strony-internetowe'
-											className='hover:text-blue-500 transition-colors'
+											className='hover:text-blue-700 transition-colors'
 										>
 											Sklep internetowe
 										</Link>
 										<Link
 											href='/strony-internetowe'
-											className='hover:text-blue-500 transition-colors'
+											className='hover:text-blue-700 transition-colors'
 										>
 											Logo firmy
 										</Link>
