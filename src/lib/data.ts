@@ -8,10 +8,6 @@ export const links = [
 		hash: '/portfolio',
 	},
 	{
-		name: 'uslugi',
-		hash: '/uslugi',
-	},
-	{
 		name: 'O nas',
 		hash: '/o-nas',
 	},

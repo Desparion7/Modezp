@@ -2,10 +2,11 @@ import SectionHeader from '@/components/section-header';
 import React from 'react';
 import Standart from './standart';
 import { standarts } from '@/lib/data';
+import Image from 'next/image';
 
 const Standards = () => {
 	return (
-		<section className='container mx-auto my-10 md:my-20 pb-20'>
+		<section className='relative container mx-auto my-10 md:my-20 pb-20'>
 			<div className='w-[100%] md:w-[50%] flex flex-col justify-between text-center sm:text-left'>
 				<SectionHeader>Nasze standardy</SectionHeader>
 			</div>

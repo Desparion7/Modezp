@@ -113,7 +113,7 @@ const Header = () => {
 									<motion.div
 										initial={{
 											opacity: 0,
-											translateY: '-30px',
+											translateY: '-10px',
 											translateX: '-100px',
 										}}
 										animate={{
@@ -124,19 +124,19 @@ const Header = () => {
 										className='absolute flex flex-col gap-3 p-3 pt-5 bg-[#e0eef8] text-black'
 									>
 										<Link
-											href='/strony-internetowe'
+											href='/uslugi/strony-internetowe'
 											className='hover:text-blue-700 transition-colors'
 										>
 											Strony internetowe
 										</Link>
 										<Link
-											href='/strony-internetowe'
+											href='/uslugi/sklep'
 											className='hover:text-blue-700 transition-colors'
 										>
 											Sklep internetowe
 										</Link>
 										<Link
-											href='/strony-internetowe'
+											href='/uslugi/logo'
 											className='hover:text-blue-700 transition-colors'
 										>
 											Logo firmy

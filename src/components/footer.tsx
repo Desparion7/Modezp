@@ -5,7 +5,7 @@ import React from 'react';
 const Footer = () => {
 	const year = new Date().getFullYear();
 	return (
-		<div className='flex justify-around items-center w-[100%] min-h-[5%] bg-opacity-95 z-10 bottom-0  bg-gradient-to-r from-blue-100 to-cyan-100 text-black'>
+		<div className='flex justify-around items-center min-w-[100%] min-h-[5%] bg-opacity-95 z-10 bottom-0  bg-gradient-to-r from-blue-100 to-cyan-100 text-black border border-t-gray-300'>
 			<div>
 				<Link href='/'>
 					<div className='w-[180px] h-auto'>

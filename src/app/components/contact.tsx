@@ -5,9 +5,9 @@ import { MdOutlineMailOutline } from 'react-icons/md';
 
 const Contact = () => {
 	return (
-		<section className='flex justify-center items-center mx-auto py-20 w-[100%] h-auto bg-gradient-to-r from-blue-950 to-sky-950'>
+		<section className='flex justify-center mx-auto items-center py-20 max-w-[100%] h-auto bg-gradient-to-r from-blue-950 to-sky-950'>
 			<div className='flex flex-col lg:flex-row gap-5'>
-				<div className='relative flex flex-col md:mix-h-[100%] bg-sky-100 text-black p-10 gap-4'>
+				<div className='relative flex flex-col md:max-h-[100%] bg-sky-100 text-black p-10 gap-4'>
 					<div className='pb-[70px] '>
 						<div
 							style={{
@@ -46,7 +46,7 @@ const Contact = () => {
 						</div>
 					</div>
 				</div>
-				<div className='bg-black text-white p-10 h-[100%]'>
+				<div className='bg-black text-white p-10 min-h-[100%]'>
 					<form action='' className='flex flex-col gap-3 '>
 						<h2 className='text-2xl mb-3'>Formularz kontaktowy</h2>
 						<div className='flex flex-col sm:flex-row  gap-2'>
