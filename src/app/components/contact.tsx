@@ -1,7 +1,9 @@
+'use client';
 import Image from 'next/image';
 import React from 'react';
 import { IoIosPhonePortrait } from 'react-icons/io';
 import { MdOutlineMailOutline } from 'react-icons/md';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
 	return (
@@ -127,12 +129,16 @@ const Contact = () => {
 							/>
 						</div>
 						<div className='flex mt-5'>
-							<button
+							<motion.button
+								whileHover={{
+									scale: 1.05,
+									transition: { duration: 0.1 },
+								}}
 								type='submit'
 								className='bg-button-background outline-none text-white text-md lg:text-lg py-2 px-4 rounded-xl hover:bg-orange-600 transition-all hover:scale-2'
 							>
 								Wyślij wiadomość
-							</button>
+							</motion.button>
 						</div>
 					</form>
 				</div>

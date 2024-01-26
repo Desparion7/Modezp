@@ -1,9 +1,12 @@
 import { motion, useAnimationControls } from 'framer-motion';
 import { useState } from 'react';
+import { cn } from '@/lib/utils';
 const Letter = ({
 	children,
+	orange,
 }: Readonly<{
 	children: React.ReactNode;
+	orange?: boolean;
 }>) => {
 	const controls = useAnimationControls();
 	const [isPlaying, setIsPlaying] = useState(false);
@@ -30,7 +33,7 @@ const Letter = ({
 			onAnimationComplete={() => {
 				setIsPlaying(false);
 			}}
-			className='inline-block'
+			className={cn('inline-block', { 'text-main-color': orange })}
 		>
 			{children}
 		</motion.span>

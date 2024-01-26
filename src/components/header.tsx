@@ -6,7 +6,6 @@ import Image from 'next/image';
 import MobileMenu from './mobile-menu';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import MenuToggleButton from '@/ui/menu-toggle-button';
-import OrangeButton from '@/ui/orange-button';
 import Path from '@/ui/svg-path';
 
 const Header = () => {
@@ -44,9 +43,9 @@ const Header = () => {
 		}),
 	};
 	return (
-		<>
+		<div>
 			<motion.header
-				className='sticky flex justify-center w-[100%]  z-10 top-0  bg-[#e0eef8] text-black'
+				className='absolute flex justify-center w-[100vw] h-20  z-10 top-0  bg-black text-white bg-opacity-50'
 				variants={{
 					visible: { y: 0 },
 					hidden: { y: -200 },
@@ -61,15 +60,21 @@ const Header = () => {
 						transition={{ duration: 0.5 }}
 					>
 						<Link href='/'>
-							<div className='w-[180px] h-auto'>
+							<motion.div
+								whileHover={{
+									scale: 1.05,
+									transition: { duration: 0.1 },
+								}}
+								className='ml-[1rem] sm:ml-0 w-[6rem] sm:w-[8rem] h-auto'
+							>
 								<Image
 									src='/logo.PNG'
 									alt='logo'
-									width={480}
-									height={189}
+									width={245}
+									height={229}
 									priority
 								/>
-							</div>
+							</motion.div>
 						</Link>
 					</motion.div>
 					<div className='hidden lg:flex items-center py-4 px-5 font-semibold'>
@@ -81,15 +86,21 @@ const Header = () => {
 									initial='initial'
 									animate='animate'
 									custom={index}
-									className='hover:text-blue-700 transition-colors'
+									className='hover:text-main-color transition-colors'
 								>
 									<Link href={link.hash}>{link.name} </Link>
 								</motion.li>
 							))}
 							<motion.li
 								variants={fadeInAnimationVariants}
-								initial='initial'
-								animate='animate'
+								initial={{ opacity: 0, y: -50 }}
+								animate={{
+									opacity: 1,
+									y: 0,
+									transition: {
+										delay: 0.05 * 5,
+									},
+								}}
 								onMouseLeave={() => setServicesVisible(false)}
 							>
 								<div
@@ -121,23 +132,23 @@ const Header = () => {
 											translateY: 0,
 										}}
 										transition={{ duration: 0.5 }}
-										className='absolute flex flex-col gap-3 p-3 pt-5 bg-[#e0eef8] text-black'
+										className='absolute flex flex-col gap-3 p-3 pt-5 bg-gradient-to-b from-transparent from-5% to-black to-100% text-white'
 									>
 										<Link
 											href='/uslugi/strony-internetowe'
-											className='hover:text-blue-700 transition-colors'
+											className='hover:text-main-color transition-colors'
 										>
 											Strony internetowe
 										</Link>
 										<Link
 											href='/uslugi/sklep'
-											className='hover:text-blue-700 transition-colors'
+											className='hover:text-main-color transition-colors'
 										>
 											Sklep internetowe
 										</Link>
 										<Link
 											href='/uslugi/logo'
-											className='hover:text-blue-700 transition-colors'
+											className='hover:text-main-color transition-colors'
 										>
 											Logo firmy
 										</Link>
@@ -146,15 +157,29 @@ const Header = () => {
 							</motion.li>
 							<motion.li
 								variants={fadeInAnimationVariants}
-								initial='initial'
-								animate='animate'
+								initial={{ opacity: 0, y: -50 }}
+								animate={{
+									opacity: 1,
+									y: 0,
+									transition: {
+										delay: 0.05 * 6,
+									},
+								}}
 							>
-								<OrangeButton>Darmowa konsultacja</OrangeButton>
+								<motion.button
+									whileHover={{
+										scale: 1.05,
+										transition: { duration: 0.1 },
+									}}
+									className='bg-button-background outline-none text-white  py-3 px-6 rounded-3xl  hover:bg-button-background-hover transition-all uppercase'
+								>
+									Darmowa konsultacja
+								</motion.button>
 							</motion.li>
 						</motion.ul>
 					</div>
 					<motion.div
-						className='relative lg:hidden py-4 mr-2 sm:pr-3 z-30'
+						className='relative lg:hidden text- py-4 mr-2 sm:pr-3 z-30'
 						initial={{ opacity: 0, y: -50 }}
 						animate={{ opacity: 1, y: 0 }}
 					>
@@ -169,7 +194,7 @@ const Header = () => {
 					menuVisible={menuVisible}
 				/>
 			</motion.header>
-		</>
+		</div>
 	);
 };
 

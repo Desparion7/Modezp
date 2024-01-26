@@ -8,12 +8,42 @@ export const links = [
 		hash: '/portfolio',
 	},
 	{
+		name: 'Kontakt',
+		hash: '/kontakt',
+	},
+	{
 		name: 'O nas',
 		hash: '/o-nas',
+	},
+] as const;
+export const linksMobile = [
+	{
+		name: 'Strona główna',
+		hash: '/',
+	},
+	{
+		name: 'portfolio',
+		hash: '/portfolio',
 	},
 	{
 		name: 'Kontakt',
 		hash: '/kontakt',
+	},
+	{
+		name: 'O nas',
+		hash: '/o-nas',
+	},
+	{
+		name: 'Strony internetowe',
+		hash: '/usługi/strony-internetowe',
+	},
+	{
+		name: 'Sklep internetowy',
+		hash: '/usługi/sklep-internetowy',
+	},
+	{
+		name: 'Logo firmy',
+		hash: '/usługi/logo',
 	},
 ] as const;
 

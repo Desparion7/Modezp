@@ -4,9 +4,11 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import SectionHeader from '@/components/section-header';
 
+// import backgroundShapes from '../../../public/shapes.svg'
+
 const Introduction = () => {
 	return (
-		<section className='container mx-auto mt-10 flex flex-col md:flex-row justify-between items-center overflow-hidden gap-5'>
+		<section className='container relative mx-auto mt-10 flex flex-col md:flex-row justify-between items-center overflow-hidden gap-5'>
 			<motion.div
 				className='w-[100%] md:w-[50%] flex flex-col justify-between text-center sm:text-left'
 				initial={{ x: -200, opacity: 0 }}
@@ -30,7 +32,7 @@ const Introduction = () => {
 				transition={{ duration: 0.5 }}
 			>
 				<Image
-					src='/computer.PNG'
+					src='/computer2.PNG'
 					fill
 					alt='computer'
 					sizes='(min-width: 1540px) 614px, (min-width: 1280px) 512px, (min-width: 1040px) 410px, (min-width: 780px) 307px, (min-width: 680px) 576px, calc(85vw + 15px)'

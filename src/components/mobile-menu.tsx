@@ -1,5 +1,5 @@
 import React from 'react';
-import { links } from '@/lib/data';
+import { linksMobile } from '@/lib/data';
 import Link from 'next/link';
 import { AnimatePresence, motion } from 'framer-motion';
 import Image from 'next/image';
@@ -27,7 +27,7 @@ const MobileMenu = ({ handleToggleMenu, menuVisible }: MobileMenuProps) => {
 						onClick={handleCloseMenu}
 					>
 						<motion.div
-							className='absolute bg-[#e0f2fe] h-screen w-[100%] left-0 z-[20]'
+							className='absolute bg-gradient-to-br from-sky-600 to-black h-screen w-[100%] left-0 z-[20]'
 							initial={{ x: 100, opacity: 0 }}
 							animate={{ x: 0, opacity: 1 }}
 							exit={{ x: 100, opacity: 0 }}
@@ -35,11 +35,10 @@ const MobileMenu = ({ handleToggleMenu, menuVisible }: MobileMenuProps) => {
 								event.stopPropagation();
 							}}
 						>
-							<ul className='flex flex-col gap-5 text-black text-md p-10  mt-10'>
-								{links.map((link) => (
+							<ul className='flex flex-col gap-5 text-white text-md p-10  mt-10'>
+								{linksMobile.map((link) => (
 									<li
 										key={link.hash}
-										className='hover:text-blue-500 transition'
 									>
 										<Link
 											href={link.hash}
@@ -54,9 +53,9 @@ const MobileMenu = ({ handleToggleMenu, menuVisible }: MobileMenuProps) => {
 								<Image
 									src='/logo.PNG'
 									alt='logo'
-									width={150}
-									height={150}
-									className='absolute bottom-10'
+									width={245}
+									height={229}
+									className='absolute bottom-10 w-[5rem]'
 									priority
 								/>
 							</div>
