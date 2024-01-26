@@ -1,6 +1,5 @@
 import React, { useCallback } from 'react';
 import Particles from 'react-particles';
-import type { Engine } from '@tsparticles/engine';
 import { loadFull } from 'tsparticles';
 
 const ParticlesContainer = () => {
