@@ -15,7 +15,7 @@ const Standart4 = () => {
 			viewport={{ once: true }}
 		>
 			<div className='col-span-10 col-start-2 sm:col-span-6 sm:col-start-2 sm:font-medium'>
-				<h3 className='text-xl sm:text-2xl mb-3 text-center uppercase text-second-color'>
+				<h3 className='text-xl sm:text-2xl lg:text-3xl mb-3 text-center uppercase text-third-color'>
 					Kopie zapasowe i zabezpieczenia
 				</h3>
 				{/* image for mobile */}
@@ -30,7 +30,7 @@ const Standart4 = () => {
 						/>
 					</div>
 				</div>
-				<p className='tracking-widest text-sm sm:text-lg text-center leading-8 sm:text-start sm:mt-8'>
+				<p className='tracking-widest text-sm sm:text-lg text-center font-semibold leading-8 sm:text-start sm:mt-8'>
 					Przy oddawaniu strony będziemy korzystać z{' '}
 					<span className='text-main-color'>
 						najnowszych i najstabilniejszych

@@ -1,0 +1,7 @@
+.shadow-bg {
+	background-image: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.55702030812324934) 80%,
+		rgba(255, 255, 255, 0) 92%
+	);
+}

@@ -2,10 +2,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-type SectionHeaderType = {
+type SectionTitleType = {
 	children: React.ReactNode;
 };
-const SectionHeader = ({ children }: SectionHeaderType) => {
+const SectionTitle = ({ children }: SectionTitleType) => {
 	return (
 		<motion.div
 			initial={{ x: -200, opacity: 0 }}
@@ -21,4 +21,4 @@ const SectionHeader = ({ children }: SectionHeaderType) => {
 	);
 };
 
-export default SectionHeader;
+export default SectionTitle;

@@ -14,7 +14,7 @@ const Standart3 = () => {
 			whileInView={{ x: 0, opacity: 1 }}
 			viewport={{ once: true }}
 		>
-			<h3 className='text-xl sm:hidden col-span-12 mb-3 text-center uppercase text-second-color'>
+			<h3 className='text-xl sm:hidden col-span-12 mb-3 text-center uppercase text-third-color'>
 				Optymalizacja
 			</h3>
 			<div className='col-span-12 col-start-5 sm:col-span-2 sm:col-start-2 flex items-center'>
@@ -29,10 +29,10 @@ const Standart3 = () => {
 				</div>
 			</div>
 			<div className='col-span-10 col-start-2 sm:col-span-7 sm:col-start-5 sm:font-medium'>
-				<h3 className='hidden sm:block text-xl sm:text-2xl mb-3 text-center uppercase text-second-color'>
+				<h3 className='hidden sm:block text-xl sm:text-2xl lg:text-3xl mb-3 text-center uppercase text-third-color'>
 					Optymalizacja
 				</h3>
-				<p className='tracking-widest text-sm sm:text-lg text-center leading-8 sm:text-start sm:mt-8'>
+				<p className='tracking-widest text-sm sm:text-lg text-center font-semibold leading-8 sm:text-start sm:mt-8'>
 					60% użytkowników rezygnuje z korzystania z Twojej strony,
 					jeśli jej wczytywanie zajmuje więcej niż 1 sekundę. Dlatego
 					dokładnie analizujemy i optymalizujemy wszystkie aspekty, w

@@ -7,6 +7,7 @@ import MobileMenu from './mobile-menu';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import MenuToggleButton from '@/ui/menu-toggle-button';
 import Path from '@/ui/svg-path';
+import styles from './style.module.css';
 
 const Header = () => {
 	const { scrollY } = useScroll();
@@ -43,7 +44,7 @@ const Header = () => {
 		}),
 	};
 	return (
-		<div>
+		<>
 			<motion.header
 				className='absolute flex justify-center w-[100vw] h-20  z-10 top-0  bg-black text-white bg-opacity-50'
 				variants={{
@@ -86,7 +87,7 @@ const Header = () => {
 									initial='initial'
 									animate='animate'
 									custom={index}
-									className='hover:text-main-color transition-colors'
+									className='lg:text-md xl:text-2xl hover:text-main-color transition-colors'
 								>
 									<Link href={link.hash}>{link.name} </Link>
 								</motion.li>
@@ -104,7 +105,7 @@ const Header = () => {
 								onMouseLeave={() => setServicesVisible(false)}
 							>
 								<div
-									className='relative flex items-center justify-center gap-2'
+									className='relative flex items-center justify-center gap-2 lg:text-md xl:text-2xl'
 									onMouseEnter={() =>
 										setServicesVisible(true)
 									}
@@ -132,7 +133,7 @@ const Header = () => {
 											translateY: 0,
 										}}
 										transition={{ duration: 0.5 }}
-										className='absolute flex flex-col gap-3 p-3 pt-5 bg-gradient-to-b from-transparent from-5% to-black to-100% text-white'
+										className={`absolute flex flex-col gap-3 p-3 pt-8 text-white lg:text-md xl:text-2xl ${styles['shadow-bg']}`}
 									>
 										<Link
 											href='/uslugi/strony-internetowe'
@@ -171,7 +172,7 @@ const Header = () => {
 										scale: 1.05,
 										transition: { duration: 0.1 },
 									}}
-									className='bg-button-background outline-none text-white  py-3 px-6 rounded-3xl  hover:bg-button-background-hover transition-all uppercase'
+									className='bg-button-background xl:text-xl text-white  py-3 px-6 rounded-3xl  hover:bg-button-background-hover transition-all uppercase'
 								>
 									Darmowa konsultacja
 								</motion.button>
@@ -179,7 +180,7 @@ const Header = () => {
 						</motion.ul>
 					</div>
 					<motion.div
-						className='relative lg:hidden text- py-4 mr-2 sm:pr-3 z-30'
+						className='relative lg:hidden pr-2 py-4 mr-2 sm:pr-3 z-30'
 						initial={{ opacity: 0, y: -50 }}
 						animate={{ opacity: 1, y: 0 }}
 					>
@@ -194,7 +195,7 @@ const Header = () => {
 					menuVisible={menuVisible}
 				/>
 			</motion.header>
-		</div>
+		</>
 	);
 };
 
