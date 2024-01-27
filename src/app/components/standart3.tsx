@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import styles from './styles.module.css';
 import Link from 'next/link';
 
-const Standart = () => {
+const Standart3 = () => {
 	return (
 		<motion.div
 			className={`mb-3 py-6 sm:mb-5 sm:py-12 grid grid-cols-12 ${styles.gradient}`}
@@ -15,61 +15,41 @@ const Standart = () => {
 			viewport={{ once: true }}
 		>
 			<h3 className='text-xl sm:hidden col-span-12 mb-3 text-center uppercase text-second-color'>
-				WYGODNE ZARZĄDZANIA STRONĄ
+				Optymalizacja
 			</h3>
 			<div className='col-span-12 col-start-5 sm:col-span-2 sm:col-start-2 flex items-center'>
 				<div className='relative w-[50%] sm:w-[100%] h-auto'>
 					<Image
-						src='/manage.PNG'
+						src='/optimization.PNG'
 						width={500}
 						height={500}
 						sizes='100vw'
-						alt='ikona trybu'
+						alt='ikona zegara optymalizacji'
 					/>
 				</div>
 			</div>
 			<div className='col-span-10 col-start-2 sm:col-span-7 sm:col-start-5 sm:font-medium'>
 				<h3 className='hidden sm:block text-xl sm:text-2xl mb-3 text-center uppercase text-second-color'>
-					WYGODNE ZARZĄDZANIA STRONĄ
+					Optymalizacja
 				</h3>
 				<p className='tracking-widest text-sm sm:text-lg text-center leading-8 sm:text-start sm:mt-8'>
-					Jeśli mówimy o stronach korporacyjnych, blogach lub
-					wizytówkach, popularnym wyborem jest platforma{' '}
+					60% użytkowników rezygnuje z korzystania z Twojej strony,
+					jeśli jej wczytywanie zajmuje więcej niż 1 sekundę. Dlatego
+					dokładnie analizujemy i optymalizujemy wszystkie aspekty, w
+					tym usuwamy zbędne skrypty oraz dostosowujemy{' '}
 					<Link
-						href='/uslugi/word-press'
+						href='/blog/zdjecia'
 						className='text-main-color hover:text-second-color hover:border-b-2 border-main-color'
 					>
-						WordPress.
-					</Link>
-					Jeżeli Twoją branżą jest sprzedaż, to można również rozważyć
-					dodanie{' '}
-					<Link
-						href='/blog/woocommerce'
-						className='text-main-color hover:text-second-color hover:border-b-2 border-main-color'
-					>
-						WooCommerce.
+						obrazy
 					</Link>{' '}
-					<Link
-						href='/uslugi/word-press'
-						className='text-main-color hover:text-second-color hover:border-b-2 border-main-color'
-					>
-						WordPress
-					</Link>{' '}
-					to panel do zarządzania treścią{' '}
-					<Link
-						href='/blog/cms'
-						className='text-main-color hover:text-second-color hover:border-b-2 border-main-color'
-					>
-						(CMS)
-					</Link>
-					, który umożliwia swobodną edycję zawartości na każdej
-					podstronie. Dzięki niemu jesteś w stanie samodzielnie
-					aktualizować dane kontaktowe, dodawać nowe zdjęcia oraz
-					produkty.
+					, aby zapewnić, że Twoja strona działa z maksymalną
+					prędkością. Naszym celem jest zapewnienie błyskawicznej
+					reakcji strony na potrzeby użytkowników.
 				</p>
 			</div>
 		</motion.div>
 	);
 };
 
-export default Standart;
+export default Standart3;

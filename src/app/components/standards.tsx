@@ -1,8 +1,9 @@
 import SectionHeader from '@/components/section-header';
 import React from 'react';
 import Standart from './standart';
-import { standarts } from '@/lib/data';
-import Image from 'next/image';
+import Standart2 from './standart2';
+import Standart3 from './standart3';
+import Standart4 from './standart4';
 
 const Standards = () => {
 	return (
@@ -10,14 +11,10 @@ const Standards = () => {
 			<div className='w-[100%] md:w-[50%] flex flex-col justify-between text-center sm:text-left'>
 				<SectionHeader>Nasze standardy</SectionHeader>
 			</div>
-			{standarts.map((standart, index) => (
-				<Standart
-					key={index}
-					name={standart.name}
-					imageSrc={standart.imageSrc}
-					text={standart.text}
-				/>
-			))}
+			<Standart />
+			<Standart2 />
+			<Standart3 />
+			<Standart4 />
 		</section>
 	);
 };

@@ -15,6 +15,7 @@ module.exports = {
 			},
 			colors: {
 				'main-color': 'var(--main-color)',
+				'second-color': 'var(--second-color)',
 				'button-background': 'var(--button-background)',
 				'button-background-hover': 'var(--button-background-hover)',
 			},

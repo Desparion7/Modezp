@@ -12,7 +12,7 @@ const MenuToggleButton = ({ toggle, isMenuVisible }: MenuToggleButtonProps) => {
 	return (
 		<motion.button
 			onClick={() => toggle((prev) => !prev)}
-			className='z-[999] lg:hidden'
+			className='z-[30] lg:hidden'
 			animate={isMenuVisible ? 'open' : 'closed'}
 		>
 			<svg width='30' height='30' viewBox='0 0 33 33'>
