@@ -1,0 +1,8 @@
+.shadow-services {
+	background-image: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 0) 33%,
+		rgba(255, 255, 255, 0.07886904761904767) 49%,
+		rgba(255, 255, 255, 0.4091211484593838) 80%
+	);
+}

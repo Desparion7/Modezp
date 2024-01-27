@@ -34,16 +34,20 @@ export const linksMobile = [
 		hash: '/o-nas',
 	},
 	{
+		name: 'usługi',
+		hash: '/uslugi',
+	},
+	{
 		name: 'Strony internetowe',
-		hash: '/usługi/strony-internetowe',
+		hash: '/uslugi/strony-internetowe',
 	},
 	{
 		name: 'Sklep internetowy',
-		hash: '/usługi/sklep-internetowy',
+		hash: '/uslugi/sklep-internetowy',
 	},
 	{
 		name: 'Logo firmy',
-		hash: '/usługi/logo',
+		hash: '/uslugi/logo',
 	},
 ] as const;
 

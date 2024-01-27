@@ -1,14 +1,7 @@
-const Websites = () => {
-	return (
-		<div>
-			<section>
-				<div>
-					{/* <h1>Tworzenie stron internetowych</h1> */}
-					<p></p>
-				</div>
-			</section>
-		</div>
-	);
+import React from 'react';
+
+const page = () => {
+	return <div>page</div>;
 };
 
-export default Websites;
+export default page;

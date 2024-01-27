@@ -104,8 +104,9 @@ const Header = () => {
 								}}
 								onMouseLeave={() => setServicesVisible(false)}
 							>
-								<div
-									className='relative flex items-center justify-center gap-2 lg:text-md '
+								<Link
+									href='/uslugi'
+									className='relative flex items-center justify-center gap-2 lg:text-md hover:text-main-color transition-colors'
 									onMouseEnter={() =>
 										setServicesVisible(true)
 									}
@@ -120,7 +121,7 @@ const Header = () => {
 									>
 										<Path d='M6 9L12 15L18 9' />
 									</svg>
-								</div>
+								</Link>
 								{servicesVisible && (
 									<motion.div
 										initial={{
