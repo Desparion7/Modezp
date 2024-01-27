@@ -17,7 +17,7 @@ export default function Page() {
 				alt='backgorund'
 				sizes='100vw'
 				fill
-				priority
+				priority={true}
 				className='z-[-3] h-[100vh]'
 			/>
 			<div className='container flex gap-5 mx-60 h-[70%]'>

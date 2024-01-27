@@ -15,7 +15,7 @@ const Intro = () => {
 		<section className='bg-black relative w-screen h-screen bg-opacity-20'>
 			<ParticlesContainer />
 			<Image
-				src='/background.PNG'
+				src='/background.JPEG'
 				alt='backgorund'
 				sizes='100vw'
 				fill
