@@ -87,7 +87,7 @@ const Header = () => {
 									initial='initial'
 									animate='animate'
 									custom={index}
-									className='lg:text-md xl:text-2xl hover:text-main-color transition-colors'
+									className='lg:text-md hover:text-main-color transition-colors'
 								>
 									<Link href={link.hash}>{link.name} </Link>
 								</motion.li>
@@ -105,7 +105,7 @@ const Header = () => {
 								onMouseLeave={() => setServicesVisible(false)}
 							>
 								<div
-									className='relative flex items-center justify-center gap-2 lg:text-md xl:text-2xl'
+									className='relative flex items-center justify-center gap-2 lg:text-md '
 									onMouseEnter={() =>
 										setServicesVisible(true)
 									}
@@ -133,7 +133,7 @@ const Header = () => {
 											translateY: 0,
 										}}
 										transition={{ duration: 0.5 }}
-										className={`absolute flex flex-col gap-3 p-3 pt-8 text-white lg:text-md xl:text-2xl ${styles['shadow-bg']}`}
+										className={`absolute flex flex-col gap-3 p-3 pt-5 text-white lg:text-md  ${styles['shadow-bg']}`}
 									>
 										<Link
 											href='/uslugi/strony-internetowe'
@@ -172,7 +172,7 @@ const Header = () => {
 										scale: 1.05,
 										transition: { duration: 0.1 },
 									}}
-									className='bg-button-background xl:text-xl text-white  py-3 px-6 rounded-3xl  hover:bg-button-background-hover transition-all uppercase'
+									className='bg-button-background text-white  py-3 px-6 rounded-3xl  hover:bg-button-background-hover transition-all uppercase'
 								>
 									Darmowa konsultacja
 								</motion.button>

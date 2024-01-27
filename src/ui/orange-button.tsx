@@ -8,7 +8,7 @@ const OrangeButton = ({ children }: OragneButtonPropsType) => {
 	return (
 		<motion.button
 			whileHover={{ scale: 1.05, transition: { duration: 0.1 } }}
-			className='bg-button-background outline-none text-white text-md lg:text-lg xl:text-2xl py-3 px-6 rounded-3xl  hover:bg-button-background-hover transition-all uppercase'
+			className='bg-button-background outline-none text-white text-md lg:text-lg py-3 px-6 rounded-3xl  hover:bg-button-background-hover transition-all uppercase'
 		>
 			{children}
 		</motion.button>

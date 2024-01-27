@@ -1,4 +1,4 @@
-import SectionTitle from '@/components/section-title';
+import SectionTitle from '@/components/section-header';
 import React from 'react';
 import Standart from './standart';
 import Standart2 from './standart2';
