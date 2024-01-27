@@ -40,7 +40,7 @@ const Standart = () => {
 						className='text-main-color hover:text-second-color hover:border-b-2 border-main-color'
 					>
 						WordPress.
-					</Link>
+					</Link>{' '}
 					Jeżeli Twoją branżą jest sprzedaż, to można również rozważyć
 					dodanie{' '}
 					<Link
