@@ -9,7 +9,7 @@ import styles from './styles.module.css';
 const Contact = () => {
 	return (
 		<section
-			className={`relative flex justify-center mx-auto pt-10 pb-16 sm:pb-36 w-[100%] h-auto ${styles['contact-gradient']}`}
+			className={`relative flex justify-center mx-auto sm:pt-10 pb-16 sm:pb-36 w-[100%] h-auto ${styles['contact-gradient']}`}
 		>
 			<Image
 				src='/internet.PNG'

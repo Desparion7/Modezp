@@ -13,7 +13,7 @@ export default function Page() {
 			className={`relative flex justify-center items-center w-[100%] h-[100vh] py-20 text-white`}
 		>
 			<Image
-				src='/background2.PNG'
+				src='/background2.jpng'
 				alt='backgorund'
 				sizes='100vw'
 				fill
