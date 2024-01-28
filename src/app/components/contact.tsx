@@ -30,7 +30,7 @@ const Contact = () => {
 							}}
 						>
 							<Image
-								src='/contactphoto.PNG'
+								src='/contactphoto1.PNG'
 								width={831}
 								height={848}
 								className='absolute top-[-70px] rounded-[50%] aspect-auto border-2 border-orange-600'

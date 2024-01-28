@@ -26,7 +26,7 @@ export default function Services() {
 				</div>
 				<div className='flex flex-col xl:flex-row xl:w-[70%]  gap-5 text-white'>
 					<Link
-						href='/uslugi/strony-internetowe'
+						href='/uslugi/strona-internetowa/next-js'
 						className='xl:w-[33%]'
 					>
 						<motion.div

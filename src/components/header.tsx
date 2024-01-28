@@ -137,16 +137,16 @@ const Header = () => {
 										className={`absolute flex flex-col gap-3 p-3 pt-5 text-white lg:text-md  ${styles['shadow-bg']}`}
 									>
 										<Link
-											href='/uslugi/strony-internetowe'
+											href='/uslugi/strona-internetowa/next-js'
 											className='hover:text-main-color transition-colors'
 										>
-											Strony internetowe
+											Strona internetowa
 										</Link>
 										<Link
 											href='/uslugi/sklep'
 											className='hover:text-main-color transition-colors'
 										>
-											Sklep internetowe
+											Sklep internetowy
 										</Link>
 										<Link
 											href='/uslugi/logo'

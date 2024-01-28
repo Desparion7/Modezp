@@ -20,12 +20,17 @@ export default function Page() {
 				priority={true}
 				className='z-[-3] h-[100vh]'
 			/>
-			<div className='container flex gap-5 mx-60 h-[70%]'>
-				<div className='flex flex-col gap-3 w-[30%] py-10'>
-					<h2 className='uppercase text-3xl'>
+			<div className='container flex flex-col xl:flex-row gap-1 lg:gap-5 xl:gap-10 mx-5 xl:mx-10 h-[70vh] xl:h-[50vh]'>
+				<div className='flex flex-col gap-1 xl:gap-3 w-[100%] xl:w-[30%] xl:py-20 py-5'>
+					<h2 className='uppercase text-xl xl:text-3xl'>
 						Nasze <span className='text-main-color'>usługi</span>{' '}
 					</h2>
-					<p>
+					<p className='xl:hidden text-[1rem]'>
+						Tworzymy nowoczesne strony internetowe, które nie tylko
+						zachwycają estetyką, ale również są zoptymalizowane pod
+						kątem urządzeń mobilnych
+					</p>
+					<p className='hidden xl:block'>
 						Tworzymy nowoczesne strony internetowe, które nie tylko
 						zachwycają estetyką, ale również są zoptymalizowane pod
 						kątem urządzeń mobilnych, umożliwiają łatwą samodzielną
@@ -34,10 +39,13 @@ export default function Page() {
 						kluczowym elementem sukcesu biznesowego.
 					</p>
 				</div>
-				<div className='w-[70%] flex gap-5 text-white'>
-					<Link href='/uslugi/strony-internetowe' className='w-[33%]'>
+				<div className='w-[100%] xl:w-[70%] flex flex-col xl:flex-row gap-1 xl:gap-5 text-white '>
+					<Link
+						href='/uslugi/strona-internetowa/next-js'
+						className='w-[100%] xl:w-[33%]'
+					>
 						<motion.div
-							className='relative flex flex-col gap-3 h-[100%] bg-black bg-opacity-35 p-4'
+							className='relative flex flex-col gap-1 xl:gap-3 h-[100%] bg-black xl:bg-opacity-35 bg-opacity-60 p-3 xl:p-4 shadow-sm shadow-main-color'
 							initial={{ scale: 0 }}
 							animate={{ scale: 1 }}
 							transition={{ ease: 'easeOut', duration: 0.5 }}
@@ -46,26 +54,29 @@ export default function Page() {
 								transition: { duration: 0.1 },
 							}}
 						>
-							<GiWireframeGlobe className='text-main-color text-3xl mb-2' />
-							<h3 className='text-xl uppercase'>
+							<GiWireframeGlobe className='text-main-color text-xl xl:text-3xl mb-2' />
+							<h3 className='text-sm sm:text-lg xl:text-xl uppercase'>
 								<span className='text-main-color'>strony</span>{' '}
 								internetowe
 							</h3>
-							<p>
+							<p className='hidden xl:block'>
 								Tworzymy responsywne strony internetowe z
 								wykorzystaniem technologii{' '}
 								<span className='text-main-color'>Next.js</span>
 								, zapewniając szybkie i efektywne działanie oraz
 								doskonałą jakość użytkowania.
 							</p>
-							<div className='absolute bottom-8 right-8'>
+							<div className='flex justify-end gap-2 absolute bottom-3 right-4 xl:bottom-8 xl:right-8'>
+								<p className='text-main-color hidden sm:block'>
+									Więcej
+								</p>
 								<FaArrowRightLong className='text-main-color text-2xl' />
 							</div>
 						</motion.div>
 					</Link>
-					<Link href='/uslugi/sklep' className='w-[33%]'>
+					<Link href='/uslugi/sklep' className='w-[100%] xl:w-[33%]'>
 						<motion.div
-							className='relative flex flex-col h-[100%] gap-3 bg-black bg-opacity-35 p-4 cursor-pointer'
+							className='relative flex flex-col h-[100%] gap-1 xl:gap-3 bg-black xl:bg-opacity-35 bg-opacity-60 5 p-3 xl:p-4cursor-pointer shadow-sm shadow-main-color'
 							initial={{ scale: 0 }}
 							animate={{ scale: 1 }}
 							transition={{ ease: 'easeOut', duration: 0.5 }}
@@ -74,12 +85,12 @@ export default function Page() {
 								transition: { duration: 0.1 },
 							}}
 						>
-							<FaShoppingCart className='text-main-color text-3xl mb-2' />
-							<h3 className='text-xl uppercase'>
+							<FaShoppingCart className='text-main-color text-xl xl:text-3xl mb-2' />
+							<h3 className='text-sm sm:text-lg xl:text-xl uppercase'>
 								<span className='text-main-color'>Sklepy</span>{' '}
 								internetowe
 							</h3>
-							<p>
+							<p className='hidden xl:block'>
 								Tworzymy profesjonalne strony sklepów
 								internetowych, dostosowane do potrzeb Twojego
 								biznesu. Oferujemy kompleksową obsługę, od
@@ -87,14 +98,17 @@ export default function Page() {
 								zakupowych po optymalizację{' '}
 								<span className='text-main-color'>SEO. </span>
 							</p>
-							<div className='absolute bottom-8 right-8'>
+							<div className='flex justify-end gap-2 absolute bottom-3 right-4 xl:bottom-8 xl:right-8'>
+								<p className='text-main-color hidden sm:block'>
+									Więcej
+								</p>
 								<FaArrowRightLong className='text-main-color text-2xl' />
 							</div>
 						</motion.div>
 					</Link>
-					<Link href='/uslugi/logo' className='w-[33%]'>
+					<Link href='/uslugi/logo' className='w-[100%] xl:w-[33%]'>
 						<motion.div
-							className='relative flex flex-col h-[100%] gap-3 bg-black bg-opacity-35 p-4 cursor-pointer'
+							className='relative flex flex-col h-[100%] gap-1 xl:gap-3 bg-black xl:bg-opacity-35 bg-opacity-60 p-3 xl:p-4 cursor-pointer shadow-sm shadow-main-color'
 							initial={{ scale: 0 }}
 							animate={{ scale: 1 }}
 							transition={{ ease: 'easeOut', duration: 0.5 }}
@@ -103,19 +117,22 @@ export default function Page() {
 								transition: { duration: 0.1 },
 							}}
 						>
-							<FaPaintBrush className='text-main-color text-3xl mb-2' />
-							<h3 className='text-xl uppercase'>
+							<FaPaintBrush className='text-main-color text-xl xl:text-3xl mb-2' />
+							<h3 className='text-sm sm:text-lg xl:text-xl uppercase'>
 								<span className='text-main-color'>logo</span>{' '}
 								firmy
 							</h3>
-							<p>
+							<p className='hidden xl:block'>
 								Tworzymy unikalne i zgodne z wizją marki logo
 								dla firm. Nasze projekty łączą kreatywność z
 								profesjonalizmem, pomagając w budowaniu
 								rozpoznawalności i pozytywnego wizerunku Twojego
 								biznesu
 							</p>
-							<div className='absolute bottom-8 right-8'>
+							<div className='flex justify-end gap-2 absolute bottom-3 right-4 xl:bottom-8 xl:right-8'>
+								<p className='text-main-color hidden sm:block'>
+									Więcej
+								</p>
 								<FaArrowRightLong className='text-main-color text-2xl' />
 							</div>
 						</motion.div>
@@ -123,7 +140,7 @@ export default function Page() {
 				</div>
 			</div>
 			<div
-				className={`absolute  w-[100vw] h-[20%] bottom-0 ${styles['shadow-services']}`}
+				className={`hidden xl:block absolute  w-[100vw] h-[20%] bottom-0 ${styles['shadow-services']}`}
 			></div>
 		</section>
 	);

@@ -63,9 +63,8 @@ const Intro = () => {
 					transition={{ ease: 'easeOut', duration: 0.5 }}
 					className='sm:hidden uppercase text-lg text-center font-bold p-4 mb-2 text-white bg-black bg-opacity-50'
 				>
-					Nowoczesna{' '}
-					<p className='text-main-color '>&nbsp; strona &nbsp;</p> dla
-					Twojego biznesu
+					Nowoczesna <p className='text-main-color '>&nbsp; &nbsp;</p>{' '}
+					dla Twojego biznesu
 				</motion.h1>
 				<motion.ul
 					className='relative flex flex-col lg:flex-row md:text-2xl md:gap-3 mb-4 py-3 lg:gap-6 text-white uppercase top-[2vh] md:top-[5vh] bg-black bg-opacity-40'
