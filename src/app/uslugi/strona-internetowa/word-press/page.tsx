@@ -7,7 +7,7 @@ import Contact from '@/app/components/contact';
 import Link from 'next/link';
 import ScrollDownBtn from '@/ui/scroll-down-btn';
 
-const page = () => {
+const WordPress = () => {
 	return (
 		<div>
 			<section
@@ -23,23 +23,29 @@ const page = () => {
 						className='object-cover z-[-3]'
 					/>
 				</div>
-				<div className='container lg:px-64 p-5 py-28 flex flex-col gap-6 z-2'>
-					<div className='sm:mb-5 sm:h-[20vh]'>
-						<h2 className='uppercase text-center text-lg lg:text-2xl md:text-3xl mb-6'>
+				<div className='container xl:px-64 p-5 py-28 flex flex-col gap-6 z-2'>
+					<div className='sm:mb-5 md:h-[20vh]'>
+						<h2 className='uppercase text-center text-xl lg:text-2xl md:text-3xl mb-6'>
 							strona w{' '}
 							<span className='text-main-color'>wordPress</span>?{' '}
 						</h2>
-						<p className='text-md md:text-lg text-center sm:text-start'>
-							Tworzymy stronę internetową z użyciem WordPress,
-							jednego z najbardziej znanych systemów zarządzania
-							treścią{' '}
-							<Link href='./' className='text-main-color'>
-								(CMS)
+						<p className='text-md md:text-lg text-center sm:text-justify'>
+							Tworzymy również strony internetowe z użyciem
+							WordPress, jednego z najbardziej znanych systemów
+							zarządzania treścią{' '}
+							<Link href='/blog/seo'>
+								<span className='text-main-color hover:border-b-2 border-main-color'>
+									CMS{' '}
+								</span>
 							</Link>
-							.
+							, który oferuje szerokie możliwości. Tworzenie
+							strony przy uzyciu tego narzędzia jest szczególnie
+							polecane osobom chciącym mieć gotową stronę szybko i
+							tanio. Dla bardziej ambitnych projektów polecamy
+							Next.js.
 						</p>
 					</div>
-					<div className='flex flex-row flex-wrap justify-center gap-5'>
+					<div className='flex flex-col md:flex-row flex-wrap justify-center gap-5'>
 						<LinkSmallCard
 							title={'Strona w Next.js'}
 							link={'/uslugi/strona-internetowa/next-js'}
@@ -50,41 +56,137 @@ const page = () => {
 							link={'/uslugi/strona-internetowa/word-press'}
 						/>
 						<LinkSmallCard
-							title={'Wsparcie Techniczne'}
-							link={
-								'/uslugi/strona-internetowa/wsparcie-techniczne'
-							}
+							title={'Sklep Internetowy'}
+							link={'/uslugi/sklep'}
 						/>
+						<LinkSmallCard title={'Logo'} link={'/uslugi/logo'} />
 						<LinkSmallCard
 							title={'Page Builder'}
 							link={'/uslugi/strona-internetowa/page-builder'}
 						/>
 						<LinkSmallCard
-							title={'Page Builder'}
-							link={'/uslugi/strona-internetowa/page-builder'}
-						/>
-						<LinkSmallCard
-							title={'Page Builder'}
-							link={'/uslugi/strona-internetowa/page-builder'}
-						/>
-						<LinkSmallCard
-							title={'Page Builder'}
-							link={'/uslugi/strona-internetowa/page-builder'}
+							title={'Projektowanie UI'}
+							link={'/uslugi/strona-internetowa/projektowanie-ui'}
 						/>
 					</div>
 				</div>
 				<div
-					className={`absolute flex justify-center items-center z-4  w-[100vw] h-[20%] bottom-0 ${styles['shadow-services']}`}
+					className={`absolute flex justify-center items-end md:items-center z-4  w-[100%] h-[20%] bottom-0 ${styles['shadow-services']}`}
 				>
 					<ScrollDownBtn />
 				</div>
 			</section>
 			<section
-				className='relative container mx-auto  pb-20 min-h-[65vh]'
+				className='relative container mx-auto pb-20 min-h-[65vh]'
 				id='second-section'
 			>
 				<div className='w-[100%] md:w-[50%] flex flex-col justify-between text-center sm:text-left'>
 					<SectionTitle>Strona w WordPress</SectionTitle>
+				</div>
+				<div className='mx-5 text-md xl:mx-80 xl:text-lg'>
+					<div className='mt-10'>
+						<h3 className='text-xl sm:text-2xl pb-5'>
+							Czym Jest WordPress?
+						</h3>
+						<p className='pb-5 leading-8 text-justify'>
+							WordPress to najpopularniejszy system zarządzania
+							treścią (CMS) na świecie. Używany jest przez miliony
+							stron internetowych, od prostych blogów po
+							zaawansowane portale i sklepy internetowe. Jego
+							elastyczność i łatwość obsługi sprawiają, że jest
+							idealnym rozwiązaniem dla firm i indywidualnych
+							użytkowników chcących zaistnieć w internecie.
+						</p>
+					</div>
+					<div className='mt-10'>
+						<h3 className='text-xl sm:text-2xl pb-5'>
+							Dlaczego Wybrać WordPress?
+						</h3>
+						<p className='pb-5 leading-8 text-justify'>
+							<span className='font-bold'>
+								Dostosowanie do Potrzeb:
+							</span>{' '}
+							WordPress oferuje szeroki wybór motywów i wtyczek,
+							umożliwiając indywidualne dostosowanie strony.
+						</p>
+						<p className='pb-5 leading-8 text-justify'>
+							{' '}
+							<span className='font-bold'>
+								{' '}
+								Przyjazny dla SEO:
+							</span>{' '}
+							WordPress oferuje szeroki wybór motywów i wtyczek,
+							umożliwiając indywidualne dostosowanie strony.
+							Strony w WordPress są zoptymalizowane pod kątem
+							wyszukiwarek internetowych, co wspiera lepszą
+						</p>
+						<p className='pb-5 leading-8 text-justify'>
+							{' '}
+							<span className='font-bold'>
+								{' '}
+								Łatwość Zarządzania:
+							</span>{' '}
+							Intuicyjny panel administracyjny WordPress umożliwia
+							łatwe zarządzanie treścią. Strony wykonane przez nas
+							w next.js również używają WordPressa jako panel do
+							zarządzania
+						</p>
+					</div>
+					<div className='mt-10'>
+						<h3 className='text-xl sm:text-2xl pb-5'>
+							Responsywność i Mobile First
+						</h3>
+						<p className='pb-5 leading-8 text-justify'>
+							Nie zapominamy o urządzeniach mobilnych! Nasze
+							strony są responsywne (RWD – Responsive Web Design),
+							co gwarantuje, że będą wyświetlać się poprawnie na
+							każdym urządzeniu. Idziemy za trendem &ldquo;Mobile
+							First&ldquo;, priorytetowo traktując użytkowników
+							mobilnych i dostosowując strony pod ekrany telefonów
+							i tabletów. Statystyki pokazują, że coraz więcej
+							osób korzysta z Internetu głównie za pośrednictwem
+							urządzeń mobilnych. Projektowanie z myślą o
+							mobilnych użytkownikach na pierwszym miejscu
+							gwarantuje, że większość odwiedzających będzie miała
+							pozytywne doświadczenie z Twoją stroną. Użytkownicy
+							mobilni często mają inne oczekiwania i zachowania
+							niż ci korzystający z komputerów stacjonarnych. Są
+							bardziej skłonni do szybkiego przeglądania i
+							oczekują szybkiego ładowania się stron, prostoty
+							nawigacji i wyraźnych wezwań do działania. Google
+							stosuje indeksowanie mobilne, co oznacza, że wersja
+							mobilna strony jest brana pod uwagę jako główna w
+							wynikach wyszukiwania. Strony zoptymalizowane dla
+							urządzeń mobilnych mają większe szanse na wysokie
+							pozycje w wynikach wyszukiwania, co prowadzi do
+							zwiększonego ruchu na stronie Strony zaprojektowane
+							z podejściem &ldquo;Mobile First&ldquo; są zazwyczaj
+							lżejsze i ładują się szybciej. Szybkość ładowania
+							strony jest kluczowym czynnikiem, zarówno dla
+							doświadczenia użytkownika, jak i dla SEO
+						</p>
+					</div>
+					<div className='mt-10'>
+						<h3 className='text-xl sm:text-2xl pb-5'>
+							Responsywność i Mobile First
+						</h3>
+						<p className='pb-5 leading-8 text-justify'>
+							Czym jest Page Builder? Page Builder to narzędzie
+							dla tych, którzy potrzebują dobrej ceny, szybkości
+							realizacji i możliwości samodzielnej edycji. Jest
+							idealne dla małych firm i projektów landing page.
+							Specjalne wtyczki optymalizacyjne pomagają w
+							uzyskaniu dobrych wyników szybkości ładowania
+							strony.
+						</p>
+						<p className='pb-5 leading-8 text-justify'>
+							Czym jest Custom Code z ACF? To metoda dla
+							wymagających klientów, którzy oczekują dedykowanych
+							rozwiązań. Strony są kodowane od podstaw, co
+							zapewnia minimalizację kodu i wtyczek, a tym samym
+							lepszą optymalizację i wydajność.
+						</p>
+					</div>
 				</div>
 			</section>
 			<Contact />
@@ -92,4 +194,4 @@ const page = () => {
 	);
 };
 
-export default page;
+export default WordPress;

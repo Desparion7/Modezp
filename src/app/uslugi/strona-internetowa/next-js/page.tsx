@@ -5,6 +5,7 @@ import styles from '../../styles.module.css';
 import SectionTitle from '@/components/section-header';
 import Contact from '@/app/components/contact';
 import ScrollDownBtn from '@/ui/scroll-down-btn';
+import Link from 'next/link';
 
 const Next = () => {
 	return (
@@ -22,39 +23,29 @@ const Next = () => {
 						className='object-cover z-[-3]'
 					/>
 				</div>
-				<div className='container lg:px-64 p-5 py-28 flex flex-col gap-6 z-2'>
-					<div className='sm:mb-5 sm:h-[20vh]'>
-						<h2 className='uppercase text-center text-lg lg:text-2xl md:text-3xl mb-6'>
+				<div className='container xl:px-64 p-5 py-28 flex flex-col gap-6 z-2'>
+					<div className='sm:mb-5 md:h-[20vh]'>
+						<h2 className='uppercase text-center text-xl lg:text-2xl md:text-3xl mb-6'>
 							Dlaczego strona internetowa w{' '}
 							<span className='text-main-color'>next.js</span>?{' '}
 						</h2>
-						<p className='text-md md:text-lg text-center sm:text-start'>
+						<p className='text-md md:text-lg text-center sm:text-justify'>
 							Next.js jest wartościowym wyborem do tworzenia stron
-							internetowych, ponieważ oferuje{' '}
-							<span className='border-b-main-color border-b-2'>
-								serwerowe renderowanie
-							</span>{' '}
-							dla{' '}
-							<span className='border-b-main-color border-b-2'>
-								szybszego ładowania
-							</span>{' '}
-							i{' '}
-							<span className='border-b-main-color border-b-2'>
-								lepszego SEO
-							</span>{' '}
+							internetowych, ponieważ oferuje serwerowe
+							renderowanie dla szybszego ładowania i lepszego{' '}
+							<Link href='/blog/seo'>
+								<span className='text-main-color hover:border-b-2 border-main-color'>
+									SEO{' '}
+								</span>
+							</Link>
 							, wspiera JavaScript i React dla dynamicznych
-							interfejsów, automatycznie{' '}
-							<span className='border-b-main-color border-b-2'>
-								dzieli kod dla optymalnej wydajności
-							</span>{' '}
-							, umożliwia tworzenie statycznych stron, a także
-							ułatwia{' '}
-							<span className='border-b-main-color border-b-2'>
-								wdrożenie i skalowanie projektu.
-							</span>
+							interfejsów, automatycznie dzieli kod dla optymalnej
+							wydajności , umożliwia łatwe skalowanie projektu.
+							Projekty pisane w next.js są pisane od podstaw, nie
+							na gotowych szablonach.
 						</p>
 					</div>
-					<div className='flex flex-row flex-wrap justify-center gap-5'>
+					<div className='flex flex-col md:flex-row flex-wrap justify-center gap-5'>
 						<LinkSmallCard
 							active={true}
 							title={'Strona w Next.js'}
@@ -65,31 +56,22 @@ const Next = () => {
 							link={'/uslugi/strona-internetowa/word-press'}
 						/>
 						<LinkSmallCard
-							title={'Wsparcie Techniczne'}
-							link={
-								'/uslugi/strona-internetowa/wsparcie-techniczne'
-							}
+							title={'Sklep Internetowy'}
+							link={'/uslugi/sklep'}
 						/>
+						<LinkSmallCard title={'Logo'} link={'/uslugi/logo'} />
 						<LinkSmallCard
 							title={'Page Builder'}
 							link={'/uslugi/strona-internetowa/page-builder'}
 						/>
 						<LinkSmallCard
-							title={'Page Builder'}
-							link={'/uslugi/strona-internetowa/page-builder'}
-						/>
-						<LinkSmallCard
-							title={'Page Builder'}
-							link={'/uslugi/strona-internetowa/page-builder'}
-						/>
-						<LinkSmallCard
-							title={'Page Builder'}
-							link={'/uslugi/strona-internetowa/page-builder'}
+							title={'Projektowanie UI'}
+							link={'/uslugi/strona-internetowa/projektowanie-ui'}
 						/>
 					</div>
 				</div>
 				<div
-					className={`absolute flex justify-center items-center z-4  w-[100vw] h-[20%] bottom-0 ${styles['shadow-services']}`}
+					className={`absolute flex justify-center items-end md:items-center z-4  w-[100%] h-[20%] bottom-0 ${styles['shadow-services']}`}
 				>
 					<ScrollDownBtn />
 				</div>
@@ -103,8 +85,10 @@ const Next = () => {
 				</div>
 				<div className='mx-5 text-md xl:mx-80 xl:text-lg'>
 					<div className='mt-10'>
-						<h3 className='text-2xl pb-5'>Czym jest Next.js?</h3>
-						<p className='pb-5 leading-8'>
+						<h3 className='text-xl sm:text-2xl pb-5'>
+							Czym jest Next.js?
+						</h3>
+						<p className='pb-5 leading-8 text-justify'>
 							Next.js to framework React.js, który umożliwia
 							renderowanie po stronie serwera (SSR) przy użyciu
 							środowiska Node.js na serwerze. Dzięki temu pozwala
@@ -113,7 +97,7 @@ const Next = () => {
 							najpopularniejszym oraz najczęściej pobieranym
 							frameworkiem do React.js
 						</p>
-						<p>
+						<p className='pb-5 leading-8 text-justify'>
 							Next.js obsługuje również Generowanie Statycznych
 							Stron (SSG), co można zauważyć w podobny sposób jak
 							w przypadku Gatsby.js. Jednakże, największą zaletą
@@ -124,10 +108,10 @@ const Next = () => {
 						</p>
 					</div>
 					<div className='mt-10'>
-						<h3 className='text-2xl pb-5'>
+						<h3 className='text-xl sm:text-2xl pb-5'>
 							Co to Server Side Rendering?
 						</h3>
-						<p className='pb-5'>
+						<p className='pb-5 leading-8 text-justify'>
 							Server Side Rendering (SSR) umożliwia wyrenderowanie
 							całej strony po stronie serwera, a nie po stronie
 							klienta, co jest charakterystyczne dla czystego
@@ -136,7 +120,7 @@ const Next = () => {
 							polegać na renderowaniu całego DOM za pomocą
 							JavaScript.
 						</p>
-						<p>
+						<p className='pb-5 leading-8 text-justify'>
 							Korzyściami płynącymi z takiego rozwiązania są
 							znacznie szybsze czasy ładowania strony oraz
 							mniejsze zużycie JavaScript. To z kolei ma istotny
@@ -144,6 +128,49 @@ const Next = () => {
 							ponieważ indeksowanie pliku HTML jest znacznie
 							prostsze dla robotów wyszukiwarek niż indeksowanie
 							stron renderowanych po stronie klienta.
+						</p>
+					</div>
+					<div className='mt-10'>
+						<h3 className='text-xl sm:text-2xl pb-5'>
+							Next.js i Jamstack
+						</h3>
+						<p className='pb-5 leading-8 text-justify'>
+							Next.js jest często wykorzystywany w architekturze
+							Jamstack, ponieważ pozwala łatwo integrować się z
+							Headless CMS. Dzięki tej integracji, możliwe jest
+							sprawnie zarządzanie treściami strony internetowej
+							za pomocą systemu zarządzania treścią, a następnie
+							wykorzystanie Next.js do renderowania i dostarczania
+							tych treści na stronie internetowej. Jest to
+							popularne podejście do tworzenia wydajnych i
+							skalowalnych stron internetowych, które pozostają
+							łatwe do zarządzania.
+						</p>
+					</div>
+					<div className='mt-10'>
+						<h3 className='text-xl sm:text-2xl pb-5'>
+							Popularność Next.js
+						</h3>
+						<p className='pb-5 leading-8 text-justify'>
+							Next.js rzeczywiście ułatwia budowanie aplikacji
+							Fullstack opartych na React.js, umożliwiając
+							zarządzanie zarówno frontendem, jak i backendem w
+							sposób bardziej zintegrowany. To narzędzie
+							rozwiązuje wiele problemów związanych z
+							renderowaniem JavaScript w przeglądarce,
+							przekształcając wiele zadań na procesy wykonywane po
+							stronie serwera. Next.js jest obecnie określany jako
+							metaframework w świecie Reacta, co potwierdzają jego
+							wyniki w rankingach i popularność. Fakt, że w 2021
+							roku zyskał więcej nowych gwiazdek na GitHubie niż
+							sam React, świadczy o jego rosnącej popularności.
+							Ponadto, znaczny wzrost liczby pobrań w okresie od
+							początku do końca 2021 roku jest dowodem na rosnące
+							zainteresowanie tym narzędziem. Rok 2022 i 2023 były
+							rokiem Next.js i wszystko wskazuje że będzie nadal
+							zyskiwał na popularności, co czyni go godnym uwagi
+							narzędziem do rozważenia w kontekście projektów
+							opartych na React.js.
 						</p>
 					</div>
 				</div>

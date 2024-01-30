@@ -9,13 +9,13 @@ const ScrollDownBtn = () => {
 		const element = document.getElementById('second-section');
 		element?.scrollIntoView({
 			behavior: 'smooth',
-			block: 'end',
+			block: 'start',
 			inline: 'nearest',
 		});
 	};
 	return (
 		<motion.button
-			className='bg-black bg-opacity-55 p-4 rounded-[50%] border-2 border-main-color '
+			className='bg-black bg-opacity-55 p-2 sm:p-3 lg:p-4 mb-4 rounded-[50%] border-2 border-main-color '
 			initial={{ scale: 0 }}
 			animate={{ scale: 1 }}
 			whileHover={{

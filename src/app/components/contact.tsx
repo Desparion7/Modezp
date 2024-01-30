@@ -52,14 +52,14 @@ const Contact = () => {
 							<p>Godziny pracy 8:00-18:00</p>
 							<div className='flex items-center gap-2 text-md sm:text-xl font-semibold'>
 								<MdOutlineMailOutline />
-								<p className='text-[#e53c16]'>
+								<p className='font-semibold'>
 									modezpw@gmail.com
 								</p>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div className='bg-[#002247] text-white p-6 sm:p-10 xl:min-h-[100%] text-sm sm:text-lg'>
+				<div className='bg-third-color text-white p-6 sm:p-10 xl:min-h-[100%] text-sm sm:text-lg'>
 					<form action='' className='flex flex-col gap-3 '>
 						<h2 className='text-xl sm:text-2xl mb-3'>
 							Formularz kontaktowy

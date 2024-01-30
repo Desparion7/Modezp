@@ -25,12 +25,9 @@ export default function Services() {
 					</p>
 				</div>
 				<div className='flex flex-col xl:flex-row xl:w-[70%]  gap-5 text-white'>
-					<Link
-						href='/uslugi/strona-internetowa/next-js'
-						className='xl:w-[33%]'
-					>
+					<div className='xl:w-[33%]'>
 						<motion.div
-							className='relative flex flex-col w-[100%] h-[100%] gap-3 bg-third-color bg-opacity-35 p-4 cursor-pointer'
+							className='relative flex flex-col w-[100%] h-[100%] gap-3 bg-third-color bg-opacity-35 p-4'
 							transition={{ ease: 'easeOut', duration: 0.5 }}
 							whileHover={{
 								scale: 1.05,
@@ -38,29 +35,41 @@ export default function Services() {
 							}}
 						>
 							<GiWireframeGlobe className='text-main-color text-3xl mb-2' />
-							<h3 className='text-xl uppercase text-center sm:text-left'>
-								<span className='text-main-color'>strony</span>{' '}
-								internetowe
-							</h3>
+							<Link href='/uslugi/strona-internetowa/next-js'>
+								<h3 className='text-xl uppercase text-center sm:text-left'>
+									<span className='text-main-color hover:border-b-2 border-main-color'>
+										strony
+									</span>{' '}
+									internetowe
+								</h3>
+							</Link>
 							<p className='text-center sm:text-left'>
 								Tworzymy responsywne strony internetowe z
 								wykorzystaniem technologii{' '}
-								<span className='text-main-color'>Next.js</span>
+								<Link href='/uslugi/strona-internetowa/next-js'>
+									<span className='text-main-color hover:border-b-2 border-main-color'>
+										Next.js
+									</span>
+								</Link>
 								, zapewniając szybkie i efektywne działanie oraz
 								doskonałą jakość użytkowania.
 							</p>
-							<div className='flex justify-end gap-2 xl:absolute bottom-8 right-8'>
-								<p className='text-main-color'>Więcej</p>
+							<Link
+								href='/uslugi/strona-internetowa/next-js'
+								className='flex justify-end gap-2 xl:absolute bottom-8 right-8'
+							>
+								<p
+									className={`text-main-color after:content-[''] after:bg-main-color after:h-[3px] after:w-[0%] after:left-0 after:bottom-[-3px] after:rounded-xl after:absolute after:duration-300 hover:after:w-[100%] `}
+								>
+									Więcej
+								</p>
 								<FaArrowRightLong className='text-main-color text-2xl' />
-							</div>
+							</Link>
 						</motion.div>
-					</Link>
-					<Link
-						href='/uslugi/sklep'
-						className='w-[100%] xl:w-[33%]'
-					>
+					</div>
+					<div className='w-[100%] xl:w-[33%]'>
 						<motion.div
-							className='relative flex flex-col w-[100%] h-[100%] gap-3 bg-third-color bg-opacity-35 p-4 cursor-pointer'
+							className='relative flex flex-col w-[100%] h-[100%] gap-3 bg-third-color bg-opacity-35 p-4'
 							transition={{ ease: 'easeOut', duration: 0.5 }}
 							whileHover={{
 								scale: 1.05,
@@ -68,27 +77,42 @@ export default function Services() {
 							}}
 						>
 							<FaShoppingCart className='text-main-color text-3xl mb-2' />
-							<h3 className='text-xl uppercase text-center sm:text-left'>
-								<span className='text-main-color'>Sklepy</span>{' '}
-								internetowe
-							</h3>
+							<Link href='/uslugi/sklep'>
+								<h3 className='text-xl uppercase text-center sm:text-left'>
+									<span className='text-main-color hover:border-b-2 border-main-color'>
+										Sklepy
+									</span>{' '}
+									internetowe
+								</h3>
+							</Link>
 							<p className='text-center sm:text-left'>
 								Tworzymy profesjonalne strony sklepów
 								internetowych, dostosowane do potrzeb Twojego
 								biznesu. Oferujemy kompleksową obsługę, od
 								projektowania interfejsu i implementacji funkcji
 								zakupowych po optymalizację{' '}
-								<span className='text-main-color'>SEO. </span>
+								<Link href='/blog/seo'>
+									<span className='text-main-color hover:border-b-2 border-main-color'>
+										SEO.{' '}
+									</span>
+								</Link>
 							</p>
-							<div className='flex justify-end gap-2 xl:absolute bottom-8 right-8'>
-								<p className='text-main-color'>Więcej</p>
+							<Link
+								href='/uslugi/sklep'
+								className='flex justify-end gap-2 xl:absolute bottom-8 right-8'
+							>
+								<p
+									className={`text-main-color after:content-[''] after:bg-main-color after:h-[3px] after:w-[0%] after:left-0 after:bottom-[-3px] after:rounded-xl after:absolute after:duration-300 hover:after:w-[100%] `}
+								>
+									Więcej
+								</p>
 								<FaArrowRightLong className='text-main-color text-2xl' />
-							</div>
+							</Link>
 						</motion.div>
-					</Link>
-					<Link href='/uslugi/logo' className='w-[100%] xl:w-[33%]'>
+					</div>
+					<div className='w-[100%] xl:w-[33%]'>
 						<motion.div
-							className='relative flex flex-col w-[100%] h-[100%] gap-3 bg-third-color bg-opacity-35 p-4 cursor-pointer'
+							className='relative flex flex-col w-[100%] h-[100%] gap-3 bg-third-color bg-opacity-35 p-4'
 							transition={{ ease: 'easeOut', duration: 0.5 }}
 							whileHover={{
 								scale: 1.05,
@@ -96,10 +120,14 @@ export default function Services() {
 							}}
 						>
 							<FaPaintBrush className='text-main-color text-3xl mb-2' />
-							<h3 className='text-xl uppercase text-center sm:text-left'>
-								<span className='text-main-color'>logo</span>{' '}
-								firmy
-							</h3>
+							<Link href='/uslugi/logo'>
+								<h3 className='text-xl uppercase text-center sm:text-left '>
+									<span className='text-main-color hover:border-b-2 border-main-color'>
+										logo
+									</span>{' '}
+									firmy
+								</h3>
+							</Link>
 							<p className='text-center sm:text-left'>
 								Tworzymy unikalne i zgodne z wizją marki logo
 								dla firm. Nasze projekty łączą kreatywność z
@@ -107,12 +135,19 @@ export default function Services() {
 								rozpoznawalności i pozytywnego wizerunku Twojego
 								biznesu
 							</p>
-							<div className='flex justify-end gap-2 xl:absolute bottom-8 right-8'>
-								<p className='text-main-color'>Więcej</p>
+							<Link
+								href='/uslugi/logo'
+								className='flex justify-end gap-2 xl:absolute bottom-8 right-8'
+							>
+								<p
+									className={`text-main-color after:content-[''] after:bg-main-color after:h-[3px] after:w-[0%] after:left-0 after:bottom-[-3px] after:rounded-xl after:absolute after:duration-300 hover:after:w-[100%] `}
+								>
+									Więcej
+								</p>
 								<FaArrowRightLong className='text-main-color text-2xl' />
-							</div>
+							</Link>
 						</motion.div>
-					</Link>
+					</div>
 				</div>
 			</div>
 		</section>

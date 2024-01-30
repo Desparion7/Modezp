@@ -31,23 +31,19 @@ const Standart4 = () => {
 					</div>
 				</div>
 				<p className='tracking-widest text-sm sm:text-lg text-center font-semibold leading-8 sm:text-start sm:mt-8'>
-					Przy oddawaniu strony będziemy korzystać z{' '}
-					<span className='text-main-color'>
-						najnowszych i najstabilniejszych
-					</span>{' '}
-					wersji oprogramowania. Dodatkowo, zainstalujemy
-					oprogramowanie antyspamowe oraz{' '}
+					Przy oddawaniu strony będziemy korzystać z najnowszych i
+					najstabilniejszych wersji oprogramowania. Dodatkowo,
+					zainstalujemy oprogramowanie antyspamowe oraz{' '}
 					<Link
-						href='/blog/rwd'
+						href='/blog/certyfikat-ssl'
 						className='text-main-color hover:text-second-color hover:border-b-2 border-main-color'
 					>
 						certyfikat SSL
 					</Link>{' '}
 					, co zapewni wyższy poziom bezpieczeństwa. Natychmiast po
 					wdrożeniu strony przeprowadzimy pełną kopię zapasową i
-					przechowamy ją przez okres{' '}
-					<span className='text-main-color'>12 miesięcy</span>, aby
-					zapewnić ochronę danych.
+					przechowamy ją przez okres 12 miesięcy, aby zapewnić ochronę
+					danych.
 				</p>
 			</div>
 			{/* image for desktop */}
