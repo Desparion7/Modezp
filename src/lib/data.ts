@@ -3,10 +3,10 @@ export const links = [
 		name: 'Strona główna',
 		hash: '/',
 	},
-	{
-		name: 'portfolio',
-		hash: '/portfolio',
-	},
+	// {
+	// 	name: 'portfolio',
+	// 	hash: '/portfolio',
+	// },
 	{
 		name: 'Kontakt',
 		hash: '/kontakt',
@@ -21,10 +21,10 @@ export const linksMobile = [
 		name: 'Strona główna',
 		hash: '/',
 	},
-	{
-		name: 'portfolio',
-		hash: '/portfolio',
-	},
+	// {
+	// 	name: 'portfolio',
+	// 	hash: '/portfolio',
+	// },
 	{
 		name: 'Kontakt',
 		hash: '/kontakt',
