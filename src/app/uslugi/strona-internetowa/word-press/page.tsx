@@ -14,7 +14,7 @@ const WordPress = () => {
 			>
 				<div>
 					<Image
-						src='/background.JPG'
+						src='/background.jpg'
 						alt='backgorund'
 						sizes='100vw'
 						fill
