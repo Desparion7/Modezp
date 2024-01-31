@@ -1,21 +1,20 @@
+'use client';
 import Image from 'next/image';
 import React from 'react';
 import LinkSmallCard from '@/components/link-small-card';
-import styles from '../styles.module.css';
 import SectionTitle from '@/components/section-header';
 import Contact from '@/app/components/contact';
 import ScrollDownBtn from '@/ui/scroll-down-btn';
-import Link from 'next/link';
 
 const Logo = () => {
 	return (
 		<div>
 			<section
-				className={`relative flex lg:py-10 justify-center items-center w-[100%] min-h-[100vh] mb-10  text-white`}
+				className={`relative flex lg:py-10 justify-center items-center w-[100%] bg-black bg-opacity-40 min-h-[100vh] mb-10  text-white`}
 			>
-				<div className=''>
+				<div>
 					<Image
-						src='/background2.jpng'
+						src='/background.JPG'
 						alt='backgorund'
 						sizes='100vw'
 						fill
@@ -23,8 +22,8 @@ const Logo = () => {
 						className='object-cover z-[-3]'
 					/>
 				</div>
-				<div className='container xl:px-64 p-5 py-28 flex flex-col gap-6 z-2'>
-					<div className='sm:mb-5 md:h-[20vh]'>
+				<div className='container xl:px-64 p-5 py-28 flex flex-col gap-6'>
+					<div className='sm:mb-5 md:min-h-[24vh] bg-black bg-opacity-80 p-3  shadow-md shadow-main-color'>
 						<h2 className='uppercase text-center text-xl lg:text-2xl md:text-3xl mb-6'>
 							Projektowanie{' '}
 							<span className='text-main-color'>Logo</span>{' '}
@@ -36,11 +35,14 @@ const Logo = () => {
 							kluczowych elementów: sygnetu, logotypu i claimu,
 							które mogą być stosowane razem lub oddzielnie, w
 							zależności od potrzeb. Zapewniamy kompleksowe
-							podejście do projektowania logo, aby Twoja firma
-							była rozpoznawalna i zapadła w pamięć.
+							podejście do projektowania logo.
 						</p>
 					</div>
-					<div className='flex flex-col md:flex-row flex-wrap justify-center gap-5'>
+					<div className='relative flex flex-col md:flex-row flex-wrap justify-center gap-5 '>
+						<LinkSmallCard
+							title={'Strona internetowa'}
+							link={'/uslugi/strona-internetowa'}
+						/>
 						<LinkSmallCard
 							title={'Strona w Next.js'}
 							link={'/uslugi/strona-internetowa/next-js'}
@@ -59,78 +61,105 @@ const Logo = () => {
 							link={'/uslugi/logo'}
 						/>
 						<LinkSmallCard
-							title={'Page Builder'}
-							link={'/uslugi/strona-internetowa/page-builder'}
-						/>
-						<LinkSmallCard
 							title={'Projektowanie UI'}
 							link={'/uslugi/strona-internetowa/projektowanie-ui'}
 						/>
 					</div>
 				</div>
-				<div
-					className={`absolute flex justify-center items-end md:items-center z-4  w-[100%] h-[20%] bottom-0 ${styles['shadow-services']}`}
-				>
-					<ScrollDownBtn />
-				</div>
-			</section>
-			<section className='relative flex flex-wrap gap-5 justify-center container mx-auto pb-20'>
-				<div className='relative w-[20%] h-auto z-50'>
-					<Image
-						src='/example-logo1.PNG'
-						alt='logo warsztatu'
-						width={386}
-						height={359}
-						priority
-						className='w-[100%] h-[100%]'
-					/>
-				</div>
-				<div className='relative w-[20%] h-auto z-50'>
-					<Image
-						src='/example-logo2.PNG'
-						alt='logo warsztatu'
-						width={388}
-						height={380}
-						priority
-						className='w-[100%] h-[100%]'
-					/>
-				</div>
-				<div className='relative w-[20%] h-auto z-50'>
-					<Image
-						src='/example-logo3.PNG'
-						alt='logo warsztatu'
-						width={388}
-						height={380}
-						priority
-						className='w-[100%] h-[100%]'
-					/>
-				</div>
-				<div className='relative w-[20%] h-auto z-50'>
-					<Image
-						src='/example-logo4.PNG'
-						alt='logo warsztatu'
-						width={388}
-						height={380}
-						priority
-						className='w-[100%] h-[100%]'
-					/>
-				</div>
-				<div className='relative w-[20%] h-auto z-50'>
-					<Image
-						src='/example-logo5.PNG'
-						alt='logo warsztatu'
-						width={388}
-						height={380}
-						priority
-						className='w-[100%] h-[100%]'
-					/>
-				</div>
+				<ScrollDownBtn />
 			</section>
 			<section
 				className='relative container mx-auto pb-20 min-h-[65vh]'
 				id='second-section'
 			>
-				<div className='w-[100%] md:w-[50%] flex flex-col justify-between text-center sm:text-left'>
+				<div className='w-[100%] md:w-[50%] sm:px-5 flex flex-col justify-between text-center sm:text-left'>
+					<SectionTitle>Przykładowe realizacje</SectionTitle>
+				</div>
+				<div className='relative flex flex-wrap gap-5 justify-center container mx-auto pb-20'>
+					<div className='relative w-[20%] h-auto z-50'>
+						<Image
+							src='/example-logo1.PNG'
+							alt='logo warsztatu'
+							width={386}
+							height={359}
+							priority
+							className='w-[100%] h-[100%]'
+						/>
+					</div>
+					<div className='relative w-[20%] h-auto z-50'>
+						<Image
+							src='/example-logo2.PNG'
+							alt='logo warsztatu'
+							width={388}
+							height={380}
+							priority
+							className='w-[100%] h-[100%]'
+						/>
+					</div>
+					<div className='relative w-[20%] h-auto z-50'>
+						<Image
+							src='/example-logo3.PNG'
+							alt='logo warsztatu'
+							width={388}
+							height={380}
+							priority
+							className='w-[100%] h-[100%]'
+						/>
+					</div>
+					<div className='relative w-[20%] h-auto z-50'>
+						<Image
+							src='/example-logo4.PNG'
+							alt='logo warsztatu'
+							width={388}
+							height={380}
+							priority
+							className='w-[100%] h-[100%]'
+						/>
+					</div>
+					<div className='relative w-[20%] h-auto z-50'>
+						<Image
+							src='/example-logo5.PNG'
+							alt='logo warsztatu'
+							width={388}
+							height={380}
+							priority
+							className='w-[100%] h-[100%]'
+						/>
+					</div>
+					<div className='relative w-[20%] h-auto z-50'>
+						<Image
+							src='/example-logo6.PNG'
+							alt='logo warsztatu'
+							width={388}
+							height={380}
+							priority
+							className='w-[100%] h-[100%]'
+						/>
+					</div>
+					<div className='relative w-[20%] h-auto z-50'>
+						<Image
+							src='/example-logo7.PNG'
+							alt='logo warsztatu'
+							width={388}
+							height={380}
+							priority
+							className='w-[100%] h-[100%]'
+						/>
+					</div>
+					<div className='relative w-[20%] h-auto z-50'>
+						<Image
+							src='/example-logo8.PNG'
+							alt='logo warsztatu'
+							width={388}
+							height={380}
+							priority
+							className='w-[100%] h-[100%]'
+						/>
+					</div>
+				</div>
+			</section>
+			<section className='relative container mx-auto pb-20 min-h-[65vh]'>
+				<div className='w-[100%] md:w-[50%] sm:px-5 flex flex-col justify-between text-center sm:text-left'>
 					<SectionTitle>Etapy Realizacji</SectionTitle>
 				</div>
 				<div className='mx-5 text-md xl:mx-80 xl:text-lg'>

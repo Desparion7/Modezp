@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import OrangeButton from '@/ui/orange-button';
 import Letter from '@/ui/letter';
 import ParticlesContainer from '@/ui/particles-container';
+import ScrollDownBtn from '@/ui/scroll-down-btn';
 
 const Intro = () => {
 	const sentence1 = 'Nowoczesna'.split('');
@@ -12,19 +13,21 @@ const Intro = () => {
 	const sentence3 = ' dla Twojego biznesu'.split('');
 
 	return (
-		<section className='bg-black relative w-screen h-screen bg-opacity-20'>
+		<section className='bg-black relative flex justify-center items-center w-[100%] min-h-[100vh] bg-opacity-40'>
 			<ParticlesContainer />
-			<Image
-				src='/background.jpng'
-				alt='backgorund'
-				sizes='100vw'
-				fill
-				priority
-				className='sm:object-cover sm:object-center z-[-3] h-[100vh] sm:w-[100vw] '
-			/>
+			<div>
+				<Image
+					src='/background.JPG'
+					alt='backgorund'
+					sizes='100vw'
+					fill
+					priority
+					className='object-cover z-[-3] '
+				/>
+			</div>
 			<div className='flex flex-col justify-center md:items-center h-[100%] w-[100%]'>
 				<motion.h1
-					className='hidden sm:flex relative uppercase text-xl sm:text-2xl text-center justify-center lg:text-4xl xl:text-5xl font-bold p-4 mb-2 text-white bg-black bg-opacity-40'
+					className='hidden sm:flex relative uppercase text-xl sm:text-2xl text-center justify-center lg:text-4xl xl:text-5xl font-bold p-4 mb-2 text-white bg-black bg-opacity-80'
 					initial={{ scale: 0 }}
 					animate={{ scale: 1 }}
 					transition={{ ease: 'easeOut', duration: 0.5 }}
@@ -61,13 +64,14 @@ const Intro = () => {
 					initial={{ scale: 0 }}
 					animate={{ scale: 1 }}
 					transition={{ ease: 'easeOut', duration: 0.5 }}
-					className='sm:hidden uppercase text-lg text-center font-bold p-4 mb-2 text-white bg-black bg-opacity-50'
+					className='sm:hidden uppercase text-lg text-center font-bold p-4 mb-2 text-white bg-black bg-opacity-80'
 				>
-					Nowoczesna <p className='text-main-color '>&nbsp;strona &nbsp;</p>{' '}
-					dla Twojego biznesu
+					Nowoczesna{' '}
+					<p className='text-main-color '>&nbsp;strona &nbsp;</p> dla
+					Twojego biznesu
 				</motion.h1>
 				<motion.ul
-					className='relative flex flex-col lg:flex-row md:text-2xl md:gap-3 mb-4 py-3 lg:gap-6 text-white uppercase top-[2vh] md:top-[5vh] bg-black bg-opacity-40'
+					className='relative flex flex-col lg:flex-row md:text-2xl md:gap-3 mb-4 py-3 lg:gap-6 text-white uppercase top-[2vh] md:top-[5vh] bg-black bg-opacity-80'
 					initial={{ scale: 0 }}
 					animate={{ scale: 1 }}
 					transition={{ ease: 'easeOut', duration: 0.5 }}
@@ -91,6 +95,7 @@ const Intro = () => {
 					<OrangeButton>Bezpłatna konsultacja</OrangeButton>
 				</motion.div>
 			</div>
+			<ScrollDownBtn />
 		</section>
 	);
 };

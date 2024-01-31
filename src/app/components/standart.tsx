@@ -14,6 +14,7 @@ const Standart = () => {
 			whileInView={{ x: 0, opacity: 1 }}
 			viewport={{ once: true }}
 		>
+			{/* h3 for mobile */}
 			<h3 className='text-xl sm:hidden col-span-12 mb-3 text-center uppercase text-[#002247]'>
 				WYGODNE ZARZĄDZANIA STRONĄ
 			</h3>
@@ -29,11 +30,12 @@ const Standart = () => {
 				</div>
 			</div>
 			<div className='col-span-10 col-start-2 sm:col-span-7 sm:col-start-5 sm:font-medium'>
+				{/* h3 for desktop */}
 				<h3 className='hidden sm:block text-xl sm:text-2xl lg:text-3xl mb-3 text-center uppercase text-third-color'>
 					WYGODNE ZARZĄDZANIA STRONĄ
 				</h3>
-				<p className='tracking-widest text-sm text-center leading-8 font-semibold sm:text-lg sm:mt-8'>
-					Jeśli mówimy o stronach korporacyjnych, blogach lub
+				<p className='tracking-widest text-sm text-justify leading-8 font-semibold sm:text-lg sm:mt-8'>
+					Jeśli mówimy o stronach dla firm, blogach lub
 					wizytówkach, popularnym wyborem jest platforma{' '}
 					<Link
 						href='/uslugi/word-press'

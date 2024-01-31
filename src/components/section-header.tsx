@@ -14,7 +14,7 @@ const SectionTitle = ({ children }: SectionTitleType) => {
 			viewport={{ once: true }}
 			className='relative mb-5'
 		>
-			<h2 className='text-2xl md:text-4xl uppercase  font-bold text-[#002247] border-b-4 border-b-main-color'>
+			<h2 className='text-2xl md:text-4xl uppercase  font-bold text-third-color border-b-4 border-b-main-color'>
 				{children}
 			</h2>
 		</motion.div>

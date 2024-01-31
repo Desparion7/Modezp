@@ -13,10 +13,10 @@ type LinkSmallCardType = {
 
 const LinkSmallCard = ({ active, title, link }: LinkSmallCardType) => {
 	return (
-		<Link href={link}>
+		<Link href={link} className='relative z-8'>
 			<motion.div
 				className={cn(
-					'relative flex justify-between md:justify-center items-center z-10  p-4 md:h-[100%] md:min-h-[10rem] md:w-[8rem] bg-black bg-opacity-60 group ',
+					'relative flex justify-between md:justify-center items-center  p-4 md:h-[100%] md:min-h-[10rem] md:w-[8rem] bg-black bg-opacity-90 group shadow-md shadow-orange-700 ',
 					{
 						'sm:scale-105 cursor-default shadow-sm shadow-main-color':
 							active,

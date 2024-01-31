@@ -8,7 +8,7 @@
 	--background-end-rgb: 255, 255, 255;
 	--main-color: #e7590a;
 	--second-color: #ec4d1d;
-	--third-color: #012c5b;
+	--third-color: rgb(18, 18, 18);
 	--button-background: #e03600;
 	--button-background-hover: #ed3700;
 }

@@ -20,7 +20,7 @@ const Contact = () => {
 				className='sm:object-cover sm:object-center z-[-3] h-[100vh] sm:w-[100vw] '
 			/>
 			<div className='flex flex-col lg:flex-row gap-5'>
-				<div className='relative flex flex-col md:max-h-[100%] bg-sky-100 text-black p-6 sm:p-10 gap-4'>
+				<div className='relative flex flex-col md:max-h-[100%] bg-white text-black p-6 sm:p-10 gap-4'>
 					<div className='pb-[70px] '>
 						<div
 							style={{
@@ -69,7 +69,7 @@ const Contact = () => {
 							<input
 								type='text'
 								name='name'
-								className='bg-slate-900 border-b-2 border-sky-900 p-1'
+								className='bg-third-color border-b-2 border-sky-900 p-1'
 								placeholder='Imię i nazwisko'
 							/>
 						</div>
@@ -77,7 +77,7 @@ const Contact = () => {
 							<p>Szukam firmy, która pomoże mi</p>{' '}
 							<select
 								name='topic'
-								className='bg-slate-900 border-b-2 border-sky-900 p-1'
+								className='bg-third-color border-b-2 border-sky-900 p-1'
 							>
 								<option value=''>Wybierz z listy</option>
 								<option value=''>stworzyć stronę www</option>
@@ -92,7 +92,7 @@ const Contact = () => {
 							<input
 								type='text'
 								name='resources'
-								className='bg-slate-900 border-b-2 border-sky-900 p-1'
+								className='bg-third-color border-b-2 border-sky-900 p-1'
 								placeholder='3 000 zł'
 							/>
 						</div>
@@ -101,7 +101,7 @@ const Contact = () => {
 							<input
 								type='number'
 								name='phone'
-								className='bg-slate-900 border-b-2 border-sky-900 p-1'
+								className='bg-third-color border-b-2 border-sky-900 p-1'
 								placeholder='+48 101 101 101'
 							/>
 						</div>
@@ -109,7 +109,7 @@ const Contact = () => {
 							<p>między</p>{' '}
 							<select
 								name='from'
-								className='bg-slate-900 border-b-2 border-sky-900 p-1'
+								className='bg-third-color border-b-2 border-sky-900 p-1'
 							>
 								<option value='1'>6:00</option>
 								<option value='2'>8:00</option>
@@ -122,7 +122,7 @@ const Contact = () => {
 							<p>-</p>{' '}
 							<select
 								name='to'
-								className='bg-slate-900 border-b-2 border-sky-900 p-1'
+								className='bg-third-color border-b-2 border-sky-900 p-1'
 							>
 								<option value='2'>8:00</option>
 								<option value='3'>10:00</option>
@@ -137,7 +137,7 @@ const Contact = () => {
 							<p>lub na adres mailowy</p>{' '}
 							<input
 								type='email'
-								className='bg-slate-900 border-b-2 border-sky-900 p-1'
+								className='bg-third-color border-b-2 border-sky-900 p-1'
 								placeholder='email'
 							/>
 						</div>

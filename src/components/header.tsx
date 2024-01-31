@@ -46,7 +46,7 @@ const Header = () => {
 	return (
 		<>
 			<motion.header
-				className='absolute flex justify-center w-[100vw] h-20  z-10 top-0  bg-black text-white bg-opacity-50'
+				className='absolute flex justify-center w-[100vw] h-20  z-10 top-0  bg-black text-white bg-opacity-80'
 				variants={{
 					visible: { y: 0 },
 					hidden: { y: -200 },
@@ -104,9 +104,8 @@ const Header = () => {
 								}}
 								onMouseLeave={() => setServicesVisible(false)}
 							>
-								<Link
-									href='/uslugi'
-									className='relative flex items-center justify-center gap-2 lg:text-md hover:text-main-color transition-colors'
+								<div
+									className='relative flex items-center justify-center gap-2 lg:text-md '
 									onMouseEnter={() =>
 										setServicesVisible(true)
 									}
@@ -121,7 +120,7 @@ const Header = () => {
 									>
 										<Path d='M6 9L12 15L18 9' />
 									</svg>
-								</Link>
+								</div>
 								{servicesVisible && (
 									<motion.div
 										initial={{

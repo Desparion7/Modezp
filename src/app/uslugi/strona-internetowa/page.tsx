@@ -6,7 +6,7 @@ import Contact from '@/app/components/contact';
 import ScrollDownBtn from '@/ui/scroll-down-btn';
 import Link from 'next/link';
 
-const Next = () => {
+const Website = () => {
 	return (
 		<div>
 			<section
@@ -25,32 +25,35 @@ const Next = () => {
 				<div className='container xl:px-64 p-5 py-28 flex flex-col gap-6'>
 					<div className='sm:mb-5 md:min-h-[24vh] bg-black bg-opacity-80 p-3  shadow-md shadow-main-color'>
 						<h2 className='uppercase text-center text-xl lg:text-2xl md:text-3xl mb-6'>
-							Dlaczego strona internetowa w{' '}
-							<span className='text-main-color'>next.js</span>?{' '}
+							strona internetowa{' '}
 						</h2>
 						<p className='text-md md:text-lg text-center sm:text-justify'>
-							Next.js jest wartościowym wyborem do tworzenia stron
-							internetowych, ponieważ oferuje serwerowe
-							renderowanie dla szybszego ładowania i lepszego{' '}
+							Oferujemy profesjonalne usługi tworzenia stron
+							internetowych w{' '}
+							<Link href='/uslugi/strona-internetowa/next-js'>
+								<span className='text-main-color hover:border-b-2 border-main-color'>
+									Next.js{' '}
+								</span>
+							</Link>{' '}
+							dla zaawansowanych projektów oraz w WordPressie dla
+							tych z mniejszym budżetem. Specjalizujemy się w
+							tworzeniu dynamicznych, wydajnych i{' '}
 							<Link href='/blog/seo'>
 								<span className='text-main-color hover:border-b-2 border-main-color'>
 									SEO{' '}
 								</span>
-							</Link>
-							, wspiera JavaScript i React dla dynamicznych
-							interfejsów, automatycznie dzieli kod dla optymalnej
-							wydajności , umożliwia łatwe skalowanie projektu.
-							Projekty pisane w next.js są pisane od podstaw, nie
-							na gotowych szablonach.
+							</Link>{' '}
+							zoptymalizowanych witryn, dopasowanych do
+							indywidualnych potrzeb i budżetu klienta.{' '}
 						</p>
 					</div>
 					<div className='flex flex-col md:flex-row flex-wrap justify-center gap-5'>
 						<LinkSmallCard
+							active={true}
 							title={'Strona internetowa'}
 							link={'/uslugi/strona-internetowa'}
 						/>
 						<LinkSmallCard
-							active={true}
 							title={'Strona w Next.js'}
 							link={'/uslugi/strona-internetowa/next-js'}
 						/>
@@ -76,70 +79,90 @@ const Next = () => {
 				id='second-section'
 			>
 				<div className='w-[100%] md:w-[50%] sm:px-5 flex flex-col justify-between text-center sm:text-left'>
-					<SectionTitle>Strona w next.js</SectionTitle>
+					<SectionTitle> WordPress czy Next.js?</SectionTitle>
 				</div>
 				<div className='mx-5 text-md xl:mx-80 xl:text-lg'>
 					<div className='mt-10'>
 						<h3 className='text-xl sm:text-2xl pb-5'>
-							Czym jest Next.js?
+							WordPress i Page Builder - Dostępność i Prostota:
 						</h3>
 						<p className='pb-5 leading-8 text-justify'>
-							Next.js to framework React.js, który umożliwia
-							renderowanie po stronie serwera (SSR) przy użyciu
-							środowiska Node.js na serwerze. Dzięki temu pozwala
-							tworzyć szybkie i zoptymalizowane pod kątem SEO
-							aplikacje internetowe. Jest obecnie
-							najpopularniejszym oraz najczęściej pobieranym
-							frameworkiem do React.js
+							Dla klientów preferujących sprawdzone rozwiązania,
+							oferujemy tworzenie stron na WordPressie w
+							połączeniu z Page Builderem. To idealny wybór dla
+							projektów wymagających:
+						</p>
+						<p className='leading-8 text-justify'>
+							<span className='font-bold'>
+								{' '}
+								Łatwości Zarządzania:
+							</span>{' '}
+							Intuicyjny interfejs użytkownika umożliwiający łatwą
+							edycję i zarządzanie treścią.
+						</p>
+						<p className='leading-8 text-justify'>
+							<span className='font-bold'>
+								{' '}
+								Dostępności Wtyczek:
+							</span>{' '}
+							Bogata biblioteka wtyczek i motywów ułatwiająca
+							personalizację strony.
 						</p>
 						<p className='pb-5 leading-8 text-justify'>
-							Next.js obsługuje również Generowanie Statycznych
-							Stron (SSG), co można zauważyć w podobny sposób jak
-							w przypadku Gatsby.js. Jednakże, największą zaletą
-							Next.js jest możliwość korzystania z obu tych
-							funkcjonalności, co pozwala nam elastycznie
-							definiować, które dane mają być pobierane po stronie
-							serwera, a które mają być generowane statycznie.
+							<span className='font-bold'>
+								{' '}
+								Efektywności Kosztowej:
+							</span>{' '}
+							Idealne dla małych i średnich przedsiębiorstw lub
+							startupów z ograniczonym budżetem.
 						</p>
 					</div>
 					<div className='mt-10'>
 						<h3 className='text-xl sm:text-2xl pb-5'>
-							Co to Server Side Rendering?
+							Next.js - Nowoczesność i Innowacja
 						</h3>
-						<p className='pb-5 leading-8 text-justify'>
-							Server Side Rendering (SSR) umożliwia wyrenderowanie
-							całej strony po stronie serwera, a nie po stronie
-							klienta, co jest charakterystyczne dla czystego
-							React.js. Dzięki takiemu podejściu otrzymujemy od
-							serwera w pełni wyrenderowany plik HTML zamiast
-							polegać na renderowaniu całego DOM za pomocą
-							JavaScript.
+						<p className='leading-8 text-justify'>
+							<span className='font-bold'>
+								{' '}
+								Niezrównaną Wydajność i Szybkość:
+							</span>{' '}
+							Szybkie czasy ładowania i optymalizacja wydajności
+							dzięki serwerowemu renderowaniu i generowaniu
+							statycznych stron.
+						</p>
+						<p className='leading-8 text-justify'>
+							<span className='font-bold'>
+								{' '}
+								Lepszą Optymalizację SEO:
+							</span>{' '}
+							Lepsze pozycjonowanie w wynikach wyszukiwania dzięki
+							optymalizacji SEO.
+						</p>
+						<p className='leading-8 text-justify'>
+							<span className='font-bold'>
+								{' '}
+								Elastyczność i Skalowalność:
+							</span>{' '}
+							Idealny do tworzenia złożonych i rozbudowanych
+							aplikacji internetowych.
 						</p>
 						<p className='pb-5 leading-8 text-justify'>
-							Korzyściami płynącymi z takiego rozwiązania są
-							znacznie szybsze czasy ładowania strony oraz
-							mniejsze zużycie JavaScript. To z kolei ma istotny
-							wpływ na optymalizację strony pod kątem SEO,
-							ponieważ indeksowanie pliku HTML jest znacznie
-							prostsze dla robotów wyszukiwarek niż indeksowanie
-							stron renderowanych po stronie klienta.
+							<span className='font-bold'> Interaktywne UI:</span>{' '}
+							Możliwość tworzenia dynamicznych i interaktywnych
+							interfejsów użytkownika.
 						</p>
 					</div>
 					<div className='mt-10'>
 						<h3 className='text-xl sm:text-2xl pb-5'>
-							Next.js i Jamstack
+							Przykłady Zastosowania Next.js:
 						</h3>
 						<p className='pb-5 leading-8 text-justify'>
-							Next.js jest często wykorzystywany w architekturze
-							Jamstack, ponieważ pozwala łatwo integrować się z
-							Headless CMS. Dzięki tej integracji, możliwe jest
-							sprawnie zarządzanie treściami strony internetowej
-							za pomocą systemu zarządzania treścią, a następnie
-							wykorzystanie Next.js do renderowania i dostarczania
-							tych treści na stronie internetowej. Jest to
-							popularne podejście do tworzenia wydajnych i
-							skalowalnych stron internetowych, które pozostają
-							łatwe do zarządzania.
+							Wielkie firmy takie jak Netflix, Twitch, czy Hulu
+							wybrały Next.js ze względu na jego wydajność,
+							skalowalność i nowoczesne podejście do web
+							developmentu. Ich sukcesy są dowodem na to, jak
+							Next.js może transformować doświadczenia online i
+							wspierać rozwój biznesu.
 						</p>
 					</div>
 					<div className='mt-10'>
@@ -168,6 +191,22 @@ const Next = () => {
 							opartych na React.js.
 						</p>
 					</div>
+					<div className='mt-10'>
+						<h3 className='text-xl sm:text-2xl pb-5'>
+							Podsumowanie
+						</h3>
+						<p className='pb-5 leading-8 text-justify'>
+							Wybierając naszą firmę, otrzymujesz dostęp do dwóch
+							różnych, ale równie skutecznych ścieżek tworzenia
+							stron internetowych. Niezależnie od tego, czy
+							wybierzesz sprawdzony WordPress z Page Builderem,
+							czy innowacyjny Next.js, gwarantujemy
+							profesjonalizm, indywidualne podejście i rozwiązania
+							dostosowane do Twoich potrzeb. Skontaktuj się z
+							nami, aby dowiedzieć się więcej i wybrać najlepsze
+							rozwiązanie dla Twojego biznesu.
+						</p>
+					</div>
 				</div>
 			</section>
 			<Contact />
@@ -175,4 +214,4 @@ const Next = () => {
 	);
 };
 
-export default Next;
+export default Website;

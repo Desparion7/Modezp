@@ -34,16 +34,12 @@ export const linksMobile = [
 		hash: '/o-nas',
 	},
 	{
-		name: 'usługi',
-		hash: '/uslugi',
-	},
-	{
 		name: 'Strony internetowe',
 		hash: '/uslugi/strona-internetowa/next-js',
 	},
 	{
 		name: 'Sklep internetowy',
-		hash: '/uslugi/sklep-internetowy',
+		hash: '/uslugi/sklep',
 	},
 	{
 		name: 'Logo firmy',

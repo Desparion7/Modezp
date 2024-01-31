@@ -16,7 +16,7 @@ const MobileMenu = ({ handleToggleMenu, menuVisible }: MobileMenuProps) => {
 	};
 
 	return (
-		<nav className='absolute uppercase lg:hidden overflow-hidden'>
+		<nav className='absolute uppercase lg:hidden overflow-hidden z-[20]'>
 			<AnimatePresence>
 				{menuVisible && (
 					<motion.div

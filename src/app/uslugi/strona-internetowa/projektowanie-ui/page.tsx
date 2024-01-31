@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
 import LinkSmallCard from '@/components/link-small-card';
-import styles from '../../styles.module.css';
 import SectionTitle from '@/components/section-header';
 import Contact from '@/app/components/contact';
 import ScrollDownBtn from '@/ui/scroll-down-btn';
@@ -10,11 +9,11 @@ const Projects = () => {
 	return (
 		<div>
 			<section
-				className={`relative flex lg:py-10 justify-center items-center w-[100%] min-h-[100vh] mb-10  text-white`}
+				className={`relative flex lg:py-10 justify-center items-center w-[100%] bg-black bg-opacity-40 min-h-[100vh] mb-10  text-white`}
 			>
-				<div className=''>
+				<div>
 					<Image
-						src='/background2.jpng'
+						src='/background.JPG'
 						alt='backgorund'
 						sizes='100vw'
 						fill
@@ -22,8 +21,8 @@ const Projects = () => {
 						className='object-cover z-[-3]'
 					/>
 				</div>
-				<div className='container xl:px-64 p-5 py-28 flex flex-col gap-6 z-2'>
-					<div className='sm:mb-5 md:h-[20vh]'>
+				<div className='container xl:px-64 p-5 py-28 flex flex-col gap-6'>
+					<div className='sm:mb-5 md:min-h-[24vh] bg-black bg-opacity-80 p-3  shadow-md shadow-main-color'>
 						<h2 className='uppercase text-center text-xl lg:text-2xl md:text-3xl mb-6'>
 							Projektowanie{' '}
 							<span className='text-main-color'>UI</span>{' '}
@@ -64,17 +63,13 @@ const Projects = () => {
 						/>
 					</div>
 				</div>
-				<div
-					className={`absolute flex justify-center items-end md:items-center z-4  w-[100%] h-[20%] bottom-0 ${styles['shadow-services']}`}
-				>
-					<ScrollDownBtn />
-				</div>
+				<ScrollDownBtn />
 			</section>
 			<section
 				className='relative container mx-auto pb-20 min-h-[65vh]'
 				id='second-section'
 			>
-				<div className='w-[100%] md:w-[50%] flex flex-col justify-between text-center sm:text-left'>
+				<div className='w-[100%] md:w-[50%] sm:px-5 flex flex-col justify-between text-center sm:text-left'>
 					<SectionTitle>Projektowanie</SectionTitle>
 				</div>
 				<div className='mx-5 text-md xl:mx-80 xl:text-lg'>
