@@ -1,8 +1,6 @@
 'use client';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 import ScrollDownBtn from '@/ui/scroll-down-btn';
-import Contact from '../components/contact';
 import SectionTitle from '@/components/section-header';
 import { IoIosPhonePortrait } from 'react-icons/io';
 

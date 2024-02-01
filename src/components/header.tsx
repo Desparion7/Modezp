@@ -219,15 +219,17 @@ const Header = () => {
 									},
 								}}
 							>
-								<motion.button
-									whileHover={{
-										scale: 1.05,
-										transition: { duration: 0.1 },
-									}}
-									className='bg-button-background text-white  py-3 px-6 rounded-3xl  hover:bg-button-background-hover transition-all uppercase'
-								>
-									Darmowa konsultacja
-								</motion.button>
+								<Link href='/konsultacja'>
+									<motion.button
+										whileHover={{
+											scale: 1.05,
+											transition: { duration: 0.1 },
+										}}
+										className='bg-button-background text-white  py-3 px-6 rounded-3xl  hover:bg-button-background-hover transition-all uppercase'
+									>
+										Darmowa konsultacja
+									</motion.button>
+								</Link>
 							</motion.li>
 						</motion.ul>
 					</div>

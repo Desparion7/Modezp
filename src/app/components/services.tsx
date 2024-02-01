@@ -49,11 +49,13 @@ export default function Services() {
 								Usługa tworzenia stron internetowych,
 								dostosowanych do Twoich potrzeb i budżetu.
 								Strona w Next.js, który jest idealny dla
-								klientów poszukujących zaawansowanych rozwiązań
-								i optymalizacji SEO. Dla klientów z mniejszym
-								budżetem lub potrzebujących prostszych
-								rozwiązań, oferujemy tworzenie stron
-								internetowych w WordPressie.
+								klientów poszukujących zaawansowanych rozwiązań.
+								Dla klientów z mniejszym budżetem lub
+								potrzebujących prostszych rozwiązań, w
+								WordPressie.
+							</p>
+							<p className='text-main-color text-center text-2xl mt-2 xl:mt-5'>
+								Strona już od 800zł
 							</p>
 							<Link
 								href='/uslugi/strona-internetowa'
