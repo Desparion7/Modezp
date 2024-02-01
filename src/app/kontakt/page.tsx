@@ -6,7 +6,7 @@ import { MdOutlineMailOutline } from 'react-icons/md';
 
 const Contact = () => {
 	return (
-		<section className='bg-black relative flex justify-around  items-center w-[100%] min-h-[91vh] bg-opacity-40'>
+		<section className='bg-black relative flex flex-col justify-around  items-center w-[100%] min-h-[91vh] bg-opacity-40'>
 			<div>
 				<Image
 					src='/background.jpg'
@@ -17,38 +17,30 @@ const Contact = () => {
 					className='object-cover z-[-3] '
 				/>
 			</div>
-			<div className='relative top-[-7vh] flex p-10 bg-black opacity-90 text-white w-[80%] shadow-md shadow-main-color'>
-				<div className='flex flex-col justify-between w-[50%]'>
+			<div className='relative mx-auto top-[-2vh] flex flex-col 2xl:flex-row gap-10 my-5 p-5 sm:p-10 bg-black opacity-90 text-white w-[90%] lg:w-[80%] shadow-md shadow-main-color'>
+				<div className='flex flex-col  2xl:w-[50%]'>
 					<div>
-						<h2 className='text-2xl mb-4'>
+						<h2 className='text-xl sm:text-2xl text-center mb-5'>
 							Masz pytania i wątpliwości? Nie wahaj się pytać.
 							Pomożemy!
 						</h2>
-						<p className='text-xl'>
-							Zachęcamy do podzielenia się z nami swoimi celami,
-							oczekiwaniami oraz wszelkimi wątpliwościami.
-							Skontaktujemy się, aby w klarowny i przystępny
-							sposób rozwiać wszelkie niejasności i omówić możliwe
-							rozwiązania.
-						</p>
 					</div>
-					<div className='flex items-center gap-4 p-2'>
+					<div className='flex flex-col sm:justify-center sm:items-center gap-4 '>
 						<div
 							style={{
 								position: 'relative',
-								width: '100px',
-								height: '100px',
+								width: '150px',
 							}}
 						>
 							<Image
-								src='/contactphoto.PNG'
-								width={831}
-								height={848}
-								className='absolute rounded-[50%] aspect-auto border-2 border-orange-600'
+								src='/contactphoto2.jpg'
+								width={800}
+								height={900}
+								className=' w-[150px] h-[150px] rounded-[50%] aspect-auto border-2 border-orange-600'
 								alt='osoba do kontaktu'
 							/>
 						</div>
-						<div className='flex flex-col gap-3 relative'>
+						<div className='flex flex-col gap-3 relative text-center'>
 							<h3 className='text-xl font-semibold'>
 								Mateusz Woś
 							</h3>
@@ -66,7 +58,10 @@ const Contact = () => {
 						</div>
 					</div>
 				</div>
-				<form className='flex flex-col justify-around gap-1 w-[50%] text-black'>
+				<form className='flex flex-col justify-around gap-1 text-sm sm:text-md 2xl:w-[50%] text-black'>
+					<h3 className='text-white text-xl mb-3'>
+						Napisz wiadomość
+					</h3>
 					<input
 						className='p-2'
 						type='text'
@@ -99,7 +94,7 @@ const Contact = () => {
 							className='w-[20px] h-[20px]'
 							required
 						/>
-						<p>
+						<p className='text-[12px] xl:text-sm'>
 							Zgadzam się na przetwarzanie moich danych osobowych
 							przez Modezp Mateusz Woś, NIP: 7952501374 w celu w
 							celu kontaktu z Tobą na Twoją prośbę zgodnie z
@@ -121,7 +116,18 @@ const Contact = () => {
 					</div>
 				</form>
 			</div>
-			{/* <ScrollDownBtn /> */}
+			<div className=' flex flex-col sm:flex-row gap-3 justify-around mb-20 p-5 text-white  bg-black  w-[90%] lg:w-[80%] shadow-md shadow-main-color'>
+				<div>
+					<p>Modezp Mateusz Woś</p>
+					<p>ul. Lipowa 88</p>
+					<p>37-716 Orły</p>
+				</div>
+				<div>
+					<p>NIP: 7952501374</p>
+					<p>REGON: 365493155</p>
+					<p>Konto: 12 1950 0001 2006 0001 3605 0001</p>
+				</div>
+			</div>
 		</section>
 	);
 };

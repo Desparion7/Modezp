@@ -1,6 +1,5 @@
 'use client';
 import React, { useState } from 'react';
-import { links } from '@/lib/data';
 import Link from 'next/link';
 import Image from 'next/image';
 import MobileMenu from './mobile-menu';
@@ -48,7 +47,7 @@ const Header = () => {
 	return (
 		<>
 			<motion.header
-				className='sticky flex justify-center w-[100vw] h-[9vh]  z-10 top-0  bg-black text-white'
+				className='sticky flex justify-center w-[100vw] sm:h-[9vh]  z-10 top-0  bg-black text-white'
 				variants={{
 					visible: { y: 0 },
 					hidden: { y: -200 },
@@ -82,23 +81,6 @@ const Header = () => {
 					</motion.div>
 					<div className='hidden lg:flex items-center py-4 px-5 font-semibold'>
 						<motion.ul className='flex gap-6 uppercase items-center'>
-							{/* {links.map((link, index) => (
-								<motion.li
-									key={link.hash}
-									variants={fadeInAnimationVariants}
-									initial='initial'
-									animate='animate'
-									custom={index}
-									className={cn(
-										`lg:text-md hover:text-main-color transition-colors`
-										// {
-										// 	'text-main-color'
-										// }
-									)}
-								>
-									<Link href={link.hash}>{link.name} </Link>
-								</motion.li>
-							))} */}
 							<motion.li
 								variants={fadeInAnimationVariants}
 								initial={{ opacity: 0, y: -50 }}

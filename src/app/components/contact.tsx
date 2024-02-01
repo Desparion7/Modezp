@@ -30,10 +30,10 @@ const Contact = () => {
 							}}
 						>
 							<Image
-								src='/contactphoto.PNG'
-								width={831}
-								height={848}
-								className='absolute top-[-70px] rounded-[50%] aspect-auto border-2 border-orange-600'
+								src='/contactphoto2.jpg'
+								width={500}
+								height={500}
+								className='absolute w-[150px] h-[150px] top-[-70px] rounded-[50%] aspect-auto border-2 border-orange-600'
 								alt='osoba do kontaktu'
 							/>
 						</div>

@@ -4,7 +4,7 @@ import { FaMobileScreen } from 'react-icons/fa6';
 
 const Footer = () => {
 	return (
-		<footer className='absolute flex justify-around items-center min-w-[100%]  bg-opacity-60 z-11 py-2 lg:py-4 bottom-0  bg-black text-white'>
+		<footer className='absolute flex justify-around items-center min-w-[100%] z-11 py-2 lg:py-4 bottom-0  bg-black text-white'>
 			<div className='container flex flex-row sm:flex-row text-sm lg:text-xl justify-between mx-10 sm:mx-20 text-center w-[100%] uppercase'>
 				<div className='flex justify-around  sm:gap-5'>
 					<Link
