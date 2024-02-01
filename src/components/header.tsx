@@ -7,11 +7,13 @@ import MobileMenu from './mobile-menu';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import MenuToggleButton from '@/ui/menu-toggle-button';
 import Path from '@/ui/svg-path';
-import styles from './style.module.css';
+import { cn } from '@/lib/utils';
+import { usePathname } from 'next/navigation';
 
 const Header = () => {
-	const { scrollY } = useScroll();
+	const url = usePathname();
 
+	const { scrollY } = useScroll();
 	const [menuVisible, setMenuVisible] = useState(false);
 	const [hidden, setHidden] = useState(false);
 	const [servicesVisible, setServicesVisible] = useState(false);
@@ -80,18 +82,23 @@ const Header = () => {
 					</motion.div>
 					<div className='hidden lg:flex items-center py-4 px-5 font-semibold'>
 						<motion.ul className='flex gap-6 uppercase items-center'>
-							{links.map((link, index) => (
+							{/* {links.map((link, index) => (
 								<motion.li
 									key={link.hash}
 									variants={fadeInAnimationVariants}
 									initial='initial'
 									animate='animate'
 									custom={index}
-									className='lg:text-md hover:text-main-color transition-colors'
+									className={cn(
+										`lg:text-md hover:text-main-color transition-colors`
+										// {
+										// 	'text-main-color'
+										// }
+									)}
 								>
 									<Link href={link.hash}>{link.name} </Link>
 								</motion.li>
-							))}
+							))} */}
 							<motion.li
 								variants={fadeInAnimationVariants}
 								initial={{ opacity: 0, y: -50 }}
@@ -99,13 +106,76 @@ const Header = () => {
 									opacity: 1,
 									y: 0,
 									transition: {
-										delay: 0.05 * 5,
+										delay: 0.05 * 1,
+									},
+								}}
+								className={cn(
+									`lg:text-md hover:text-main-color transition-colors`,
+									{
+										'text-main-color': url === '/',
+									}
+								)}
+							>
+								<Link href='/'>strona główna</Link>
+							</motion.li>
+							<motion.li
+								variants={fadeInAnimationVariants}
+								initial={{ opacity: 0, y: -50 }}
+								animate={{
+									opacity: 1,
+									y: 0,
+									transition: {
+										delay: 0.05 * 2,
+									},
+								}}
+								className={cn(
+									`lg:text-md hover:text-main-color transition-colors`,
+									{
+										'text-main-color': url === '/kontakt',
+									}
+								)}
+							>
+								<Link href='/kontakt'>kontakt</Link>
+							</motion.li>
+							<motion.li
+								variants={fadeInAnimationVariants}
+								initial={{ opacity: 0, y: -50 }}
+								animate={{
+									opacity: 1,
+									y: 0,
+									transition: {
+										delay: 0.05 * 3,
+									},
+								}}
+								className={cn(
+									`lg:text-md hover:text-main-color transition-colors`,
+									{
+										'text-main-color': url === '/o-nas',
+									}
+								)}
+							>
+								<Link href='/o-nas'>o nas</Link>
+							</motion.li>
+							<motion.li
+								variants={fadeInAnimationVariants}
+								initial={{ opacity: 0, y: -50 }}
+								animate={{
+									opacity: 1,
+									y: 0,
+									transition: {
+										delay: 0.05 * 4,
 									},
 								}}
 								onMouseLeave={() => setServicesVisible(false)}
 							>
 								<div
-									className='relative flex items-center justify-center gap-2 lg:text-md '
+									className={cn(
+										`relative flex items-center justify-center gap-2 lg:text-md`,
+										{
+											'text-main-color':
+												url.startsWith('/uslugi'),
+										}
+									)}
 									onMouseEnter={() =>
 										setServicesVisible(true)
 									}
@@ -133,7 +203,7 @@ const Header = () => {
 											translateY: 0,
 										}}
 										transition={{ duration: 0.5 }}
-										className={`absolute flex flex-col gap-3 p-3 pt-5 text-white lg:text-md  ${styles['shadow-bg']}`}
+										className='absolute flex flex-col gap-3 p-3 pt-5 text-white bg-black lg:text-md'
 									>
 										<Link
 											href='/uslugi/strona-internetowa/next-js'
@@ -163,7 +233,7 @@ const Header = () => {
 									opacity: 1,
 									y: 0,
 									transition: {
-										delay: 0.05 * 6,
+										delay: 0.05 * 5,
 									},
 								}}
 							>
