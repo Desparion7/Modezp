@@ -5,17 +5,17 @@ import PortfolioProject from './portfolio-project';
 
 const Portfolio = () => {
 	return (
-		<section className='my-5 pb-20'>
+		<section className='my-5 container mx-auto pb-20 '>
 			<div className='container sm:mx-auto sm:px-5'>
-				<div className='w-[100%] md:w-[50%] flex flex-col justify-between text-center sm:text-left'>
+				<div className='w-[100%] md:w-[100%] flex flex-col justify-between text-center sm:text-left'>
 					<SectionTitle>Nasze realizacje</SectionTitle>
 				</div>
 			</div>
-			<div className='flex flex-wrap justify-between'>
+			<div className='flex flex-wrap justify-between px-5 '>
 				<PortfolioProject
 					side={'right'}
-					backgroundColor={'bg-[#509f25]'}
-					textColor={'text-white'}
+					backgroundColor={'bg-transparent'}
+					textColor={'text-black'}
 					src='/portfolio2.PNG'
 					alt='logo warsztatu'
 					width={954}
@@ -29,8 +29,8 @@ const Portfolio = () => {
 				/>
 				<PortfolioProject
 					side={'left'}
-					backgroundColor={'bg-black'}
-					textColor={'text-white'}
+					backgroundColor={'bg-transparent'}
+					textColor={'text-black'}
 					src='/portfolio3.PNG'
 					alt='logo warsztatu'
 					width={954}
@@ -40,7 +40,8 @@ const Portfolio = () => {
 				/>
 				<PortfolioProject
 					side={'right'}
-					backgroundColor={'bg-[#daa034]'}
+					// backgroundColor={'bg-[#daa034]'}
+					backgroundColor={'bg-transparent'}
 					textColor={'text-black'}
 					src='/portfolio1.PNG'
 					alt='logo warsztatu'

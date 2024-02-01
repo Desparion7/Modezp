@@ -51,7 +51,7 @@ const Standart2 = () => {
 				</p>
 			</div>
 			{/* image for desktop */}
-			<div className='hidden sm:flex col-span-2 col-start-9 items-center'>
+			<div className='hidden sm:flex col-span-2 col-start-10 items-center'>
 				<div className='relative w-[100%] h-auto'>
 					<Image
 						src='/responsive.PNG'

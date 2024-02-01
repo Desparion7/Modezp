@@ -10,6 +10,7 @@ export default function Services() {
 	return (
 		<section
 			className={`relative container mx-auto flex justify-center items-center w-[100%] xl:h-[65vh] py-10 sm:px-5 text-black`}
+			id='second-section'
 		>
 			<div className=' flex flex-col xl:flex-row gap-5 xl:gap-10 xl:h-[100%]'>
 				<div className='flex flex-col gap-3 xl:w-[30%] xl:py-20 py-5 p-3'>

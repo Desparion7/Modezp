@@ -30,19 +30,22 @@ const PortfolioProject = ({
 		target: ref,
 		offset: ['0 1', '1.33 1'],
 	});
-	const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
+	const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
 
 	return (
 		<>
 			{side === 'right' ? (
 				<div
-					className={`flex flex-col lg:flex-row w-[100%] ${backgroundColor}`}
+					className={`flex flex-col justify-around lg:flex-row w-[100%] ${backgroundColor}`}
 				>
 					<motion.div
-						className='relative mr-auto w-[100%] lg:w-[50%]'
+						className='relative mr-auto w-[100%] lg:w-[50%] lg:pr-10'
 						ref={ref}
 						style={{
 							scale: scaleProgess,
+						}}
+						viewport={{
+							once: true,
 						}}
 					>
 						<Image
@@ -59,6 +62,9 @@ const PortfolioProject = ({
 						initial={{ opacity: 0, translateX: '-30px' }}
 						whileInView={{ opacity: 1, translateX: '0' }}
 						transition={{ ease: 'easeOut', duration: 1 }}
+						viewport={{
+							once: true,
+						}}
 					>
 						<h2 className='text-md md:text-2xl xl:text-3xl'>
 							{title}
@@ -75,6 +81,9 @@ const PortfolioProject = ({
 						initial={{ opacity: 0, translateX: '-30px' }}
 						whileInView={{ opacity: 1, translateX: '0' }}
 						transition={{ ease: 'easeOut', duration: 1 }}
+						viewport={{
+							once: true,
+						}}
 					>
 						<h2 className='text-md md:text-2xl xl:text-3xl'>
 							{title}
@@ -82,7 +91,7 @@ const PortfolioProject = ({
 						<p className='text-sm md:text-lg xl:text-xl'>{text}</p>
 					</motion.div>
 					<motion.div
-						className='relative ml-auto w-[100%] lg:w-[50%]'
+						className='relative ml-auto w-[100%] lg:w-[50%] lg:pl-10'
 						ref={ref}
 						style={{
 							scale: scaleProgess,

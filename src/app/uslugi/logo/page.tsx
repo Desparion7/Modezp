@@ -10,7 +10,7 @@ const Logo = () => {
 	return (
 		<div>
 			<section
-				className={`relative flex lg:py-10 justify-center items-center w-[100%] bg-black bg-opacity-40 min-h-[100vh] mb-10  text-white`}
+				className={`relative flex lg:py-10 justify-center items-center w-[100%] bg-black bg-opacity-40 min-h-[91vh] mb-10  text-white`}
 			>
 				<div>
 					<Image
@@ -22,7 +22,7 @@ const Logo = () => {
 						className='object-cover z-[-3]'
 					/>
 				</div>
-				<div className='container xl:px-64 p-5 py-28 flex flex-col gap-6'>
+				<div className='relative top-[-7vh] container xl:px-64 p-5 py-28 flex flex-col gap-6'>
 					<div className='sm:mb-5 md:min-h-[24vh] bg-black bg-opacity-80 p-3  shadow-md shadow-main-color'>
 						<h2 className='uppercase text-center text-xl lg:text-2xl md:text-3xl mb-6'>
 							Projektowanie{' '}
@@ -73,7 +73,7 @@ const Logo = () => {
 				id='second-section'
 			>
 				<div className='w-[100%] md:w-[50%] sm:px-5 flex flex-col justify-between text-center sm:text-left'>
-					<SectionTitle>Przykładowe realizacje</SectionTitle>
+					<SectionTitle>Przykładowe projekty</SectionTitle>
 				</div>
 				<div className='relative flex flex-wrap gap-5 justify-center container mx-auto pb-20'>
 					<div className='relative w-[20%] h-auto z-50'>

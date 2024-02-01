@@ -6,7 +6,7 @@ import { MdOutlineMailOutline } from 'react-icons/md';
 
 const Contact = () => {
 	return (
-		<section className='bg-black relative flex justify-around  items-center w-[100%] min-h-[100vh] bg-opacity-40'>
+		<section className='bg-black relative flex justify-around  items-center w-[100%] min-h-[91vh] bg-opacity-40'>
 			<div>
 				<Image
 					src='/background.jpg'
@@ -17,7 +17,7 @@ const Contact = () => {
 					className='object-cover z-[-3] '
 				/>
 			</div>
-			<div className='flex p-10 bg-black opacity-90 text-white w-[80%]'>
+			<div className='relative top-[-7vh] flex p-10 bg-black opacity-90 text-white w-[80%] shadow-md shadow-main-color'>
 				<div className='flex flex-col justify-between w-[50%]'>
 					<div>
 						<h2 className='text-2xl mb-4'>
@@ -25,9 +25,11 @@ const Contact = () => {
 							Pomożemy!
 						</h2>
 						<p className='text-xl'>
-							Opisz nam po krótce Twoje cele, założenia i obawy.
-							Skontaktujemy się z Tobą i postaramy wszystko
-							wyjaśnić w prostej, zrozumiałej formie.
+							Zachęcamy do podzielenia się z nami swoimi celami,
+							oczekiwaniami oraz wszelkimi wątpliwościami.
+							Skontaktujemy się, aby w klarowny i przystępny
+							sposób rozwiać wszelkie niejasności i omówić możliwe
+							rozwiązania.
 						</p>
 					</div>
 					<div className='flex items-center gap-4 p-2'>
