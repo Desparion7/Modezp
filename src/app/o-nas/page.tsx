@@ -12,7 +12,7 @@ const Aboutus = () => {
 			>
 				<div>
 					<Image
-						src='/background.jpg'
+						src='/background.JPG'
 						alt='backgorund'
 						sizes='100vw'
 						fill
@@ -39,11 +39,11 @@ const Aboutus = () => {
 						</div>
 						<div className='flex items-center lg:w-[30%]'>
 							<Image
-								src='/onas.PNG'
-								alt='backgorund'
+								src='/onas.jpg'
+								alt='zdjęcie mózgu nad ksiązkami w bibliotece'
 								sizes='50vw'
-								width={1024}
-								height={1024}
+								width={500}
+								height={500}
 								priority={true}
 							/>
 						</div>
@@ -59,13 +59,13 @@ const Aboutus = () => {
 					<SectionTitle>Nasza Historia</SectionTitle>
 				</div>
 				<div className='flex flex-col lg:flex-row items-center gap-10 sm:mb-5 p-5 lg:p-10 md:min-h-[24vh] '>
-					<div className='w-40%]'>
+					<div >
 						<Image
-							src='/onas2.PNG'
+							src='/onas2.jpg'
 							alt='backgorund'
 							sizes='50vw'
-							width={983}
-							height={751}
+							width={900}
+							height={668}
 							priority={true}
 						/>
 					</div>
@@ -95,21 +95,21 @@ const Aboutus = () => {
 					</div>
 				</div>
 				<div className='w-[100%] md:w-[100%] flex flex-col justify-between text-center mt-10 sm:text-left'>
-					<SectionTitle>Nasza Zespół</SectionTitle>
+					<SectionTitle>Nasz Zespół</SectionTitle>
 					<div className='flex justify-around flex-col gap-10 lg:flex-row mb-20 mt-10'>
 						<div className='flex flex-col justify-center items-center '>
 							<div>
 								<Image
 									src='/contactphoto1.jpg'
-									width={607}
-									height={658}
+									width={250}
+									height={247}
 									className=' w-[150px] h-[150px] rounded-[50%] aspect-auto border-2 border-orange-600'
 									alt='osoba do kontaktu'
 								/>
 							</div>
 							<div className='flex flex-col gap-3 relative'>
 								<h3 className='text-xl sm:text-3xl text-center font-semibold'>
-									Łukasza Woś
+									Łukasz Woś
 								</h3>
 								<div className='flex items-center text-xl justify-center font-semibold'>
 									<IoIosPhonePortrait />
@@ -124,15 +124,15 @@ const Aboutus = () => {
 							<div>
 								<Image
 									src='/contactphoto2.jpg'
-									width={500}
-									height={500}
+									width={250}
+									height={250}
 									className=' w-[150px] h-[150px] rounded-[50%] aspect-auto border-2 border-orange-600'
 									alt='osoba do kontaktu'
 								/>
 							</div>
 							<div className='flex flex-col gap-3 relative'>
 								<h3 className='text-xl sm:text-3xl text-center font-semibold'>
-									Mateusza Woś
+									Mateusz Woś
 								</h3>
 								<div className='flex items-center text-xl justify-center font-semibold'>
 									<IoIosPhonePortrait />

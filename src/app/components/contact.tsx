@@ -11,14 +11,16 @@ const Contact = () => {
 		<section
 			className={`relative flex justify-center mx-auto sm:pt-10 pb-16 sm:pb-36 w-[100%] h-auto ${styles['contact-gradient']}`}
 		>
-			<Image
-				src='/internet.PNG'
-				alt='backgorund'
-				sizes='100vw'
-				fill
-				priority
-				className='sm:object-cover sm:object-center z-[-3] h-[100vh] sm:w-[100vw] '
-			/>
+			<div>
+				<Image
+					src='/internet.PNG'
+					alt='backgorund'
+					sizes='100vw'
+					fill
+					priority
+					className='object-cover z-[-3] '
+				/>
+			</div>
 			<div className='flex flex-col lg:flex-row gap-5'>
 				<div className='relative flex flex-col md:max-h-[100%] bg-white text-black p-6 sm:p-10 gap-4'>
 					<div className='pb-[70px] '>
@@ -31,8 +33,8 @@ const Contact = () => {
 						>
 							<Image
 								src='/contactphoto2.jpg'
-								width={500}
-								height={500}
+								width={250}
+								height={250}
 								className='absolute w-[150px] h-[150px] top-[-70px] rounded-[50%] aspect-auto border-2 border-orange-600'
 								alt='osoba do kontaktu'
 							/>
@@ -76,13 +78,14 @@ const Contact = () => {
 						<div className='flex flex-col sm:flex-row gap-2'>
 							<p>Szukam firmy, która pomoże mi</p>{' '}
 							<select
+								aria-label='cel kontaktu'
 								name='topic'
 								className='bg-third-color border-b-2 border-sky-900 p-1'
 							>
 								<option value=''>Wybierz z listy</option>
 								<option value=''>stworzyć stronę www</option>
 								<option value=''>
-									stworzyć sklep internetowy
+									przenieść strone na next.js
 								</option>
 								<option value=''>stworzyć logo</option>
 							</select>
@@ -108,6 +111,7 @@ const Contact = () => {
 						<div className='flex items-center gap-2'>
 							<p>między</p>{' '}
 							<select
+								aria-label='czas'
 								name='from'
 								className='bg-third-color border-b-2 border-sky-900 p-1'
 							>
@@ -121,6 +125,7 @@ const Contact = () => {
 							</select>
 							<p>-</p>{' '}
 							<select
+								aria-label='czas'
 								name='to'
 								className='bg-third-color border-b-2 border-sky-900 p-1'
 							>

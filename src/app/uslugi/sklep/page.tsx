@@ -14,7 +14,7 @@ const Shop = () => {
 			>
 				<div>
 					<Image
-						src='/background.jpg'
+						src='/background.JPG'
 						alt='backgorund'
 						sizes='100vw'
 						fill

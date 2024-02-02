@@ -70,7 +70,7 @@ const Header = () => {
 								className='ml-[1rem] sm:ml-0 w-[6rem] sm:w-[8rem] h-auto'
 							>
 								<Image
-									src='/logo.PNG'
+									src='/logo.png'
 									alt='logo'
 									width={245}
 									height={229}
@@ -221,6 +221,7 @@ const Header = () => {
 							>
 								<Link href='/konsultacja'>
 									<motion.button
+										aria-label='menu'
 										whileHover={{
 											scale: 1.05,
 											transition: { duration: 0.1 },

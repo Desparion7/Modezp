@@ -14,7 +14,7 @@ const Logo = () => {
 			>
 				<div>
 					<Image
-						src='/background.jpg'
+						src='/background.JPG'
 						alt='backgorund'
 						sizes='100vw'
 						fill
@@ -76,82 +76,82 @@ const Logo = () => {
 					<SectionTitle>Przykładowe projekty</SectionTitle>
 				</div>
 				<div className='relative flex flex-wrap gap-5 justify-center container mx-auto pb-20'>
-					<div className='relative w-[20%] h-auto z-50'>
+					<div className='relative w-[20%] h-auto '>
 						<Image
-							src='/example-logo1.PNG'
+							src='/example-logo1.jpg'
 							alt='logo warsztatu'
-							width={386}
-							height={359}
+							width={300}
+							height={279}
 							priority
 							className='w-[100%] h-[100%]'
 						/>
 					</div>
-					<div className='relative w-[20%] h-auto z-50'>
+					<div className='relative w-[20%] h-auto'>
 						<Image
-							src='/example-logo2.PNG'
-							alt='logo warsztatu'
-							width={388}
-							height={380}
+							src='/example-logo2.jpg'
+							alt='logo piekarni'
+							width={300}
+							height={294}
 							priority
 							className='w-[100%] h-[100%]'
 						/>
 					</div>
-					<div className='relative w-[20%] h-auto z-50'>
+					<div className='relative w-[20%] h-auto '>
 						<Image
-							src='/example-logo3.PNG'
-							alt='logo warsztatu'
-							width={388}
-							height={380}
+							src='/example-logo3.jpg'
+							alt='logo pizzeri'
+							width={300}
+							height={281}
 							priority
 							className='w-[100%] h-[100%]'
 						/>
 					</div>
-					<div className='relative w-[20%] h-auto z-50'>
+					<div className='relative w-[20%] h-auto '>
 						<Image
-							src='/example-logo4.PNG'
-							alt='logo warsztatu'
-							width={388}
-							height={380}
+							src='/example-logo4.jpg'
+							alt='logo pomocy drogowej'
+							width={300}
+							height={300}
 							priority
 							className='w-[100%] h-[100%]'
 						/>
 					</div>
-					<div className='relative w-[20%] h-auto z-50'>
+					<div className='relative w-[20%] h-auto '>
 						<Image
-							src='/example-logo5.PNG'
-							alt='logo warsztatu'
-							width={388}
-							height={380}
+							src='/example-logo5.jpg'
+							alt='logo fotografa'
+							width={300}
+							height={300}
 							priority
 							className='w-[100%] h-[100%]'
 						/>
 					</div>
-					<div className='relative w-[20%] h-auto z-50'>
+					<div className='relative w-[20%] h-auto '>
 						<Image
-							src='/example-logo6.PNG'
+							src='/example-logo6.jpg'
 							alt='logo warsztatu'
-							width={388}
-							height={380}
+							width={300}
+							height={300}
 							priority
 							className='w-[100%] h-[100%]'
 						/>
 					</div>
-					<div className='relative w-[20%] h-auto z-50'>
+					<div className='relative w-[20%] h-auto '>
 						<Image
-							src='/example-logo7.PNG'
-							alt='logo warsztatu'
-							width={388}
-							height={380}
+							src='/example-logo7.jpg'
+							alt='logo pomocy drogowej'
+							width={300}
+							height={295}
 							priority
 							className='w-[100%] h-[100%]'
 						/>
 					</div>
-					<div className='relative w-[20%] h-auto z-50'>
+					<div className='relative w-[20%] h-auto '>
 						<Image
-							src='/example-logo8.PNG'
-							alt='logo warsztatu'
-							width={388}
-							height={380}
+							src='/example-logo9.png'
+							alt='logo schroniska'
+							width={300}
+							height={300}
 							priority
 							className='w-[100%] h-[100%]'
 						/>

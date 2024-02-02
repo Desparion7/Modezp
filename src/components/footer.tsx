@@ -14,7 +14,7 @@ const Footer = () => {
 						Blog
 					</Link>
 					<Link
-						href='/polityka'
+						href='/polityka-prywatnosci'
 						className='hidden sm:block hover:text-main-color transition-colors'
 					>
 						Polityka prywatności
@@ -30,20 +30,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-{
-	/* <div className='flex flex-col sm:flex-row gap-2 text-sm text-center items-center  h-[100%]'>
-<Link href='/'>
-	<div className='w-[50px] h-auto'>
-		<Image
-			src='/logo.PNG'
-			alt='logo'
-			width={480}
-			height={189}
-			priority
-		/>
-	</div>
-</Link>
-<p>Copyright ©{year} Modezp.</p>
-</div> */
-}

@@ -1,16 +1,13 @@
 'use client';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 import { IoIosPhonePortrait } from 'react-icons/io';
-import { MdOutlineMailOutline } from 'react-icons/md';
-import ScrollDownBtn from '@/ui/scroll-down-btn';
 
 const Consultation = () => {
 	return (
 		<section className='bg-black relative flex flex-col justify-around  items-center w-[100%] min-h-[91vh] bg-opacity-40'>
 			<div>
 				<Image
-					src='/background.jpg'
+					src='/background.JPG'
 					alt='backgorund'
 					sizes='100vw'
 					fill
@@ -18,21 +15,21 @@ const Consultation = () => {
 					className='object-cover z-[-3] '
 				/>
 			</div>
-			<div className='relative xl:top-[-12vh] lg:w-[80%] w-[90%] flex flex-col justify-center my-5 mb-20 xl:mb-0 p-5 mx-auto sm:p-10 bg-black opacity-90 text-white shadow-md shadow-main-color'>
+			<div className='relative xl:top-[-9vh] lg:w-[80%] w-[90%] flex flex-col justify-center my-5 mb-20 xl:mb-0 p-5 mx-auto sm:p-10 bg-black opacity-90 text-white shadow-md shadow-main-color'>
 				<div className='flex justify-around flex-col gap-10 lg:flex-row mb-20 mt-10'>
 					<div className='flex flex-col justify-center items-center'>
-						<div>
+						<div className='mb-2'>
 							<Image
 								src='/contactphoto2.jpg'
-								width={500}
-								height={500}
+								width={250}
+								height={250}
 								className=' w-[150px] h-[150px] rounded-[50%] aspect-auto border-2 border-orange-600'
 								alt='osoba do kontaktu'
 							/>
 						</div>
 						<div className='flex flex-col gap-3 relative'>
 							<h3 className='text-xl sm:text-3xl text-center font-semibold'>
-								Mateusza Woś
+								Mateusz Woś
 							</h3>
 							<div className='flex items-center text-xl justify-center font-semibold'>
 								<IoIosPhonePortrait />
@@ -44,7 +41,7 @@ const Consultation = () => {
 						</div>
 					</div>
 					<div className='flex flex-col justify-center items-center '>
-						<div>
+						<div className='mb-2'>
 							<Image
 								src='/contactphoto1.jpg'
 								width={607}
@@ -55,7 +52,7 @@ const Consultation = () => {
 						</div>
 						<div className='flex flex-col gap-3 relative'>
 							<h3 className='text-xl sm:text-3xl text-center font-semibold'>
-								Łukasza Woś
+								Łukasz Woś
 							</h3>
 							<div className='flex items-center text-xl justify-center font-semibold'>
 								<IoIosPhonePortrait />

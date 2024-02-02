@@ -9,7 +9,7 @@ const Contact = () => {
 		<section className='bg-black relative flex flex-col justify-around  items-center w-[100%] min-h-[91vh] bg-opacity-40'>
 			<div>
 				<Image
-					src='/background.jpg'
+					src='/background.JPG'
 					alt='backgorund'
 					sizes='100vw'
 					fill
@@ -34,8 +34,8 @@ const Contact = () => {
 						>
 							<Image
 								src='/contactphoto2.jpg'
-								width={800}
-								height={900}
+								width={250}
+								height={250}
 								className=' w-[150px] h-[150px] rounded-[50%] aspect-auto border-2 border-orange-600'
 								alt='osoba do kontaktu'
 							/>

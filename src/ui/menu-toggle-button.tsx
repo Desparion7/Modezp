@@ -11,6 +11,7 @@ type MenuToggleButtonProps = {
 const MenuToggleButton = ({ toggle, isMenuVisible }: MenuToggleButtonProps) => {
 	return (
 		<motion.button
+			aria-label='toggle menu'
 			onClick={() => toggle((prev) => !prev)}
 			className='z-[30] lg:hidden'
 			animate={isMenuVisible ? 'open' : 'closed'}

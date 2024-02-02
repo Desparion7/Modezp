@@ -14,7 +14,7 @@ const WordPress = () => {
 			>
 				<div>
 					<Image
-						src='/background.jpg'
+						src='/background.JPG'
 						alt='backgorund'
 						sizes='100vw'
 						fill
@@ -39,7 +39,7 @@ const WordPress = () => {
 							</Link>
 							, który oferuje szerokie możliwości. Tworzenie
 							strony przy uzyciu tego narzędzia jest szczególnie
-							polecane osobom chciącym mieć gotową stronę szybko i
+							polecane osobom chcącym mieć gotową stronę szybko i
 							tanio. Dla bardziej ambitnych projektów polecamy
 							Next.js.
 						</p>
@@ -95,7 +95,7 @@ const WordPress = () => {
 					</div>
 					<div className='mt-10'>
 						<h3 className='text-xl sm:text-2xl pb-5'>
-							Dlaczego Wybrać WordPress?
+							Dlaczego WordPress?
 						</h3>
 						<p className='pb-5 leading-8 text-justify'>
 							<span className='font-bold'>
@@ -113,7 +113,7 @@ const WordPress = () => {
 							WordPress oferuje szeroki wybór motywów i wtyczek,
 							umożliwiając indywidualne dostosowanie strony.
 							Strony w WordPress są zoptymalizowane pod kątem
-							wyszukiwarek internetowych, co wspiera lepszą
+							wyszukiwarek internetowych.
 						</p>
 						<p className='pb-5 leading-8 text-justify'>
 							{' '}
@@ -154,11 +154,11 @@ const WordPress = () => {
 							wynikach wyszukiwania. Strony zoptymalizowane dla
 							urządzeń mobilnych mają większe szanse na wysokie
 							pozycje w wynikach wyszukiwania, co prowadzi do
-							zwiększonego ruchu na stronie Strony zaprojektowane
+							zwiększonego ruchu na stronie. Strony zaprojektowane
 							z podejściem &ldquo;Mobile First&ldquo; są zazwyczaj
 							lżejsze i ładują się szybciej. Szybkość ładowania
 							strony jest kluczowym czynnikiem, zarówno dla
-							doświadczenia użytkownika, jak i dla SEO
+							doświadczenia użytkownika, jak i dla SEO.
 						</p>
 					</div>
 					<div className='mt-10'>

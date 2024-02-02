@@ -18,6 +18,7 @@ const ScrollDownBtn = () => {
 			className={`absolute flex justify-center items-end lg:items-center  w-[100%] h-[20%] bottom-0 ${styles['shadow-services']}`}
 		>
 			<motion.button
+				aria-label='scroll-down'
 				className='bg-black bg-opacity-55 p-2 sm:p-3 lg:p-4 mb-4 rounded-[50%] border-2 border-main-color '
 				initial={{ scale: 0 }}
 				animate={{ scale: 1 }}
