@@ -13,29 +13,37 @@ const Shop = () => {
 				className={`relative flex lg:py-10 justify-center items-center w-[100%] bg-black bg-opacity-40 min-h-[91vh] mb-10  text-white`}
 			>
 				<div>
-					<Image
-						src='/background.JPG'
-						alt='backgorund'
-						sizes='100vw'
-						fill
-						priority={true}
-						className='object-cover z-[-3]'
-					/>
+				<Image
+					src='/background.JPG'
+					alt='backgorund'
+					sizes='100vw'
+					fill
+					priority
+					className='hidden sm:inline object-cover z-[-3] '
+				/>
+				<Image
+					src='/background-mobile.jpg'
+					alt='backgorund-mobile'
+					sizes='100vw'
+					fill
+					priority
+					className='sm:hidden object-cover z-[-3] '
+				/>
 				</div>
 				<div className='relative top-[-7vh] container xl:px-64 p-5 py-28 flex flex-col gap-6 z-2'>
 					<div className='sm:mb-5 md:min-h-[24vh] bg-black bg-opacity-80 p-3  shadow-md shadow-main-color'>
-						<h2 className='uppercase text-center text-xl lg:text-2xl md:text-3xl mb-6'>
+						<h1 className='uppercase text-center text-xl lg:text-2xl md:text-3xl mb-6'>
 							Profesjonalne tworzenie{' '}
 							<span className='text-main-color'>
 								sklepów internetowych
 							</span>{' '}
 							(e-commerce)
-						</h2>
+						</h1>
 						<p className='text-md md:text-lg text-center sm:text-justify'>
 							Oferujemy profesjonalne usługi tworzenia sklepów
 							internetowych opartych na popularnym systemie
 							zarządzania treścią,{' '}
-							<Link href='/strona-internetowa/word-press'>
+							<Link href='/uslugi/strona-internetowa/word-press'>
 								<span className='text-main-color hover:border-b-2 border-main-color'>
 									WordPress{' '}
 								</span>
@@ -80,9 +88,9 @@ const Shop = () => {
 				</div>
 				<div className='mx-5 text-md xl:mx-80 xl:text-lg'>
 					<div className='mt-10'>
-						<h3 className='text-xl sm:text-2xl pb-5'>
+						<h2 className='text-xl sm:text-2xl pb-5'>
 							Rozwój twojego sklepu internetowego
-						</h3>
+						</h2>
 						<p className='pb-5 leading-8 text-justify'>
 							Rozwój branży e-commerce otwiera przed
 							przedsiębiorcami nowe możliwości, a my jesteśmy
@@ -93,9 +101,9 @@ const Shop = () => {
 						</p>
 					</div>
 					<div className='mt-10'>
-						<h3 className='text-xl sm:text-2xl pb-5'>
+						<h2 className='text-xl sm:text-2xl pb-5'>
 							Dostosowane rozwiązania dla każdego biznesu:
-						</h3>
+						</h2>
 						<p className='pb-5 leading-8 text-justify'>
 							Dobór odpowiedniego rozwiązania do tworzenia małego
 							lub dużego sklepu internetowego jest kluczowym
@@ -123,10 +131,10 @@ const Shop = () => {
 						</p>
 					</div>
 					<div className='mt-10'>
-						<h3 className='text-xl sm:text-2xl pb-5'>
+						<h2 className='text-xl sm:text-2xl pb-5'>
 							Tworzenie doświadczenia użytkownika i zwiększanie
 							sprzedaży
-						</h3>
+						</h2>
 						<p className='pb-5 leading-8 text-justify'>
 							Tworzenie sklepu internetowego to nie tylko kwestia
 							techniczna. To także budowanie doświadczenia
@@ -140,9 +148,9 @@ const Shop = () => {
 						</p>
 					</div>
 					<div className='mt-10'>
-						<h3 className='text-xl sm:text-2xl pb-5'>
+						<h2 className='text-xl sm:text-2xl pb-5'>
 							Wsparcie na każdym etapie Twojej drogi w E-commerce
-						</h3>
+						</h2>
 						<p className='pb-5 leading-8 text-justify'>
 							Pamiętaj, że stworzenie sklepu internetowego to
 							dopiero początek Twojej drogi w e-commerce. Chętnie

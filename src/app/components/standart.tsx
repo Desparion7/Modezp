@@ -35,10 +35,10 @@ const Standart = () => {
 					WYGODNE ZARZĄDZANIA STRONĄ
 				</h3>
 				<p className='tracking-widest text-sm text-justify leading-8 font-semibold sm:text-lg sm:mt-8'>
-					Jeśli mówimy o stronach dla firm, blogach lub
-					wizytówkach, popularnym wyborem jest platforma{' '}
+					Jeśli mówimy o stronach dla firm, blogach lub wizytówkach,
+					popularnym wyborem jest platforma{' '}
 					<Link
-						href='/uslugi/word-press'
+						href='/uslugi/strona-internetowa/word-press'
 						className='text-main-color hover:text-second-color hover:border-b-2 border-main-color'
 					>
 						WordPress.
@@ -52,7 +52,7 @@ const Standart = () => {
 						WooCommerce.
 					</Link>{' '}
 					<Link
-						href='/uslugi/word-press'
+						href='/uslugi/strona-internetowa/word-press'
 						className='text-main-color hover:text-second-color hover:border-b-2 border-main-color'
 					>
 						WordPress

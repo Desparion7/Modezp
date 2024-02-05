@@ -13,14 +13,22 @@ const WordPress = () => {
 				className={`relative flex lg:py-10 justify-center items-center w-[100%] bg-black bg-opacity-40 min-h-[91vh] mb-10  text-white`}
 			>
 				<div>
-					<Image
-						src='/background.JPG'
-						alt='backgorund'
-						sizes='100vw'
-						fill
-						priority={true}
-						className='object-cover z-[-3]'
-					/>
+				<Image
+					src='/background.JPG'
+					alt='backgorund'
+					sizes='100vw'
+					fill
+					priority
+					className='hidden sm:inline object-cover z-[-3] '
+				/>
+				<Image
+					src='/background-mobile.jpg'
+					alt='backgorund-mobile'
+					sizes='100vw'
+					fill
+					priority
+					className='sm:hidden object-cover z-[-3] '
+				/>
 				</div>
 				<div className='relative top-[-7vh] container xl:px-64 p-5 py-28 flex flex-col gap-6'>
 					<div className='sm:mb-5 md:min-h-[24vh] bg-black bg-opacity-80 p-3  shadow-md shadow-main-color'>
@@ -83,9 +91,9 @@ const WordPress = () => {
 				</div>
 				<div className='mx-5 text-md xl:mx-80 xl:text-lg'>
 					<div className='mt-10'>
-						<h3 className='text-xl sm:text-2xl pb-5'>
+						<h2 className='text-xl sm:text-2xl pb-5'>
 							WordPress i Page Builder - Dostępność i Prostota:
-						</h3>
+						</h2>
 						<p className='pb-5 leading-8 text-justify'>
 							Dla klientów preferujących sprawdzone rozwiązania,
 							oferujemy tworzenie stron na WordPressie w
@@ -118,9 +126,9 @@ const WordPress = () => {
 						</p>
 					</div>
 					<div className='mt-10'>
-						<h3 className='text-xl sm:text-2xl pb-5'>
+						<h2 className='text-xl sm:text-2xl pb-5'>
 							Next.js - Nowoczesność i Innowacja
-						</h3>
+						</h2>
 						<p className='leading-8 text-justify'>
 							<span className='font-bold'>
 								{' '}
@@ -153,9 +161,9 @@ const WordPress = () => {
 						</p>
 					</div>
 					<div className='mt-10'>
-						<h3 className='text-xl sm:text-2xl pb-5'>
+						<h2 className='text-xl sm:text-2xl pb-5'>
 							Przykłady Zastosowania Next.js:
-						</h3>
+						</h2>
 						<p className='pb-5 leading-8 text-justify'>
 							Wielkie firmy takie jak Netflix, Twitch, czy Hulu
 							wybrały Next.js ze względu na jego wydajność,
@@ -166,9 +174,9 @@ const WordPress = () => {
 						</p>
 					</div>
 					<div className='mt-10'>
-						<h3 className='text-xl sm:text-2xl pb-5'>
+						<h2 className='text-xl sm:text-2xl pb-5'>
 							Popularność Next.js
-						</h3>
+						</h2>
 						<p className='pb-5 leading-8 text-justify'>
 							Next.js rzeczywiście ułatwia budowanie aplikacji
 							Fullstack opartych na React.js, umożliwiając
@@ -192,9 +200,9 @@ const WordPress = () => {
 						</p>
 					</div>
 					<div className='mt-10'>
-						<h3 className='text-xl sm:text-2xl pb-5'>
+						<h2 className='text-xl sm:text-2xl pb-5'>
 							Podsumowanie
-						</h3>
+						</h2>
 						<p className='pb-5 leading-8 text-justify'>
 							Wybierając naszą firmę, otrzymujesz dostęp do dwóch
 							różnych, ale równie skutecznych ścieżek tworzenia

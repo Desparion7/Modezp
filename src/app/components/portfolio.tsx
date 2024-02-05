@@ -5,7 +5,7 @@ import PortfolioProject from './portfolio-project';
 
 const Portfolio = () => {
 	return (
-		<section className='my-5 container mx-auto pb-20 '>
+		<section className='my-5 container mx-auto pb-10 '>
 			<div className='container sm:mx-auto sm:px-5'>
 				<div className='w-[100%] md:w-[100%] flex flex-col justify-between text-center sm:text-left'>
 					<SectionTitle>Nasze realizacje</SectionTitle>
@@ -16,7 +16,7 @@ const Portfolio = () => {
 					side={'right'}
 					backgroundColor={'bg-transparent'}
 					textColor={'text-black'}
-					src='/portfolio2.PNG'
+					src='/portfolio2.jpg'
 					alt='logo warsztatu'
 					width={954}
 					height={591}
@@ -31,7 +31,7 @@ const Portfolio = () => {
 					side={'left'}
 					backgroundColor={'bg-transparent'}
 					textColor={'text-black'}
-					src='/portfolio3.PNG'
+					src='/portfolio3.jpg'
 					alt='logo warsztatu'
 					width={954}
 					height={591}
@@ -40,10 +40,9 @@ const Portfolio = () => {
 				/>
 				<PortfolioProject
 					side={'right'}
-					// backgroundColor={'bg-[#daa034]'}
 					backgroundColor={'bg-transparent'}
 					textColor={'text-black'}
-					src='/portfolio1.PNG'
+					src='/portfolio1.jpg'
 					alt='logo warsztatu'
 					width={1636}
 					height={863}

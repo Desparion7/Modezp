@@ -13,21 +13,29 @@ const Logo = () => {
 				className={`relative flex lg:py-10 justify-center items-center w-[100%] bg-black bg-opacity-40 min-h-[91vh] mb-10  text-white`}
 			>
 				<div>
-					<Image
-						src='/background.JPG'
-						alt='backgorund'
-						sizes='100vw'
-						fill
-						priority={true}
-						className='object-cover z-[-3]'
-					/>
+				<Image
+					src='/background.JPG'
+					alt='backgorund'
+					sizes='100vw'
+					fill
+					priority
+					className='hidden sm:inline object-cover z-[-3] '
+				/>
+				<Image
+					src='/background-mobile.jpg'
+					alt='backgorund-mobile'
+					sizes='100vw'
+					fill
+					priority
+					className='sm:hidden object-cover z-[-3] '
+				/>
 				</div>
 				<div className='relative top-[-7vh] container xl:px-64 p-5 py-28 flex flex-col gap-6'>
 					<div className='sm:mb-5 md:min-h-[24vh] bg-black bg-opacity-80 p-3  shadow-md shadow-main-color'>
-						<h2 className='uppercase text-center text-xl lg:text-2xl md:text-3xl mb-6'>
+						<h1 className='uppercase text-center text-xl lg:text-2xl md:text-3xl mb-6'>
 							Projektowanie{' '}
 							<span className='text-main-color'>Logo</span>{' '}
-						</h2>
+						</h1>
 						<p className='text-md md:text-lg text-center sm:text-justify'>
 							Twoja firma może się wyróżnić na rynku nie tylko
 							dzięki doskonałym produktom, ale także poprzez
@@ -69,13 +77,13 @@ const Logo = () => {
 				<ScrollDownBtn />
 			</section>
 			<section
-				className='relative container mx-auto pb-20 min-h-[65vh]'
+				className='relative container mx-auto pb-5 '
 				id='second-section'
 			>
 				<div className='w-[100%] md:w-[50%] sm:px-5 flex flex-col justify-between text-center sm:text-left'>
 					<SectionTitle>Przykładowe projekty</SectionTitle>
 				</div>
-				<div className='relative flex flex-wrap gap-5 justify-center container mx-auto pb-20'>
+				<div className='relative flex flex-wrap gap-5 justify-center container mx-auto pb-5 sm:pb-20'>
 					<div className='relative w-[20%] h-auto '>
 						<Image
 							src='/example-logo1.jpg'
@@ -164,11 +172,11 @@ const Logo = () => {
 				</div>
 				<div className='mx-5 text-md xl:mx-80 xl:text-lg'>
 					<div className='mt-10'>
-						<h3 className='text-xl sm:text-2xl pb-5'>
+						<h2 className='text-xl sm:text-2xl pb-5'>
 							<span className='font-bold'>
 								Rozpoznanie i analiza briefu
 							</span>
-						</h3>
+						</h2>
 						<p className='pb-5 leading-8 text-justify'>
 							Pierwszym krokiem jest zrozumienie potrzeb klienta.
 							To obejmuje analizę briefu, który zawiera informacje
@@ -178,9 +186,9 @@ const Logo = () => {
 						</p>
 					</div>
 					<div className='mt-5'>
-						<h3 className='text-xl sm:text-2xl pb-5'>
+						<h2 className='text-xl sm:text-2xl pb-5'>
 							<span className='font-bold'>Badania</span>
-						</h3>
+						</h2>
 						<p className='pb-5 leading-8 text-justify'>
 							Następnie przeprowadzamy badania rynkowe, które
 							obejmują analizę konkurencji, trendów branżowych i
@@ -191,11 +199,11 @@ const Logo = () => {
 						</p>
 					</div>
 					<div className='mt-5'>
-						<h3 className='text-xl sm:text-2xl pb-5'>
+						<h2 className='text-xl sm:text-2xl pb-5'>
 							<span className='font-bold'>
 								Tworzenie koncepcji
 							</span>
-						</h3>
+						</h2>
 						<p className='pb-5 leading-8 text-justify'>
 							Na tym etapie projektant tworzy różnorodne koncepcje
 							graficzne. Pomysły te są generowane na podstawie
@@ -205,11 +213,11 @@ const Logo = () => {
 						</p>
 					</div>
 					<div className='mt-5'>
-						<h3 className='text-xl sm:text-2xl pb-5'>
+						<h2 className='text-xl sm:text-2xl pb-5'>
 							<span className='font-bold'>
 								Projektowanie cyfrowe
 							</span>
-						</h3>
+						</h2>
 						<p className='pb-5 leading-8 text-justify'>
 							Wybrane koncepcje są następnie rozwijane cyfrowo.
 							Używa się specjalistycznego oprogramowania do
@@ -218,11 +226,11 @@ const Logo = () => {
 						</p>
 					</div>
 					<div className='mt-5'>
-						<h3 className='text-xl sm:text-2xl pb-5'>
+						<h2 className='text-xl sm:text-2xl pb-5'>
 							<span className='font-bold'>
 								Prezentacja klientowi
 							</span>
-						</h3>
+						</h2>
 						<p className='pb-5 leading-8 text-justify'>
 							Projektowane logo jest prezentowane klientowi,
 							często w kilku wariantach. Ważne jest, aby pokazać
@@ -232,11 +240,11 @@ const Logo = () => {
 						</p>
 					</div>
 					<div className='mt-5'>
-						<h3 className='text-xl sm:text-2xl pb-5'>
+						<h2 className='text-xl sm:text-2xl pb-5'>
 							<span className='font-bold'>
 								Odbiór opinii i modyfikacje
 							</span>
-						</h3>
+						</h2>
 						<p className='pb-5 leading-8 text-justify'>
 							Klient przekazuje swoje opinie na temat
 							prezentowanych projektów. Na tej podstawie
@@ -245,11 +253,11 @@ const Logo = () => {
 						</p>
 					</div>
 					<div className='mt-5'>
-						<h3 className='text-xl sm:text-2xl pb-5'>
+						<h2 className='text-xl sm:text-2xl pb-5'>
 							<span className='font-bold'>
 								Finalizacja i dostarczenie plików
 							</span>
-						</h3>
+						</h2>
 						<p className='pb-5 leading-8 text-justify'>
 							Po zatwierdzeniu finalnego projektu, logo jest
 							przygotowywane do użycia w różnych formatach i
@@ -258,11 +266,11 @@ const Logo = () => {
 						</p>
 					</div>
 					<div className='mt-5'>
-						<h3 className='text-xl sm:text-2xl pb-5'>
+						<h2 className='text-xl sm:text-2xl pb-5'>
 							<span className='font-bold'>
 								Wytyczne dotyczące marki
 							</span>
-						</h3>
+						</h2>
 						<p className='pb-5 leading-8 text-justify'>
 							Często dostarcza się także wytyczne dotyczące marki,
 							które określają, jak logo powinno być stosowane, w
@@ -278,9 +286,9 @@ const Logo = () => {
 				</div>
 				<div className='mx-5 text-md xl:mx-80 xl:text-lg'>
 					<div className='mt-10'>
-						<h3 className='text-xl sm:text-2xl pb-5'>
+						<h2 className='text-xl sm:text-2xl pb-5'>
 							Pierwsze Wrażenie Jest Najważniejsze
-						</h3>
+						</h2>
 						<p className='pb-5 leading-8 text-justify'>
 							Logo często jest pierwszym punktem kontaktu między
 							firmą a potencjalnym klientem. Dobre logo może
@@ -294,9 +302,9 @@ const Logo = () => {
 						</p>
 					</div>
 					<div className='mt-10'>
-						<h3 className='text-xl sm:text-2xl pb-5'>
+						<h2 className='text-xl sm:text-2xl pb-5'>
 							Tożsamość i Charakter Marki
-						</h3>
+						</h2>
 						<p className='pb-5 leading-8 text-justify'>
 							Logo to wizualne odzwierciedlenie tożsamości marki.
 							Przekazuje misję, wartości i ogólny charakter firmy.
@@ -320,9 +328,9 @@ const Logo = () => {
 						</p>
 					</div>
 					<div className='mt-10'>
-						<h3 className='text-xl sm:text-2xl pb-5'>
+						<h2 className='text-xl sm:text-2xl pb-5'>
 							Uniwersalność i Adaptowalność
-						</h3>
+						</h2>
 						<p className='pb-5 leading-8 text-justify'>
 							W erze cyfrowej, logo musi być funkcjonalne w
 							różnych środowiskach – od ekranów telefonów po

@@ -58,7 +58,7 @@ const PortfolioProject = ({
 						/>
 					</motion.div>
 					<motion.div
-						className={`flex flex-col mx-auto  gap-5 justify-center p-10 lg:w-[50%] ${textColor}`}
+						className={`flex flex-col mx-auto sm:gap-5 justify-center p-2 sm:p-10 mb-10 lg:w-[50%] ${textColor}`}
 						initial={{ opacity: 0, translateX: '-30px' }}
 						whileInView={{ opacity: 1, translateX: '0' }}
 						transition={{ ease: 'easeOut', duration: 1 }}
@@ -66,7 +66,7 @@ const PortfolioProject = ({
 							once: true,
 						}}
 					>
-						<h2 className='text-md md:text-2xl xl:text-3xl'>
+						<h2 className='text-md md:text-2xl xl:text-3xl my-2'>
 							{title}
 						</h2>
 						<p className='text-sm md:text-lg xl:text-xl'>{text}</p>
@@ -77,7 +77,7 @@ const PortfolioProject = ({
 					className={`relative flex flex-col lg:flex-row w-[100%] ${backgroundColor}`}
 				>
 					<motion.div
-						className={`flex flex-col order-last lg:order-first mx-auto gap-5 justify-center p-10 w-[100%] lg:w-[50%] ${textColor}`}
+						className={`flex flex-col order-last lg:order-first mx-auto sm:gap-5 mb-10 justify-center p-2 sm:p-10 w-[100%] lg:w-[50%] ${textColor}`}
 						initial={{ opacity: 0, translateX: '-30px' }}
 						whileInView={{ opacity: 1, translateX: '0' }}
 						transition={{ ease: 'easeOut', duration: 1 }}
@@ -85,7 +85,7 @@ const PortfolioProject = ({
 							once: true,
 						}}
 					>
-						<h2 className='text-md md:text-2xl xl:text-3xl'>
+						<h2 className='text-md md:text-2xl xl:text-3xl my-2'>
 							{title}
 						</h2>
 						<p className='text-sm md:text-lg xl:text-xl'>{text}</p>

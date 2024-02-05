@@ -13,21 +13,29 @@ const Next = () => {
 				className={`relative flex lg:py-10 justify-center items-center w-[100%] bg-black bg-opacity-40 min-h-[91vh] mb-10  text-white`}
 			>
 				<div>
-					<Image
-						src='/background.JPG'
-						alt='backgorund'
-						sizes='100vw'
-						fill
-						priority={true}
-						className='object-cover z-[-3]'
-					/>
+				<Image
+					src='/background.JPG'
+					alt='backgorund'
+					sizes='100vw'
+					fill
+					priority
+					className='hidden sm:inline object-cover z-[-3] '
+				/>
+				<Image
+					src='/background-mobile.jpg'
+					alt='backgorund-mobile'
+					sizes='100vw'
+					fill
+					priority
+					className='sm:hidden object-cover z-[-3] '
+				/>
 				</div>
 				<div className='relative top-[-7vh] container xl:px-64 p-5 py-28 flex flex-col gap-6'>
 					<div className='sm:mb-5 md:min-h-[24vh] bg-black bg-opacity-80 p-3  shadow-md shadow-main-color'>
-						<h2 className='uppercase text-center text-xl lg:text-2xl md:text-3xl mb-6'>
+						<h1 className='uppercase text-center text-xl lg:text-2xl md:text-3xl mb-6'>
 							Dlaczego strona internetowa w{' '}
 							<span className='text-main-color'>next.js</span>?{' '}
-						</h2>
+						</h1>
 						<p className='text-md md:text-lg text-center sm:text-justify'>
 							Next.js jest wartościowym wyborem do tworzenia stron
 							internetowych, ponieważ oferuje serwerowe
@@ -80,9 +88,9 @@ const Next = () => {
 				</div>
 				<div className='mx-5 text-md xl:mx-80 xl:text-lg'>
 					<div className='mt-10'>
-						<h3 className='text-xl sm:text-2xl pb-5'>
+						<h2 className='text-xl sm:text-2xl pb-5'>
 							Czym jest Next.js?
-						</h3>
+						</h2>
 						<p className='pb-5 leading-8 text-justify'>
 							Next.js to framework React.js, który umożliwia
 							renderowanie po stronie serwera (SSR) przy użyciu
@@ -103,9 +111,9 @@ const Next = () => {
 						</p>
 					</div>
 					<div className='mt-10'>
-						<h3 className='text-xl sm:text-2xl pb-5'>
+						<h2 className='text-xl sm:text-2xl pb-5'>
 							Co to Server Side Rendering?
-						</h3>
+						</h2>
 						<p className='pb-5 leading-8 text-justify'>
 							Server Side Rendering (SSR) umożliwia wyrenderowanie
 							całej strony po stronie serwera, a nie po stronie
@@ -126,9 +134,9 @@ const Next = () => {
 						</p>
 					</div>
 					<div className='mt-10'>
-						<h3 className='text-xl sm:text-2xl pb-5'>
+						<h2 className='text-xl sm:text-2xl pb-5'>
 							Next.js i Jamstack
-						</h3>
+						</h2>
 						<p className='pb-5 leading-8 text-justify'>
 							Next.js jest często wykorzystywany w architekturze
 							Jamstack, ponieważ pozwala łatwo integrować się z
@@ -143,9 +151,9 @@ const Next = () => {
 						</p>
 					</div>
 					<div className='mt-10'>
-						<h3 className='text-xl sm:text-2xl pb-5'>
+						<h2 className='text-xl sm:text-2xl pb-5'>
 							Popularność Next.js
-						</h3>
+						</h2>
 						<p className='pb-5 leading-8 text-justify'>
 							Next.js rzeczywiście ułatwia budowanie aplikacji
 							Fullstack opartych na React.js, umożliwiając

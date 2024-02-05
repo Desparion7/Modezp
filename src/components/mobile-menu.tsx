@@ -1,5 +1,5 @@
 import React from 'react';
-import { linksMobile } from '@/lib/data';
+import { linksMobile } from '@/lib/links';
 import Link from 'next/link';
 import { AnimatePresence, motion } from 'framer-motion';
 import Image from 'next/image';
@@ -16,7 +16,7 @@ const MobileMenu = ({ handleToggleMenu, menuVisible }: MobileMenuProps) => {
 	};
 
 	return (
-		<nav className='absolute uppercase lg:hidden overflow-hidden z-[20]'>
+		<nav className='absolute uppercase lg:hidden overflow-hidden z-[20] '>
 			<AnimatePresence>
 				{menuVisible && (
 					<motion.div
@@ -53,7 +53,7 @@ const MobileMenu = ({ handleToggleMenu, menuVisible }: MobileMenuProps) => {
 									alt='logo'
 									width={245}
 									height={229}
-									className='absolute bottom-10 w-[5rem]'
+									className='absolute bottom-24 w-[5rem] '
 									priority
 								/>
 							</div>

@@ -8,13 +8,13 @@ import ParticlesContainer from '@/ui/particles-container';
 import ScrollDownBtn from '@/ui/scroll-down-btn';
 import Link from 'next/link';
 
-const Intro = () => {
+const Intro = ({}) => {
 	const sentence1 = 'Nowoczesna'.split('');
 	const sentence2 = ' strona'.split('');
 	const sentence3 = ' dla Twojego biznesu'.split('');
 
 	return (
-		<section className='bg-black relative flex justify-center items-center w-[100%] min-h-[91vh] bg-opacity-40'>
+		<section className='bg-black relative flex justify-center items-center w-[100%] min-h-[85vh] sm:min-h-[91vh] bg-opacity-40'>
 			<ParticlesContainer />
 			<div>
 				<Image
@@ -23,10 +23,18 @@ const Intro = () => {
 					sizes='100vw'
 					fill
 					priority
-					className='object-cover z-[-3] '
+					className='hidden sm:inline object-cover z-[-3] '
+				/>
+				<Image
+					src='/background-mobile.jpg'
+					alt='backgorund-mobile'
+					sizes='100vw'
+					fill
+					priority
+					className='sm:hidden  z-[-3] '
 				/>
 			</div>
-			<div className='relative top-[-9vh] flex flex-col justify-center md:items-center  h-[100%] w-[100%]'>
+			<div className='relative top-[-9vh] flex flex-col justify-center md:items-center h-[100%] w-[100%]'>
 				<motion.h1
 					className='hidden sm:flex relative uppercase text-xl sm:text-2xl text-center justify-center lg:text-4xl xl:text-5xl font-bold p-4 mb-2 text-white bg-black bg-opacity-80'
 					initial={{ scale: 0 }}
@@ -102,4 +110,5 @@ const Intro = () => {
 		</section>
 	);
 };
+
 export default Intro;

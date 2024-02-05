@@ -6,13 +6,21 @@ const Consultation = () => {
 	return (
 		<section className='bg-black relative flex flex-col justify-around  items-center w-[100%] min-h-[91vh] bg-opacity-40'>
 			<div>
-				<Image
+			<Image
 					src='/background.JPG'
 					alt='backgorund'
 					sizes='100vw'
 					fill
 					priority
-					className='object-cover z-[-3] '
+					className='hidden sm:inline object-cover z-[-3] '
+				/>
+				<Image
+					src='/background-mobile.jpg'
+					alt='backgorund-mobile'
+					sizes='100vw'
+					fill
+					priority
+					className='sm:hidden object-cover z-[-3] '
 				/>
 			</div>
 			<div className='relative xl:top-[-9vh] lg:w-[80%] w-[90%] flex flex-col justify-center my-5 mb-20 xl:mb-0 p-5 mx-auto sm:p-10 bg-black opacity-90 text-white shadow-md shadow-main-color'>
@@ -28,9 +36,9 @@ const Consultation = () => {
 							/>
 						</div>
 						<div className='flex flex-col gap-3 relative'>
-							<h3 className='text-xl sm:text-3xl text-center font-semibold'>
+							<h2 className='text-xl sm:text-3xl text-center font-semibold'>
 								Mateusz Woś
-							</h3>
+							</h2>
 							<div className='flex items-center text-xl justify-center font-semibold'>
 								<IoIosPhonePortrait />
 								<p>+48 796 390 226</p>
@@ -51,9 +59,9 @@ const Consultation = () => {
 							/>
 						</div>
 						<div className='flex flex-col gap-3 relative'>
-							<h3 className='text-xl sm:text-3xl text-center font-semibold'>
+							<h2 className='text-xl sm:text-3xl text-center font-semibold'>
 								Łukasz Woś
-							</h3>
+							</h2>
 							<div className='flex items-center text-xl justify-center font-semibold'>
 								<IoIosPhonePortrait />
 								<p>+48 695 117 487</p>
@@ -65,9 +73,9 @@ const Consultation = () => {
 					</div>
 				</div>
 				<div className=' text-center mb-10'>
-					<p className='text-main-color text-center text-2xl mb-5'>
-						Cena strony internetowej już od 800zł
-					</p>
+					<h1 className='text-main-color text-center text-2xl mb-5'>
+						Cena strony internetowej już od 1000zł
+					</h1>
 					<p className='text-xl'>
 						Cena strony internetowej zależy od wielu czynników, w
 						tym technologii i indywidualnego projektu, ale jesteśmy

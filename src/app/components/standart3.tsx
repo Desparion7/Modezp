@@ -40,10 +40,10 @@ const Standart3 = () => {
 					dokładnie analizujemy i optymalizujemy wszystkie aspekty, w
 					tym usuwamy zbędne skrypty oraz dostosowujemy{' '}
 					<Link
-						href='/blog/zdjecia'
+						href='/blog/fotografia'
 						className='text-main-color hover:text-second-color hover:border-b-2 border-main-color'
 					>
-						obrazy
+						zdjęcia
 					</Link>, aby zapewnić, że Twoja strona działa z maksymalną
 					prędkością. Naszym celem jest zapewnienie błyskawicznej
 					reakcji strony na potrzeby użytkowników.

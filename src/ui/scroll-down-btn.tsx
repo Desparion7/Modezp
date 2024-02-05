@@ -19,7 +19,7 @@ const ScrollDownBtn = () => {
 		>
 			<motion.button
 				aria-label='scroll-down'
-				className='bg-black bg-opacity-55 p-2 sm:p-3 lg:p-4 mb-4 rounded-[50%] border-2 border-main-color '
+				className='bg-black bg-opacity-55 p-2 sm:p-3 lg:p-4 mb-10 sm:mb-6 rounded-[50%] border-2 border-main-color '
 				initial={{ scale: 0 }}
 				animate={{ scale: 1 }}
 				whileHover={{

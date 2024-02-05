@@ -3,8 +3,27 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { IoIosPhonePortrait } from 'react-icons/io';
 import { MdOutlineMailOutline } from 'react-icons/md';
+import { useForm, SubmitHandler, Controller } from 'react-hook-form';
+import { toast } from 'react-hot-toast';
+import { sendFormData, FormData } from '@/lib/contact-form';
 
 const Contact = () => {
+	const { control, handleSubmit, reset } = useForm<FormData>();
+
+	const onSubmit: SubmitHandler<FormData> = async (data) => {
+		const url =
+			'https://modezp.com/wp/wp-json/contact-form-7/v1/contact-forms/27/feedback';
+		try {
+			const result = await sendFormData(data, url);
+			if (result) {
+				toast.success('Wiadomość została wysłana');
+			}
+			reset();
+		} catch (error) {
+			toast.error('Coś poszło nie tak');
+		}
+	};
+
 	return (
 		<section className='bg-black relative flex flex-col justify-around  items-center w-[100%] min-h-[91vh] bg-opacity-40'>
 			<div>
@@ -14,7 +33,15 @@ const Contact = () => {
 					sizes='100vw'
 					fill
 					priority
-					className='object-cover z-[-3] '
+					className='hidden sm:inline object-cover z-[-3] '
+				/>
+				<Image
+					src='/background-mobile.jpg'
+					alt='backgorund-mobile'
+					sizes='100vw'
+					fill
+					priority
+					className='sm:hidden object-cover z-[-3] '
 				/>
 			</div>
 			<div className='relative mx-auto top-[-2vh] flex flex-col 2xl:flex-row gap-10 my-5 p-5 sm:p-10 bg-black opacity-90 text-white w-[90%] lg:w-[80%] shadow-md shadow-main-color'>
@@ -25,7 +52,7 @@ const Contact = () => {
 							Pomożemy!
 						</h2>
 					</div>
-					<div className='flex flex-col sm:justify-center sm:items-center gap-4 '>
+					<div className='flex flex-col sm:justify-center items-center gap-4 '>
 						<div
 							style={{
 								position: 'relative',
@@ -41,9 +68,9 @@ const Contact = () => {
 							/>
 						</div>
 						<div className='flex flex-col gap-3 relative text-center'>
-							<h3 className='text-xl font-semibold'>
+							<h2 className='text-xl font-semibold'>
 								Mateusz Woś
-							</h3>
+							</h2>
 							<div className='flex items-center text-xl '>
 								<IoIosPhonePortrait />
 								<p>+48 796 390 226</p>
@@ -58,35 +85,67 @@ const Contact = () => {
 						</div>
 					</div>
 				</div>
-				<form className='flex flex-col justify-around gap-1 text-sm sm:text-md 2xl:w-[50%] text-black'>
-					<h3 className='text-white text-xl mb-3'>
+				<form
+					onSubmit={handleSubmit(onSubmit)}
+					className='flex flex-col justify-around gap-1 text-sm sm:text-md 2xl:w-[50%] text-black'
+				>
+					<h2 className='text-white text-xl mb-3'>
 						Napisz wiadomość
-					</h3>
-					<input
-						className='p-2'
-						type='text'
-						name='name'
-						placeholder='Imię i nazwisko'
+					</h2>
+					<Controller
+						name='yourName'
+						control={control}
+						defaultValue=''
+						rules={{ required: true }}
+						render={({ field }) => (
+							<input
+								{...field}
+								type='text'
+								className='p-2'
+								placeholder='Imię i nazwisko'
+							/>
+						)}
 					/>
-					<input
-						className='p-2'
-						type='email'
-						name='email'
-						placeholder='Twój e-mail'
+					<Controller
+						name='yourEmail'
+						control={control}
+						defaultValue=''
+						render={({ field }) => (
+							<input
+								{...field}
+								type='email'
+								className='p-2'
+								placeholder='Twój e-mail'
+							/>
+						)}
 					/>
-					<input
-						className='p-2'
-						type='email'
-						name='email'
-						placeholder='Twój numer telefonu'
+					<Controller
+						name='yourPhone'
+						control={control}
+						defaultValue=''
+						render={({ field }) => (
+							<input
+								{...field}
+								type='number'
+								className='p-2'
+								placeholder='Twój numer telefonu'
+							/>
+						)}
 					/>
-					<textarea
-						className='p-2'
-						name='message'
-						id='message'
-						placeholder='Wiadomość'
-						cols={30}
-						rows={5}
+					<Controller
+						name='yourMessage'
+						control={control}
+						defaultValue=''
+						render={({ field }) => (
+							<textarea
+								{...field}
+								className='p-2'
+								placeholder='Wiadomość'
+								cols={30}
+								rows={5}
+								style={{ resize: 'none' }}
+							/>
+						)}
 					/>
 					<label htmlFor='agreement' className='text-white mt-2'>
 						<input
@@ -101,8 +160,7 @@ const Contact = () => {
 							polityką prywatności.
 						</p>
 					</label>
-
-					<div className='flex justify-end mt-5'>
+					<div className='flex justify-center sm:justify-end mt-5'>
 						<motion.button
 							whileHover={{
 								scale: 1.05,

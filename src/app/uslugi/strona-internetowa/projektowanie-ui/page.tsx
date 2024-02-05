@@ -12,21 +12,29 @@ const Projects = () => {
 				className={`relative flex lg:py-10 justify-center items-center w-[100%] bg-black bg-opacity-40 min-h-[91vh] mb-10  text-white`}
 			>
 				<div>
-					<Image
-						src='/background.JPG'
-						alt='backgorund'
-						sizes='100vw'
-						fill
-						priority={true}
-						className='object-cover z-[-3]'
-					/>
+				<Image
+					src='/background.JPG'
+					alt='backgorund'
+					sizes='100vw'
+					fill
+					priority
+					className='hidden sm:inline object-cover z-[-3] '
+				/>
+				<Image
+					src='/background-mobile.jpg'
+					alt='backgorund-mobile'
+					sizes='100vw'
+					fill
+					priority
+					className='sm:hidden object-cover z-[-3] '
+				/>
 				</div>
 				<div className='container relative top-[-7vh] xl:px-64 p-5 py-28 flex flex-col gap-6'>
 					<div className='sm:mb-5 md:min-h-[24vh] bg-black bg-opacity-80 p-3  shadow-md shadow-main-color'>
-						<h2 className='uppercase text-center text-xl lg:text-2xl md:text-3xl mb-6'>
+						<h1 className='uppercase text-center text-xl lg:text-2xl md:text-3xl mb-6'>
 							Projektowanie{' '}
 							<span className='text-main-color'>UI</span>{' '}
-						</h2>
+						</h1>
 						<p className='text-md md:text-lg text-center sm:text-justify'>
 							Projektowanie interfejsu użytkownika (UI) to proces,
 							który wykracza poza samo kreowanie estetycznego
@@ -74,9 +82,9 @@ const Projects = () => {
 				</div>
 				<div className='mx-5 text-md xl:mx-80 xl:text-lg'>
 					<div className='mt-10'>
-						<h3 className='text-xl sm:text-2xl pb-5'>
+						<h2 className='text-xl sm:text-2xl pb-5'>
 							Czym jest projektowanie UI?
-						</h3>
+						</h2>
 						<p className='pb-5 leading-8 text-justify'>
 							Projektowanie UI, czyli projektowanie interfejsu
 							użytkownika, stanowi kluczowy etap w procesie
@@ -91,9 +99,9 @@ const Projects = () => {
 						</p>
 					</div>
 					<div className='mt-10'>
-						<h3 className='text-xl sm:text-2xl pb-5'>
+						<h2 className='text-xl sm:text-2xl pb-5'>
 							Tworzenie projektu prototypu
-						</h3>
+						</h2>
 						<p className='pb-5 leading-8 text-justify'>
 							Pierwszym krokiem w projektowaniu UI jest tworzenie
 							prototypu. Prototypowanie pozwala na wizualizację
@@ -109,9 +117,9 @@ const Projects = () => {
 						</p>
 					</div>
 					<div className='mt-10'>
-						<h3 className='text-xl sm:text-2xl pb-5'>
+						<h2 className='text-xl sm:text-2xl pb-5'>
 							Projektowanie graficzne (UI)
-						</h3>
+						</h2>
 						<p className='pb-5 leading-8 text-justify'>
 							Po pozytywnym zatwierdzeniu prototypu, projekt
 							wchodzi w fazę projektowania graficznego. To tutaj

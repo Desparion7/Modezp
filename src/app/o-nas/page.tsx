@@ -11,22 +11,30 @@ const Aboutus = () => {
 				className={`relative flex lg:py-10 justify-center items-center w-[100%] bg-black bg-opacity-40 min-h-[91vh] mb-10  text-white`}
 			>
 				<div>
-					<Image
-						src='/background.JPG'
-						alt='backgorund'
-						sizes='100vw'
-						fill
-						priority={true}
-						className='object-cover z-[-3]'
-					/>
+				<Image
+					src='/background.JPG'
+					alt='backgorund'
+					sizes='100vw'
+					fill
+					priority
+					className='hidden sm:inline object-cover z-[-3] '
+				/>
+				<Image
+					src='/background-mobile.jpg'
+					alt='backgorund-mobile'
+					sizes='100vw'
+					fill
+					priority
+					className='sm:hidden object-cover z-[-3] '
+				/>
 				</div>
 				<div className='relative flex flex-col  top-[-7vh] container xl:px-32 p-2 sm:p-5 pb-10 pt-20 sm:py-28 gap-6 z-2'>
 					<div className='flex flex-col lg:flex-row justify-around gap-10 sm:mb-5 p-5 sm:p-10 md:min-h-[24vh] bg-black bg-opacity-80 shadow-md shadow-main-color'>
 						<div className='lg:w-[50%]'>
-							<h2 className='text-xl sm:text-3xl mb-5'>
+							<h1 className='text-xl sm:text-3xl mb-5'>
 								{`"Dwa umysły, jedna wizja - strony internetowe,
 								które wyróżniają."`}
-							</h2>
+							</h1>
 							<p className='text-md sm:text-xl text-justify'>
 								Witamy w MODEZP, gdzie pasja do nowoczesnego
 								designu i zaawansowanej technologii łączy się,

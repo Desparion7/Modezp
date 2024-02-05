@@ -13,26 +13,34 @@ const WordPress = () => {
 				className={`relative flex lg:py-10 justify-center items-center w-[100%] bg-black bg-opacity-40 min-h-[91vh] mb-10  text-white`}
 			>
 				<div>
-					<Image
-						src='/background.JPG'
-						alt='backgorund'
-						sizes='100vw'
-						fill
-						priority={true}
-						className='object-cover z-[-3]'
-					/>
+				<Image
+					src='/background.JPG'
+					alt='backgorund'
+					sizes='100vw'
+					fill
+					priority
+					className='hidden sm:inline object-cover z-[-3] '
+				/>
+				<Image
+					src='/background-mobile.jpg'
+					alt='backgorund-mobile'
+					sizes='100vw'
+					fill
+					priority
+					className='sm:hidden object-cover z-[-3] '
+				/>
 				</div>
 				<div className='relative top-[-7vh] container xl:px-64 p-5 py-28 flex flex-col gap-6'>
 					<div className='sm:mb-5 md:min-h-[24vh] bg-black bg-opacity-80 p-3  shadow-md shadow-main-color'>
-						<h2 className='uppercase text-center text-xl lg:text-2xl md:text-3xl mb-6'>
+						<h1 className='uppercase text-center text-xl lg:text-2xl md:text-3xl mb-6'>
 							strona w{' '}
 							<span className='text-main-color'>wordPress</span>?{' '}
-						</h2>
+						</h1>
 						<p className='text-md md:text-lg text-center sm:text-justify'>
 							Tworzymy również strony internetowe z użyciem
 							WordPress, jednego z najbardziej znanych systemów
 							zarządzania treścią{' '}
-							<Link href='/blog/seo'>
+							<Link href='/blog/cms'>
 								<span className='text-main-color hover:border-b-2 border-main-color'>
 									CMS{' '}
 								</span>
@@ -80,9 +88,9 @@ const WordPress = () => {
 				</div>
 				<div className='mx-5 text-md xl:mx-80 xl:text-lg'>
 					<div className='mt-10'>
-						<h3 className='text-xl sm:text-2xl pb-5'>
+						<h2 className='text-xl sm:text-2xl pb-5'>
 							Czym Jest WordPress?
-						</h3>
+						</h2>
 						<p className='pb-5 leading-8 text-justify'>
 							WordPress to najpopularniejszy system zarządzania
 							treścią (CMS) na świecie. Używany jest przez miliony
@@ -94,9 +102,9 @@ const WordPress = () => {
 						</p>
 					</div>
 					<div className='mt-10'>
-						<h3 className='text-xl sm:text-2xl pb-5'>
+						<h2 className='text-xl sm:text-2xl pb-5'>
 							Dlaczego WordPress?
-						</h3>
+						</h2>
 						<p className='pb-5 leading-8 text-justify'>
 							<span className='font-bold'>
 								Dostosowanie do Potrzeb:
@@ -128,9 +136,9 @@ const WordPress = () => {
 						</p>
 					</div>
 					<div className='mt-10'>
-						<h3 className='text-xl sm:text-2xl pb-5'>
+						<h2 className='text-xl sm:text-2xl pb-5'>
 							Responsywność i Mobile First
-						</h3>
+						</h2>
 						<p className='pb-5 leading-8 text-justify'>
 							Nie zapominamy o urządzeniach mobilnych! Nasze
 							strony są responsywne (RWD – Responsive Web Design),
@@ -162,9 +170,9 @@ const WordPress = () => {
 						</p>
 					</div>
 					<div className='mt-10'>
-						<h3 className='text-xl sm:text-2xl pb-5'>
+						<h2 className='text-xl sm:text-2xl pb-5'>
 							Responsywność i Mobile First
-						</h3>
+						</h2>
 						<p className='pb-5 leading-8 text-justify'>
 							Czym jest Page Builder? Page Builder to narzędzie
 							dla tych, którzy potrzebują dobrej ceny, szybkości

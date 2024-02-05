@@ -5,8 +5,27 @@ import { IoIosPhonePortrait } from 'react-icons/io';
 import { MdOutlineMailOutline } from 'react-icons/md';
 import { motion } from 'framer-motion';
 import styles from './styles.module.css';
+import { useForm, SubmitHandler, Controller } from 'react-hook-form';
+import { toast } from 'react-hot-toast';
+import { sendFormData, FormData } from '@/lib/contact-form';
 
 const Contact = () => {
+	const { control, handleSubmit, reset } = useForm<FormData>();
+
+	const onSubmit: SubmitHandler<FormData> = async (data) => {
+		const url =
+			'https://modezp.com/wp/wp-json/contact-form-7/v1/contact-forms/39/feedback';
+		try {
+			const result = await sendFormData(data, url);
+			if (result) {
+				toast.success('Wiadomość została wysłana');
+			}
+			reset();
+		} catch (error) {
+			toast.error('Coś poszło nie tak');
+		}
+	};
+
 	return (
 		<section
 			className={`relative flex justify-center mx-auto sm:pt-10 pb-16 sm:pb-36 w-[100%] h-auto ${styles['contact-gradient']}`}
@@ -62,88 +81,151 @@ const Contact = () => {
 					</div>
 				</div>
 				<div className='bg-third-color text-white p-6 sm:p-10 xl:min-h-[100%] text-sm sm:text-lg'>
-					<form action='' className='flex flex-col gap-3 '>
+					<form
+						onSubmit={handleSubmit(onSubmit)}
+						className='flex flex-col gap-3 '
+					>
 						<h2 className='text-xl sm:text-2xl mb-3'>
 							Formularz kontaktowy
 						</h2>
 						<div className='flex flex-col sm:flex-row  gap-2'>
 							<p>Witam, mam na imię</p>{' '}
-							<input
-								type='text'
-								name='name'
-								className='bg-third-color border-b-2 border-sky-900 p-1'
-								placeholder='Imię i nazwisko'
+							<Controller
+								name='yourName'
+								control={control}
+								defaultValue=''
+								rules={{ required: true }}
+								render={({ field }) => (
+									<input
+										{...field}
+										type='text'
+										className='bg-third-color border-b-2 border-sky-900 p-1 focus:border-main-color focus:border-2 focus:outline-none '
+										placeholder='Imię i nazwisko'
+									/>
+								)}
 							/>
 						</div>
 						<div className='flex flex-col sm:flex-row gap-2'>
 							<p>Szukam firmy, która pomoże mi</p>{' '}
-							<select
-								aria-label='cel kontaktu'
-								name='topic'
-								className='bg-third-color border-b-2 border-sky-900 p-1'
-							>
-								<option value=''>Wybierz z listy</option>
-								<option value=''>stworzyć stronę www</option>
-								<option value=''>
-									przenieść strone na next.js
-								</option>
-								<option value=''>stworzyć logo</option>
-							</select>
+							<Controller
+								name='yourTopic'
+								control={control}
+								defaultValue='Wybierz z listy'
+								rules={{ required: true }}
+								render={({ field }) => (
+									<select
+										{...field}
+										aria-label='cel kontaktu'
+										className='bg-third-color border-b-2 border-sky-900 p-1 focus:border-main-color focus:border-2 focus:outline-none'
+									>
+										<option value=''>
+											Wybierz z listy
+										</option>
+										<option value='stworzyć stronę www'>
+											Stworzyć stronę www
+										</option>
+										<option value='przenieść stronę na next.js'>
+											Przenieść stronę na next.js
+										</option>
+										<option value='stworzyć logo'>
+											Stworzyć logo
+										</option>
+										<option value='inny'>Inny</option>
+									</select>
+								)}
+							/>
 						</div>
 						<div className='flex flex-col sm:flex-row gap-2'>
 							<p>Chcę na to przeznaczyć </p>{' '}
-							<input
-								type='text'
-								name='resources'
-								className='bg-third-color border-b-2 border-sky-900 p-1'
-								placeholder='3 000 zł'
+							<Controller
+								name='yourAmount'
+								control={control}
+								defaultValue=''
+								rules={{ required: true }}
+								render={({ field }) => (
+									<input
+										{...field}
+										type='text'
+										className='bg-third-color border-b-2 border-sky-900 p-1 focus:border-main-color focus:border-2 focus:outline-none'
+										placeholder='3 000 zł'
+									/>
+								)}
 							/>
 						</div>
 						<div className='flex flex-col sm:flex-row gap-2'>
 							<p>Proszę o kontakt na numer</p>
-							<input
-								type='number'
-								name='phone'
-								className='bg-third-color border-b-2 border-sky-900 p-1'
-								placeholder='+48 101 101 101'
+							<Controller
+								name='yourPhone'
+								control={control}
+								defaultValue=''
+								render={({ field }) => (
+									<input
+										{...field}
+										type='number'
+										className='bg-third-color border-b-2 border-sky-900 p-1 focus:border-main-color focus:border-2 focus:outline-none'
+										placeholder='+48 101 101 101'
+									/>
+								)}
 							/>
 						</div>
 						<div className='flex items-center gap-2'>
 							<p>między</p>{' '}
-							<select
-								aria-label='czas'
-								name='from'
-								className='bg-third-color border-b-2 border-sky-900 p-1'
-							>
-								<option value='1'>6:00</option>
-								<option value='2'>8:00</option>
-								<option value='3'>10:00</option>
-								<option value='4'>12:00</option>
-								<option value='5'>14:00</option>
-								<option value='5'>16:00</option>
-								<option value='5'>18:00</option>
-							</select>
+							<Controller
+								name='yourFromTime'
+								control={control}
+								defaultValue='6:00'
+								render={({ field }) => (
+									<select
+										{...field}
+										aria-label='czas'
+										className='bg-third-color border-b-2 border-sky-900 p-1 focus:border-main-color focus:border-2 focus:outline-none'
+									>
+										<option value='6:00'>6:00</option>
+										<option value='8:00'>8:00</option>
+										<option value='10:00'>10:00</option>
+										<option value='12:00'>12:00</option>
+										<option value='14:00'>14:00</option>
+										<option value='16:00'>16:00</option>
+										<option value='18:00'>18:00</option>
+									</select>
+								)}
+							/>
 							<p>-</p>{' '}
-							<select
-								aria-label='czas'
-								name='to'
-								className='bg-third-color border-b-2 border-sky-900 p-1'
-							>
-								<option value='2'>8:00</option>
-								<option value='3'>10:00</option>
-								<option value='4'>12:00</option>
-								<option value='5'>14:00</option>
-								<option value='5'>16:00</option>
-								<option value='5'>18:00</option>
-								<option value='5'>20:00</option>
-							</select>
+							<Controller
+								name='yourToTime'
+								control={control}
+								defaultValue='8:00'
+								render={({ field }) => (
+									<select
+										{...field}
+										aria-label='czas'
+										className='bg-third-color border-b-2 border-sky-900 p-1 focus:border-main-color focus:border-2 focus:outline-none'
+									>
+										<option value='8:00'>8:00</option>
+										<option value='10:00'>10:00</option>
+										<option value='12:00'>12:00</option>
+										<option value='14:00'>14:00</option>
+										<option value='16:00'>16:00</option>
+										<option value='18:00'>18:00</option>
+										<option value='20:00'>20:00</option>
+									</select>
+								)}
+							/>
 						</div>
 						<div className='flex flex-col sm:flex-row gap-2'>
 							<p>lub na adres mailowy</p>{' '}
-							<input
-								type='email'
-								className='bg-third-color border-b-2 border-sky-900 p-1'
-								placeholder='email'
+							<Controller
+								name='yourEmail'
+								control={control}
+								defaultValue=''
+								render={({ field }) => (
+									<input
+										{...field}
+										type='email'
+										className='bg-third-color border-b-2 border-sky-900 p-1 focus:border-main-color focus:border-2 focus:outline-none'
+										placeholder='email'
+									/>
+								)}
 							/>
 						</div>
 						<div className='flex mt-5'>
