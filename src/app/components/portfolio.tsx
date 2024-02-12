@@ -14,10 +14,11 @@ const Portfolio = () => {
 			<div className='flex flex-wrap justify-between px-5 '>
 				<PortfolioProject
 					side={'right'}
+					link={'https://osk-neocar.pl/'}
 					backgroundColor={'bg-transparent'}
 					textColor={'text-black'}
 					src='/portfolio2.jpg'
-					alt='logo warsztatu'
+					alt='strone Neocar'
 					width={954}
 					height={591}
 					title={
@@ -29,6 +30,7 @@ const Portfolio = () => {
 				/>
 				<PortfolioProject
 					side={'left'}
+					link={'http://www.adrianpruchnik.pl/'}
 					backgroundColor={'bg-transparent'}
 					textColor={'text-black'}
 					src='/portfolio3.jpg'
@@ -40,6 +42,7 @@ const Portfolio = () => {
 				/>
 				<PortfolioProject
 					side={'right'}
+					link={'https://pomocdrogowaorly.000webhostapp.com/'}
 					backgroundColor={'bg-transparent'}
 					textColor={'text-black'}
 					src='/portfolio1.jpg'

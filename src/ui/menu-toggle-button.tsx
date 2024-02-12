@@ -18,7 +18,7 @@ const MenuToggleButton = ({ toggle, isMenuVisible }: MenuToggleButtonProps) => {
 		>
 			<svg width='30' height='30' viewBox='0 0 33 33'>
 				<Path
-				d='M 2 9.5 L 30 9.5'
+					d='M 2 9.5 L 30 9.5'
 					variants={{
 						closed: { d: 'M 2 9.5 L 30 9.5' },
 						open: { d: 'M 3 25.5 L 30 2.5' },
@@ -37,6 +37,7 @@ const MenuToggleButton = ({ toggle, isMenuVisible }: MenuToggleButtonProps) => {
 					transition={{ duration: 0.1 }}
 				/>
 				<Path
+					d='M 2 9.5 L 30 9.5'
 					variants={{
 						closed: { d: 'M 2 23.5 L 30 23.5' },
 						open: { d: 'M 3 2.5 L 30 25.346' },

@@ -4,6 +4,7 @@ import Image from 'next/image';
 
 type PortfolioProjectPropsType = {
 	side: string;
+	link: string;
 	backgroundColor: string;
 	src: string;
 	alt: string;
@@ -16,6 +17,7 @@ type PortfolioProjectPropsType = {
 
 const PortfolioProject = ({
 	side,
+	link,
 	backgroundColor,
 	src,
 	alt,
@@ -48,14 +50,20 @@ const PortfolioProject = ({
 							once: true,
 						}}
 					>
-						<Image
-							src={src}
-							alt={alt}
-							width={width}
-							height={height}
-							priority
-							sizes='100vw'
-						/>
+						<a
+							href={link}
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<Image
+								src={src}
+								alt={alt}
+								width={width}
+								height={height}
+								priority
+								sizes='100vw'
+							/>
+						</a>
 					</motion.div>
 					<motion.div
 						className={`flex flex-col mx-auto sm:gap-5 justify-center p-2 sm:p-10 mb-10 lg:w-[50%] ${textColor}`}
@@ -97,14 +105,20 @@ const PortfolioProject = ({
 							scale: scaleProgess,
 						}}
 					>
-						<Image
-							src={src}
-							alt={alt}
-							width={width}
-							height={height}
-							priority
-							sizes='100vw'
-						/>
+						<a
+							href={link}
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<Image
+								src={src}
+								alt={alt}
+								width={width}
+								height={height}
+								priority
+								sizes='100vw'
+							/>
+						</a>
 					</motion.div>
 				</div>
 			)}

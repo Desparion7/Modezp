@@ -32,7 +32,7 @@ export default function Services() {
 
 	return (
 		<section
-			className={`relative container mx-auto flex justify-center items-center w-[100%] xl:h-[65vh] py-10 sm:px-5 text-black`}
+			className={`relative container mx-auto flex justify-center items-center w-[100%] xl:h-[65vh] py-10 sm:px-5 text-black min-h-[600px]`}
 			id='second-section'
 		>
 			<div className=' flex flex-col xl:flex-row gap-5 xl:gap-10 xl:h-[100%]'>
@@ -79,7 +79,7 @@ export default function Services() {
 									</p>
 									<p className='text-main-color text-center text-2xl mt-2 xl:mt-5'>
 										{data.loading
-											? '....'
+											? 'Strona już od 1000 zł'
 											: `Strona już od ${data?.priceData[0].acf.cena} zł`}
 									</p>
 									<div className='flex justify-end gap-2 xl:absolute bottom-8 right-8'>

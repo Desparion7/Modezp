@@ -148,6 +148,25 @@ const Header = () => {
 										delay: 0.05 * 4,
 									},
 								}}
+								className={cn(
+									`lg:text-md hover:text-main-color transition-colors`,
+									{
+										'text-main-color': url === '/blog',
+									}
+								)}
+							>
+								<Link href='/blog'>Blog</Link>
+							</motion.li>
+							<motion.li
+								variants={fadeInAnimationVariants}
+								initial={{ opacity: 0, y: -50 }}
+								animate={{
+									opacity: 1,
+									y: 0,
+									transition: {
+										delay: 0.05 * 5,
+									},
+								}}
 								onMouseLeave={() => setServicesVisible(false)}
 							>
 								<div
@@ -215,7 +234,7 @@ const Header = () => {
 									opacity: 1,
 									y: 0,
 									transition: {
-										delay: 0.05 * 5,
+										delay: 0.05 * 6,
 									},
 								}}
 							>
@@ -226,7 +245,7 @@ const Header = () => {
 											scale: 1.05,
 											transition: { duration: 0.1 },
 										}}
-										className='bg-button-background text-white  py-3 px-6 rounded-3xl  hover:bg-button-background-hover transition-all uppercase'
+										className='bg-button-background text-white  py-2.5 px-6 rounded-3xl  hover:bg-button-background-hover transition-all uppercase'
 									>
 										Darmowa konsultacja
 									</motion.button>

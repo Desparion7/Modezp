@@ -34,6 +34,10 @@ export const linksMobile = [
 		hash: '/o-nas',
 	},
 	{
+		name: 'Blog',
+		hash: '/blog',
+	},
+	{
 		name: 'Strony internetowe',
 		hash: '/uslugi/strona-internetowa/next-js',
 	},

@@ -16,11 +16,12 @@ const Intro = ({}) => {
 	return (
 		<section className='bg-black relative flex justify-center items-center w-[100%] min-h-[85vh] sm:min-h-[91vh] bg-opacity-40'>
 			<ParticlesContainer />
-			<div>
+			<div className=''>
 				<Image
 					src='/background.JPG'
 					alt='backgorund'
-					sizes='100vw'
+					sizes='100vh'
+					quality={80}
 					fill
 					priority
 					className='hidden sm:inline object-cover z-[-3] '
@@ -31,7 +32,7 @@ const Intro = ({}) => {
 					sizes='100vw'
 					fill
 					priority
-					className='sm:hidden  z-[-3] '
+					className='sm:hidden z-[-3] '
 				/>
 			</div>
 			<div className='relative top-[-9vh] flex flex-col justify-center md:items-center h-[100%] w-[100%]'>
