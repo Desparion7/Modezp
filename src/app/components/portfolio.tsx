@@ -34,7 +34,7 @@ const Portfolio = () => {
 					backgroundColor={'bg-transparent'}
 					textColor={'text-black'}
 					src='/portfolio3.jpg'
-					alt='logo warsztatu'
+					alt='strona Adriana Pruchnika'
 					width={954}
 					height={591}
 					title={`Wizualnie zachwycająca przestrzeń, inspirująca emocje i pasję, zachęcająca do odkrywania świata fotografii z Adrianem.`}
@@ -42,15 +42,39 @@ const Portfolio = () => {
 				/>
 				<PortfolioProject
 					side={'right'}
-					link={'https://pomocdrogowaorly.000webhostapp.com/'}
+					link={'https://transwos.pl/'}
 					backgroundColor={'bg-transparent'}
 					textColor={'text-black'}
 					src='/portfolio1.jpg'
-					alt='logo warsztatu'
+					alt='Strona pomocy drogowej'
 					width={1636}
 					height={863}
 					title={`"Natychmiastowa pomoc drogowa, na którą możesz liczyć"-TRANSWOŚ.`}
 					text={`Nasza strona oferuje łatwy dostęp do wyraźnie widocznego numeru telefonu, zapewniając szybki kontakt w sytuacjach awaryjnych. To właśnie tego typu strony powinny cechować się prostotą. `}
+				/>
+				<PortfolioProject
+					side={'left'}
+					link={'https://credo-psi.vercel.app/'}
+					backgroundColor={'bg-transparent'}
+					textColor={'text-black'}
+					src='/portfolio4.jpg'
+					alt='Strona biura pielgrzymkowo-turystycznego CREDO'
+					width={954}
+					height={591}
+					title={`Zachwycające miejsce, które budzi inspirację i zachęca do odkrywania nowych kierunków podróży z biurem pielgrzymkowo-turystycznym CREDO.`}
+					text={`Strona została zaprojektowana z myślą o intuicyjnej nawigacji i bezproblemowym dostępie do najważniejszych informacji oraz oferty wycieczek.`}
+				/>
+				<PortfolioProject
+					side={'right'}
+					link={'https://wik-land-front.vercel.app/'}
+					backgroundColor={'bg-transparent'}
+					textColor={'text-black'}
+					src='/portfolio5.png'
+					alt='Strona sklepu Wikland'
+					width={900}
+					height={493}
+					title={`Strona Wickerland oferuje wyjątkowe wyroby z wikliny, łącząc tradycję z nowoczesnością.`}
+					text={`Strona sklepów internetowych projektowane są przede wszystkim z dbałością o intuicyjność korzystania z interfejsu. Użytkownik musi łatwo odnaleźć potrzebne funkcje by chętnie wracała do zakupów`}
 				/>
 			</div>
 		</section>

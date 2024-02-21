@@ -47,7 +47,7 @@ const Header = () => {
 	return (
 		<>
 			<motion.header
-				className='sticky flex justify-center w-[100vw] sm:h-[9vh]  z-10 top-0  bg-black text-white'
+				className='sticky flex justify-center w-[100vw] sm:h-[6.5rem]  z-10 top-0  bg-black text-white'
 				variants={{
 					visible: { y: 0 },
 					hidden: { y: -200 },
@@ -67,10 +67,10 @@ const Header = () => {
 									scale: 1.05,
 									transition: { duration: 0.1 },
 								}}
-								className='ml-[1rem] sm:ml-0 w-[6rem] sm:w-[8rem] h-auto'
+								className='ml-[1rem] sm:ml-0 w-[6rem] sm:w-[6rem] h-auto'
 							>
 								<Image
-									src='/logo.png'
+									src='/logo.jpg'
 									alt='logo'
 									width={245}
 									height={229}
