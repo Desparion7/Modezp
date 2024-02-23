@@ -87,6 +87,52 @@ const WordPress = () => {
 				id='second-section'
 			>
 				<div className='w-[100%] md:w-[50%] sm:px-5 flex flex-col justify-between text-center sm:text-left'>
+					<SectionTitle>
+						Jak przebiega proces realizacji?{' '}
+					</SectionTitle>
+				</div>
+				<div className='mx-5 text-md xl:mx-80 xl:text-lg'>
+					<h2 className='text-xl sm:text-2xl pb-5'>
+						Etap I
+					</h2>
+					<p className='pb-5 leading-8 text-justify'>
+						Po skontaktowaniu się z nami i ustaleniu głównej wizji
+						strony oraz przewidzianych funkcjonalności, prosimy o
+						przesłanie podstawowych informacji o firmie, oferowanych
+						usługach oraz zdjęć, które chcielibyście Państwo
+						umieścić na stronie. Zarówno w kwestii opisów, jak i
+						zdjęć, chętnie służymy pomocą.
+					</p>
+					<h2 className='text-xl sm:text-2xl pb-5'>
+						Etap II
+					</h2>
+					<p className='pb-5 leading-8 text-justify'>
+						Następnym krokiem będzie przygotowanie graficznego
+						przykładu strony, co zajmie nam do 7 dni. Ten wzór
+						zostanie przesłany do Państwa w celu akceptacji. Po
+						otrzymaniu Państwa zgody i ewentualnym wprowadzeniu
+						poprawek, przejdziemy do trzeciego etapu procesu.
+					</p>
+					<h2 className='text-xl sm:text-2xl pb-5'>
+						Etap III
+					</h2>
+					<p className='pb-5 leading-8 text-justify'>
+						Ostatnim krokiem będzie przeniesienie projektu na kod
+						oraz uruchomienie strony internetowej. Po wprowadzeniu
+						wszystkich poprawek i ostatecznym zatwierdzeniu przez
+						Państwa, dokonamy optymalizacji strony pod kątem SEO,
+						przeprowadzimy testy funkcjonalne oraz dostosujemy ją do
+						różnych urządzeń i przeglądarek. Następnie, po pełnej
+						weryfikacji i zapewnieniu, że strona działa płynnie i
+						bezbłędnie, dokonamy jej oficjalnego uruchomienia.
+						Będziemy również dostępni do wsparcia po uruchomieniu,
+						aby zapewnić, że wszystko funkcjonuje zgodnie z Państwa
+						oczekiwaniami i potrzebami.
+					</p>
+				</div>
+			</section>
+			<section className='relative container mx-auto pb-20 min-h-[65vh]'>
+				<div className='w-[100%] md:w-[50%] sm:px-5 flex flex-col justify-between text-center sm:text-left'>
 					<SectionTitle> WordPress czy Next.js?</SectionTitle>
 				</div>
 				<div className='mx-5 text-md xl:mx-80 xl:text-lg'>
@@ -118,7 +164,10 @@ const WordPress = () => {
 								{' '}
 								Zaawansowana strona w atrakcyjnej cenie:
 							</span>{' '}
-							Niewiele firm świadczy pisanie tak zaawansowanych stron w tak niskiej cenie. Cena żależna jest od skompilkowania projektu. Dlatego zachęcamy do kontaktu i darmowej wyceny.
+							Niewiele firm świadczy pisanie tak zaawansowanych
+							stron w tak niskiej cenie. Cena żależna jest od
+							skompilkowania projektu. Dlatego zachęcamy do
+							kontaktu i darmowej wyceny.
 						</p>
 						<p className='pb-5 leading-8 text-justify'>
 							<span className='font-bold'>

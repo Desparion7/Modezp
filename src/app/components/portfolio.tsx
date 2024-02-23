@@ -69,7 +69,7 @@ const Portfolio = () => {
 					link={'https://wik-land-front.vercel.app/'}
 					backgroundColor={'bg-transparent'}
 					textColor={'text-black'}
-					src='/portfolio5.png'
+					src='/portfolio5.jpg'
 					alt='Strona sklepu Wikland'
 					width={900}
 					height={493}

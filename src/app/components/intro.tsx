@@ -9,8 +9,8 @@ import ScrollDownBtn from '@/ui/scroll-down-btn';
 import Link from 'next/link';
 
 const Intro = ({}) => {
-	const sentence1 = 'Nowoczesna'.split('');
-	const sentence2 = ' strona'.split('');
+	const sentence1 = 'Strona'.split('');
+	const sentence2 = ' internetowa'.split('');
 	const sentence3 = ' dla Twojego biznesu'.split('');
 
 	return (
@@ -36,7 +36,7 @@ const Intro = ({}) => {
 				/>
 			</div>
 			<div className='relative top-[-9vh] flex flex-col justify-center md:items-center h-[100%] w-[100%]'>
-				<motion.h1
+				<motion.h2
 					className='hidden sm:flex relative uppercase text-xl sm:text-2xl text-center justify-center lg:text-4xl xl:text-5xl font-bold p-4 mb-2 text-white bg-black bg-opacity-80'
 					initial={{ scale: 0 }}
 					animate={{ scale: 1 }}
@@ -69,15 +69,15 @@ const Intro = ({}) => {
 							)}
 						</React.Fragment>
 					))}
-				</motion.h1>
+				</motion.h2>
 				<motion.h1
 					initial={{ scale: 0 }}
 					animate={{ scale: 1 }}
 					transition={{ ease: 'easeOut', duration: 0.5 }}
 					className='sm:hidden uppercase text-lg text-center font-bold p-4 mb-2 text-white bg-black bg-opacity-80'
 				>
-					Nowoczesna{' '}
-					<p className='text-main-color '>&nbsp;strona &nbsp;</p> dla
+					Strona{' '}
+					<span className='text-main-color '>&nbsp;internetowa &nbsp;</span> dla
 					Twojego biznesu
 				</motion.h1>
 				<motion.ul

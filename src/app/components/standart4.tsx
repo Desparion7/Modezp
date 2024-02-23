@@ -30,7 +30,7 @@ const Standart4 = () => {
 						/>
 					</div>
 				</div>
-				<p className='tracking-widest text-sm sm:text-lg text-justify font-semibold leading-8 sm:mt-8'>
+				<p className='tracking-widest text-sm sm:text-lg text-justify leading-8 sm:mt-8'>
 					Przy oddawaniu strony będziemy korzystać z najnowszych i
 					najstabilniejszych wersji oprogramowania. Dodatkowo,
 					zainstalujemy oprogramowanie antyspamowe oraz{' '}

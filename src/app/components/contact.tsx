@@ -62,7 +62,6 @@ const Contact = () => {
 							<h3 className='text-xl sm:text-3xl font-semibold'>
 								Mateusz Woś
 							</h3>
-							<p>Specjalista ds. Obsługi Klienta</p>
 							<p className=' sm:text-2xl font-semibold'>
 								Przemyślmy i ustalmy strategię działania!
 							</p>
@@ -80,7 +79,7 @@ const Contact = () => {
 						</div>
 					</div>
 				</div>
-				<div className='bg-third-color text-white p-6 sm:p-10 xl:min-h-[100%] text-sm sm:text-lg'>
+				<div className='bg-third-color text-white p-6 pb-20 sm:p-10 xl:min-h-[100%] text-sm sm:text-lg'>
 					<form
 						onSubmit={handleSubmit(onSubmit)}
 						className='flex flex-col gap-3 '

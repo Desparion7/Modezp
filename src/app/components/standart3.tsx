@@ -34,9 +34,9 @@ const Standart3 = () => {
 				<h3 className='hidden sm:block text-xl sm:text-2xl lg:text-3xl mb-3 text-center uppercase text-third-color'>
 					Optymalizacja
 				</h3>
-				<p className='tracking-widest text-sm sm:text-lg text-justify font-semibold leading-8 sm:mt-8'>
+				<p className='tracking-widest text-sm sm:text-lg text-justify  leading-8 sm:mt-8'>
 					60% użytkowników rezygnuje z korzystania z Twojej strony,
-					jeśli jej wczytywanie zajmuje więcej niż 1 sekundę. Dlatego
+					jeśli jej wczytywanie zajmuje więcej niż 5 sekund. Dlatego
 					dokładnie analizujemy i optymalizujemy wszystkie aspekty, w
 					tym usuwamy zbędne skrypty oraz dostosowujemy{' '}
 					<Link

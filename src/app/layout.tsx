@@ -4,6 +4,8 @@ import './globals.css';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 import Toast from '@/ui/toast';
+import Script from 'next/script';
+const GTM_ID = 'G-DS0HHHF9BX';
 
 const poppins = Poppins({
 	subsets: ['latin'],
@@ -15,12 +17,12 @@ const poppins = Poppins({
 export const metadata: Metadata = {
 	title: 'Modezp - Profesjonalne Tworzenie Stron Internetowych',
 	description:
-		'Modezp to frima specjalizująca się w projektowaniu i rozwijaniu zaawansowanych stron internetowych z wykorzystaniem Next.js i WordPress. Łączymy nowoczesne technologie z kreatywnym designem, aby dostarczać responsywne, szybkie i optymalizowane pod SEO witryny, które pomagają naszym klientom osiągać cele biznesowe i zwiększać widoczność w sieci.',
+		'Modezp łączy Next.js i WordPress w tworzeniu responsywnych, szybkich stron internetowych. Odkryj nasze kreatywne rozwiązania dla sukcesu Twojej firmy!',
 	icons: {
 		icon: '/logo.jpg',
 	},
 	keywords:
-	'Tworzenie stron internetowych dla firm - profesjonalne i responsywne rozwiązania, Projektowanie stron www dostosowanych do urządzeń mobilnych - Rzeszów, Indywidualne projekty stron internetowych z zarządzaniem treścią CMS, Modernizacja i aktualizacja stron www - zwiększ bezpieczeństwo i funkcjonalność, Responsywne strony internetowe - optymalizacja dla wszystkich urządzeń, Strony www dla małych i średnich  przedsiębiorstw - skrojone na miarę Twojej firmy, Rozwiązania internetowe dostosowane do potrzeb biznesowych - efektywne i atrakcyjne wizualnie, Zarządzanie treścią stron www z łatwym CMS - aktualizuj swoją stronę bez wysiłku, Usługi web design- zwiększ swoją widoczność online',
+		'Tworzenie stron internetowych dla firm - profesjonalne i responsywne rozwiązania, Projektowanie stron www dostosowanych do urządzeń mobilnych - Rzeszów, Indywidualne projekty stron internetowych z zarządzaniem treścią CMS, Modernizacja i aktualizacja stron www - zwiększ bezpieczeństwo i funkcjonalność, Responsywne strony internetowe - optymalizacja dla wszystkich urządzeń, Strony www dla małych i średnich  przedsiębiorstw - skrojone na miarę Twojej firmy, Rozwiązania internetowe dostosowane do potrzeb biznesowych - efektywne i atrakcyjne wizualnie, Zarządzanie treścią stron www z łatwym CMS - aktualizuj swoją stronę bez wysiłku, Usługi web design- zwiększ swoją widoczność online',
 };
 
 export default function RootLayout({
@@ -30,6 +32,15 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='pl'>
+			<Script id='google-tag-manager' strategy='afterInteractive'>
+				{`
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','${GTM_ID}');
+        `}
+			</Script>
 			<body
 				className={`${poppins.className}  bg-[#cbced1] relative text-black overflow-x-hidden`}
 			>

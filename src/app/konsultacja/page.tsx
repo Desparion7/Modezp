@@ -6,7 +6,7 @@ const Consultation = () => {
 	return (
 		<section className='bg-black relative flex flex-col justify-around  items-center w-[100%] min-h-[91vh] bg-opacity-40'>
 			<div>
-			<Image
+				<Image
 					src='/background.JPG'
 					alt='backgorund'
 					sizes='100vw'
@@ -44,7 +44,7 @@ const Consultation = () => {
 								<p>+48 796 390 226</p>
 							</div>
 							<p className='text-center sm:text-2xl p-2'>
-								Współwłaściciel, Web Developer
+								Freelancer, Web Developer
 							</p>
 						</div>
 					</div>
@@ -64,10 +64,10 @@ const Consultation = () => {
 							</h2>
 							<div className='flex items-center text-xl justify-center font-semibold'>
 								<IoIosPhonePortrait />
-								<p>+48 695 117 487</p>
+								<p>+48 796 284 109</p>
 							</div>
 							<p className='text-center sm:text-2xl   p-2'>
-								Współwłaściciel, Web Developer
+								Freelancer, Web Developer
 							</p>
 						</div>
 					</div>
