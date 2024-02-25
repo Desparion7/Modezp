@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useTransform, useAnimation } from 'framer-motion';
 import Image from 'next/image';
 
 type PortfolioProjectPropsType = {
@@ -34,6 +34,20 @@ const PortfolioProject = ({
 	});
 	const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
 
+	const controls = useAnimation();
+
+	const handleMouseEnter = () => {
+		controls.start({
+			opacity: 1,
+			scale: 1.0,
+			transition: { duration: 0.3 },
+		});
+	};
+
+	const handleMouseLeave = () => {
+		controls.start({ opacity: 0, scale: 1, transition: { duration: 0.3 } });
+	};
+
 	return (
 		<>
 			{side === 'right' ? (
@@ -56,7 +70,13 @@ const PortfolioProject = ({
 							rel='noopener noreferrer'
 						>
 							<div className='relative w-full h-auto'>
-								<div className='absolute inset-0 flex justify-center items-center bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-opacity duration-300 ease-in-out'>
+								<motion.div
+									className='absolute inset-0 flex justify-center items-center bg-black bg-opacity-0 group-hover:bg-opacity-70 transition-opacity duration-300 ease-in-out'
+									initial={{ opacity: 0, scale: 1 }}
+									animate={controls}
+									onMouseEnter={handleMouseEnter}
+									onMouseLeave={handleMouseLeave}
+								>
 									<motion.button
 										name='free consultation'
 										whileHover={{
@@ -67,7 +87,7 @@ const PortfolioProject = ({
 									>
 										Pokaż stronę
 									</motion.button>
-								</div>
+								</motion.div>
 								<Image
 									src={src}
 									alt={alt}
@@ -126,7 +146,13 @@ const PortfolioProject = ({
 							rel='noopener noreferrer'
 						>
 							<div className='relative w-full h-auto'>
-								<div className='absolute inset-0 flex justify-center items-center bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-opacity duration-300 ease-in-out'>
+								<motion.div
+									className='absolute inset-0 flex justify-center items-center bg-black bg-opacity-0 group-hover:bg-opacity-70 transition-opacity duration-300 ease-in-out'
+									initial={{ opacity: 0, scale: 1 }}
+									animate={controls}
+									onMouseEnter={handleMouseEnter}
+									onMouseLeave={handleMouseLeave}
+								>
 									<motion.button
 										name='free consultation'
 										whileHover={{
@@ -137,7 +163,7 @@ const PortfolioProject = ({
 									>
 										Pokaż stronę
 									</motion.button>
-								</div>
+								</motion.div>
 								<Image
 									src={src}
 									alt={alt}
