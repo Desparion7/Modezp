@@ -60,8 +60,8 @@ const PortfolioProject = ({
 								alt={alt}
 								width={width}
 								height={height}
-								priority
 								sizes='100vw'
+								loading="lazy"
 							/>
 						</a>
 					</motion.div>
@@ -115,8 +115,8 @@ const PortfolioProject = ({
 								alt={alt}
 								width={width}
 								height={height}
-								priority
 								sizes='100vw'
+								loading="lazy"
 							/>
 						</a>
 					</motion.div>

@@ -36,8 +36,8 @@ const Contact = () => {
 					alt='backgorund'
 					sizes='100vw'
 					fill
-					priority
 					className='object-cover z-[-3] '
+					loading="lazy"
 				/>
 			</div>
 			<div className='flex flex-col lg:flex-row gap-5'>
@@ -67,7 +67,7 @@ const Contact = () => {
 							</p>
 							<div className='flex items-center text-xl sm:text-2xl font-semibold'>
 								<IoIosPhonePortrait />
-								<p>+48 796 390 226</p>
+								<a href='tel:+48796390226'>796 390 226</a>
 							</div>
 							<p>Godziny pracy 8:00-18:00</p>
 							<div className='flex items-center gap-2 text-md sm:text-xl font-semibold'>

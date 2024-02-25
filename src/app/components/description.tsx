@@ -22,10 +22,8 @@ const Description = () => {
 					Twojej strony internetowej, w tym przewidzianych
 					funkcjonalności, zapraszamy do przesłania podstawowych
 					informacji o Twojej firmie oraz oferowanych przez Ciebie
-					usługach. Prosimy również o dostarczenie zdjęć, które
-					chciałbyś zobaczyć na swojej stronie. Niezależnie od tego,
-					czy potrzebujesz pomocy przy tworzeniu opisów, czy doborze
-					zdjęć, jesteśmy tutaj, aby Ci pomóc.
+					usługach. Prosimy również o dostarczenie zdjęć. Zarówno ze
+					zdjęciami i opisami pomożemy.
 				</p>
 				<h2 className='text-xl sm:text-2xl pb-5'>
 					Tworzenie graficznego projektu strony
@@ -100,14 +98,14 @@ const Description = () => {
 			<div className='mx-5 text-md xl:mx-80 xl:text-lg'>
 				<h2 className='text-xl sm:text-2xl pb-5'>
 					Odkryj Przystępne Ceny Tworzenia Stron Internetowych -
-					Zaczynamy Już od 1000 zł!
+					Zaczynamy Już od 800zł!
 				</h2>
 				<p className='pb-5 leading-8 text-justify'>
 					Rozumiemy, że koszt stworzenia strony internetowej jest
 					jednym z kluczowych czynników, które bierzesz pod uwagę,
 					decydując się na obecność w internecie. Dlatego z dumą
 					informujemy, że cena stworzenia strony internetowej u nas
-					zaczyna się już od 1000 zł. Jednakże, warto pamiętać, że
+					zaczyna się już od 800 zł. Jednakże, warto pamiętać, że
 					ostateczna cena projektu zależy od wielu czynników, w tym od
 					stopnia skomplikowania strony.
 				</p>

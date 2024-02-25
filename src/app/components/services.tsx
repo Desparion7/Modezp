@@ -79,7 +79,7 @@ export default function Services() {
 									</p>
 									<p className='text-main-color text-center text-2xl mt-2 xl:mt-5'>
 										{data.loading
-											? 'Strona już od 1000 zł'
+											? 'Strona już od 800 zł'
 											: `Strona już od ${data?.priceData[0].acf.cena} zł`}
 									</p>
 									<div className='flex justify-end gap-2 xl:absolute bottom-8 right-8'>

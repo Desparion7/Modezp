@@ -73,7 +73,7 @@ const Contact = () => {
 							</h2>
 							<div className='flex items-center text-xl '>
 								<IoIosPhonePortrait />
-								<p>+48 796 390 226</p>
+								<a href='tel:+48796390226'>796 390 226</a>
 							</div>
 							<p>Godziny pracy 8:00-18:00</p>
 							<div className='flex items-center gap-2 '>
