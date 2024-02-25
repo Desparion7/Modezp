@@ -41,7 +41,7 @@ const PortfolioProject = ({
 					className={`flex flex-col justify-around lg:flex-row w-[100%] ${backgroundColor}`}
 				>
 					<motion.div
-						className='relative mr-auto w-[100%] lg:w-[50%] lg:pr-10'
+						className='relative mr-auto w-[100%] lg:w-[50%] lg:pr-10 group'
 						ref={ref}
 						style={{
 							scale: scaleProgess,
@@ -55,14 +55,29 @@ const PortfolioProject = ({
 							target='_blank'
 							rel='noopener noreferrer'
 						>
-							<Image
-								src={src}
-								alt={alt}
-								width={width}
-								height={height}
-								sizes='100vw'
-								loading="lazy"
-							/>
+							<div className='relative w-full h-auto'>
+								<div className='absolute inset-0 flex justify-center items-center bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-opacity duration-300 ease-in-out'>
+									<motion.button
+										name='free consultation'
+										whileHover={{
+											scale: 1.05,
+											transition: { duration: 0.1 },
+										}}
+										className='opacity-0 group-hover:opacity-100 bg-button-background outline-none text-white text-md lg:text-md py-2 px-4 rounded-3xl  hover:bg-button-background-hover transition-all uppercase'
+									>
+										Pokaż stronę
+									</motion.button>
+								</div>
+								<Image
+									src={src}
+									alt={alt}
+									width={width}
+									height={height}
+									sizes='100vw'
+									className='w-full h-auto'
+									loading='lazy'
+								/>
+							</div>
 						</a>
 					</motion.div>
 					<motion.div
@@ -99,7 +114,7 @@ const PortfolioProject = ({
 						<p className='text-sm md:text-lg xl:text-xl'>{text}</p>
 					</motion.div>
 					<motion.div
-						className='relative ml-auto w-[100%] lg:w-[50%] lg:pl-10'
+						className='relative ml-auto w-[100%] lg:w-[50%] lg:pl-10 group'
 						ref={ref}
 						style={{
 							scale: scaleProgess,
@@ -110,14 +125,29 @@ const PortfolioProject = ({
 							target='_blank'
 							rel='noopener noreferrer'
 						>
-							<Image
-								src={src}
-								alt={alt}
-								width={width}
-								height={height}
-								sizes='100vw'
-								loading="lazy"
-							/>
+							<div className='relative w-full h-auto'>
+								<div className='absolute inset-0 flex justify-center items-center bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-opacity duration-300 ease-in-out'>
+									<motion.button
+										name='free consultation'
+										whileHover={{
+											scale: 1.05,
+											transition: { duration: 0.1 },
+										}}
+										className='opacity-0 group-hover:opacity-100 bg-button-background outline-none text-white text-md lg:text-md py-2 px-4 rounded-3xl  hover:bg-button-background-hover transition-all uppercase'
+									>
+										Pokaż stronę
+									</motion.button>
+								</div>
+								<Image
+									src={src}
+									alt={alt}
+									width={width}
+									height={height}
+									sizes='100vw'
+									className='w-full h-auto'
+									loading='lazy'
+								/>
+							</div>
 						</a>
 					</motion.div>
 				</div>
