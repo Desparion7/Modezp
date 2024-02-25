@@ -71,7 +71,7 @@ const PortfolioProject = ({
 						>
 							<div className='relative w-full h-auto'>
 								<motion.div
-									className='absolute inset-0 flex justify-center items-center bg-black bg-opacity-0 group-hover:bg-opacity-70 transition-opacity duration-300 ease-in-out'
+									className='absolute inset-0 hidden lg:flex justify-center items-center bg-black bg-opacity-0 group-hover:bg-opacity-70 transition-opacity duration-300 ease-in-out'
 									initial={{ opacity: 0, scale: 1 }}
 									animate={controls}
 									onMouseEnter={handleMouseEnter}
@@ -98,6 +98,19 @@ const PortfolioProject = ({
 									loading='lazy'
 								/>
 							</div>
+						</a>
+						<a
+							href={link}
+							target='_blank'
+							rel='noopener noreferrer'
+							className='flex justify-center lg:hidden'
+						>
+							<button
+								name='free consultation'
+								className=' bg-button-background outline-none text-white text-sm py-2 px-4 rounded-3xl mt-5'
+							>
+								Pokaż stronę
+							</button>
 						</a>
 					</motion.div>
 					<motion.div
@@ -147,7 +160,7 @@ const PortfolioProject = ({
 						>
 							<div className='relative w-full h-auto'>
 								<motion.div
-									className='absolute inset-0 flex justify-center items-center bg-black bg-opacity-0 group-hover:bg-opacity-70 transition-opacity duration-300 ease-in-out'
+									className='absolute hidden lg:flex inset-0  justify-center items-center bg-black bg-opacity-0 group-hover:bg-opacity-70 transition-opacity duration-300 ease-in-out'
 									initial={{ opacity: 0, scale: 1 }}
 									animate={controls}
 									onMouseEnter={handleMouseEnter}
@@ -174,6 +187,19 @@ const PortfolioProject = ({
 									loading='lazy'
 								/>
 							</div>
+						</a>
+						<a
+							href={link}
+							target='_blank'
+							rel='noopener noreferrer'
+							className='flex justify-center lg:hidden'
+						>
+							<button
+								name='free consultation'
+								className=' bg-button-background outline-none text-white text-sm py-2 px-4 rounded-3xl mt-5'
+							>
+								Pokaż stronę
+							</button>
 						</a>
 					</motion.div>
 				</div>

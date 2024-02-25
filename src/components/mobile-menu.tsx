@@ -53,7 +53,7 @@ const MobileMenu = ({ handleToggleMenu, menuVisible }: MobileMenuProps) => {
 									alt='logo'
 									width={245}
 									height={229}
-									className='absolute bottom-24 w-[5rem] '
+									className='absolute bottom-20 w-[5rem] '
 									priority
 								/>
 							</div>
