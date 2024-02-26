@@ -39,7 +39,6 @@ export default function RootLayout({
 				<Toast />
 				<main className='-z-1'>{children}</main>
 				<Footer />
-				<GoogleTagManager gtmId='GTM-5MJG8XJV' />
 			</body>
 		</html>
 	);

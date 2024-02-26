@@ -25,7 +25,7 @@ const Portfolio = () => {
 						'Przyjazne wizualnie środowisko, które wywołuje pozytywne emocje i zachęca przyszłych kursantów do podjęcia decyzji o nauce jazdy właśnie w NeoCar.'
 					}
 					text={
-						'Struktura strony zaprojektowana do łatwego odnaleźienia niezbednych informacji.'
+						'Struktura strony zaprojektowana do łatwego odnalezienia niezbednych informacji.'
 					}
 				/>
 				<PortfolioProject
