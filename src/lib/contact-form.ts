@@ -8,8 +8,32 @@ export type FormData = {
 	yourEmail: string;
 	yourMessage?: string;
 };
+export type FormRegistration = {
+	yourName: string;
+	yourPhone: string;
+	yourEmail: string;
+	yourAdress: string;
+	shortCompanyDescription: string;
+	companyProducts: string;
+	companyCharacteristics: string;
+	companyLogo: string;
+	pageFunctions: string;
+	pageSections: string;
+	pageStyle: string;
+	pageExample: string;
+	pageMainInformation: string;
+	pageExtraInfromation: string;
+	subpages: string;
+	subpagesInfo: string;
+	domena: string;
+	hosting: string;
+	deadline: string;
+	budget: string;
+	comments: string;
+};
 
 export const sendFormData = async (data: FormData, url: string) => {
+	console.log(data);
 	let formBody = new FormData();
 	for (const [key, value] of Object.entries(data)) {
 		formBody.append(key, value.toString());

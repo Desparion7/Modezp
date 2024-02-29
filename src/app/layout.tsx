@@ -25,6 +25,20 @@ export const metadata: Metadata = {
 	},
 	keywords:
 		'Tworzenie stron internetowych dla firm - profesjonalne i responsywne rozwiązania, Projektowanie stron www dostosowanych do urządzeń mobilnych - Rzeszów, Indywidualne projekty stron internetowych z zarządzaniem treścią CMS, Modernizacja i aktualizacja stron www - zwiększ bezpieczeństwo i funkcjonalność, Responsywne strony internetowe - optymalizacja dla wszystkich urządzeń, Strony www dla małych i średnich  przedsiębiorstw - skrojone na miarę Twojej firmy, Rozwiązania internetowe dostosowane do potrzeb biznesowych - efektywne i atrakcyjne wizualnie, Zarządzanie treścią stron www z łatwym CMS - aktualizuj swoją stronę bez wysiłku, Usługi web design- zwiększ swoją widoczność online',
+	openGraph: {
+		title: 'Modezp - Profesjonalne Tworzenie Stron Internetowych',
+		description:
+			'Odkryj nasze kreatywne rozwiązania dla sukcesu Twojej firmy!',
+		url: 'https://modezp.com',
+		images: [
+			{
+				url: 'https://modezp.com/opengraph-image.jpg',
+				width: 1091,
+				height: 600,
+			},
+		],
+		type: 'website',
+	},
 };
 
 export default function RootLayout({
@@ -42,6 +56,7 @@ export default function RootLayout({
 				<Toast />
 				<main className='-z-1'>{children}</main>
 				<Footer />
+				<GoogleTagManager gtmId='GTM-5MJG8XJV' />
 			</body>
 		</html>
 	);

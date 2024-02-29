@@ -11,6 +11,7 @@ const pages = [
 	'/polityka-prywatnosci',
 	'/usługi',
 	'/portfolio',
+	'/formularz-zgloszeniowy',
 	// Dodaj więcej ścieżek
 ];
 

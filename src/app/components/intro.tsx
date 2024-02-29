@@ -29,7 +29,7 @@ const Intro = ({}) => {
 				<Image
 					src='/background-mobile.jpg'
 					alt='backgorund-mobile'
-					layout='fill'
+					fill
 					quality={80}
 					objectFit='cover'
 					priority

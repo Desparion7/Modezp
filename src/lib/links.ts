@@ -38,6 +38,10 @@ export const linksMobile = [
 		hash: '/blog',
 	},
 	{
+		name: 'Formularz',
+		hash: '/formularz-zgloszeniowy',
+	},
+	{
 		name: 'Strony internetowe',
 		hash: '/uslugi/strona-internetowa/next-js',
 	},

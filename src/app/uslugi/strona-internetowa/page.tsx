@@ -92,9 +92,7 @@ const WordPress = () => {
 					</SectionTitle>
 				</div>
 				<div className='mx-5 text-md xl:mx-80 xl:text-lg'>
-					<h2 className='text-xl sm:text-2xl pb-5'>
-						Etap I
-					</h2>
+					<h2 className='text-xl sm:text-2xl pb-5'>Etap I</h2>
 					<p className='pb-5 leading-8 text-justify'>
 						Po skontaktowaniu się z nami i ustaleniu głównej wizji
 						strony oraz przewidzianych funkcjonalności, prosimy o
@@ -103,9 +101,7 @@ const WordPress = () => {
 						umieścić na stronie. Zarówno w kwestii opisów, jak i
 						zdjęć, chętnie służymy pomocą.
 					</p>
-					<h2 className='text-xl sm:text-2xl pb-5'>
-						Etap II
-					</h2>
+					<h2 className='text-xl sm:text-2xl pb-5'>Etap II</h2>
 					<p className='pb-5 leading-8 text-justify'>
 						Następnym krokiem będzie przygotowanie graficznego
 						przykładu strony, co zajmie nam do 7 dni. Ten wzór
@@ -113,9 +109,7 @@ const WordPress = () => {
 						otrzymaniu Państwa zgody i ewentualnym wprowadzeniu
 						poprawek, przejdziemy do trzeciego etapu procesu.
 					</p>
-					<h2 className='text-xl sm:text-2xl pb-5'>
-						Etap III
-					</h2>
+					<h2 className='text-xl sm:text-2xl pb-5'>Etap III</h2>
 					<p className='pb-5 leading-8 text-justify'>
 						Ostatnim krokiem będzie przeniesienie projektu na kod
 						oraz uruchomienie strony internetowej. Po wprowadzeniu
@@ -148,7 +142,7 @@ const WordPress = () => {
 							Strona jest przystosowana do pracy na telefonach i
 							tabletach. Zoptymalizowana pod kątem szybkości
 							ładowania, kompatybilności z różnymi przeglądarkami
-							oraz urządzeniami mobilnymi. Zaprojektowana w celu
+							oraz urządzeniami mobilnymi. Zaprojektowana
 							maksymalizacji zysków.
 						</p>
 						<p className='leading-8 text-justify'>

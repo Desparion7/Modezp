@@ -35,7 +35,7 @@ const MobileMenu = ({ handleToggleMenu, menuVisible }: MobileMenuProps) => {
 								event.stopPropagation();
 							}}
 						>
-							<ul className='flex flex-col gap-5 text-main-color text-lg p-10  mt-10'>
+							<ul className='flex flex-col gap-2 text-main-color text-lg p-10  mt-10'>
 								{linksMobile.map((link) => (
 									<li key={link.hash}>
 										<Link

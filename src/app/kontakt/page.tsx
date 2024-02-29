@@ -155,7 +155,7 @@ const Contact = () => {
 						/>
 						<p className='text-[12px] xl:text-sm'>
 							Zgadzam się na przetwarzanie moich danych osobowych
-							przez Modezp Mateusz Woś, NIP: 7952501374 w celu w
+							przez Modezp Mateusz Woś, NIP: 7952501374 w
 							celu kontaktu z Tobą na Twoją prośbę zgodnie z
 							polityką prywatności.
 						</p>

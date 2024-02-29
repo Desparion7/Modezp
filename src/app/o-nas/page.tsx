@@ -121,7 +121,7 @@ const Aboutus = () => {
 								</h3>
 								<div className='flex items-center text-xl justify-center font-semibold'>
 									<IoIosPhonePortrait />
-									<p>+48 695 117 487</p>
+									<p>+48 796 284 109</p>
 								</div>
 								<p className=' sm:text-2xl font-semibold bg-main-color p-2'>
 									Współwłaściciel, Web Developer

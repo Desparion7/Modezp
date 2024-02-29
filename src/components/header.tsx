@@ -53,7 +53,7 @@ const Header = () => {
 					hidden: { y: -200 },
 				}}
 				animate={hidden ? 'hidden' : 'visible'}
-				transition={{ duration: 0.5, ease: 'easeInOut' }}
+				transition={{ duration: 0.3, ease: 'easeInOut' }}
 			>
 				<nav className='container mx-auto flex justify-between py-2'>
 					<motion.div
@@ -204,7 +204,7 @@ const Header = () => {
 											translateY: 0,
 										}}
 										transition={{ duration: 0.5 }}
-										className='absolute flex flex-col gap-3 p-3 pt-5 text-white bg-black lg:text-md'
+										className='absolute flex flex-col gap-3 p-3  pt-5 text-white bg-black lg:text-md'
 									>
 										<Link
 											href='/uslugi/strona-internetowa/next-js'
@@ -223,6 +223,12 @@ const Header = () => {
 											className='hover:text-main-color transition-colors'
 										>
 											Logo firmy
+										</Link>
+										<Link
+											href='/formularz-zgloszeniowy'
+											className='hover:text-main-color transition-colors'
+										>
+											Formularz zgłoszeniowy
 										</Link>
 									</motion.div>
 								)}
@@ -245,7 +251,7 @@ const Header = () => {
 											scale: 1.05,
 											transition: { duration: 0.1 },
 										}}
-										className='bg-button-background text-white  py-2.5 px-6 rounded-3xl  hover:bg-button-background-hover transition-all uppercase'
+										className='relative bg-button-background text-white  py-2.5 px-6 rounded-3xl  hover:bg-button-background-hover transition-all uppercase'
 									>
 										Darmowa konsultacja
 									</motion.button>
