@@ -42,7 +42,7 @@ const Contact = () => {
 			</div>
 			<div className='flex flex-col lg:flex-row gap-5'>
 				<div className='relative flex flex-col md:max-h-[100%] bg-white text-black p-6 sm:p-10 gap-4'>
-					<div className='pb-[70px] '>
+					<div className='pb-[70px] flex flex-col items-center '>
 						<div
 							style={{
 								position: 'relative',
@@ -58,11 +58,11 @@ const Contact = () => {
 								alt='osoba do kontaktu'
 							/>
 						</div>
-						<div className='flex flex-col gap-3 relative top-[30px]'>
+						<div className='flex flex-col items-center gap-3 relative top-[30px]'>
 							<h3 className='text-xl sm:text-3xl font-semibold'>
 								Mateusz Woś
 							</h3>
-							<p className=' sm:text-2xl font-semibold'>
+							<p className='sm:text-2xl font-semibold text-center'>
 								Przemyślmy i ustalmy strategię działania!
 							</p>
 							<div className='flex items-center text-xl sm:text-2xl font-semibold'>

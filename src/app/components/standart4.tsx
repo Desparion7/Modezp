@@ -30,19 +30,17 @@ const Standart4 = () => {
 						/>
 					</div>
 				</div>
-				<p className='tracking-widest text-sm sm:text-lg text-justify leading-8 sm:mt-8'>
+				<p className='tracking-widest text-sm sm:text-lg text-center leading-8 sm:mt-8'>
 					Przy oddawaniu strony będziemy korzystać z najnowszych i
 					najstabilniejszych wersji oprogramowania. Dodatkowo,
-					zainstalujemy oprogramowanie antyspamowe oraz{' '}
+					zainstalujemy{' '}
 					<Link
 						href='/blog/certyfikat-ssl'
 						className='text-main-color hover:text-second-color hover:border-b-2 border-main-color'
 					>
 						certyfikat SSL
-					</Link>, co zapewni wyższy poziom bezpieczeństwa. Natychmiast po
-					wdrożeniu strony przeprowadzimy pełną kopię zapasową i
-					przechowamy ją przez okres 12 miesięcy, aby zapewnić ochronę
-					danych.
+					</Link>
+					, co zapewni wyższy poziom bezpieczeństwa.
 				</p>
 			</div>
 			{/* image for desktop */}

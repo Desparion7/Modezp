@@ -53,4 +53,31 @@ export const blog = [
 		shortText:
 			'SEO (Search Engine Optimization) to niezbędna strategia dla każdej strony internetowej, która pragnie osiągnąć sukces online. W tym artykule wprowadzimy Cię w świat SEO, wyjaśnimy, czym jest i dlaczego jest tak istotne dla widoczności twojej strony w wynikach wyszukiwania.',
 	},
+	{
+		link: '/blog/wordpress-nextjs',
+		img: '/wordpress-next.jpg',
+		alt: 'zdjęcie wordpress vs next.js',
+		span: 'Next.js',
+		h2: 'Headless WordPress z Next.js',
+		shortText:
+			'W modelu headless WordPress służy wyłącznie jako backend, dostarczając treść poprzez REST API lub GraphQL, podczas gdy cała logika prezentacji przenoszona jest do oddzielnego frontendu. Integracja WordPressa z Next.js otwiera przed twórcami stron nowe możliwości.',
+	},
+	{
+		link: '/blog/nextjs',
+		img: '/next.jpg',
+		alt: 'zdjęcienext.js',
+		span: 'Next.js',
+		h2: 'Strona w Next.js',
+		shortText:
+			'Next.js to popularny framework dla aplikacji React, który umożliwia tworzenie renderowanych po stronie serwera (SSR - Server-Side Rendering) oraz statycznych stron internetowych i aplikacji webowych.',
+	},
+	{
+		link: '/blog/wordpress',
+		img: '/wordpress.jpg',
+		alt: 'zdjęcie loga wordpress',
+		span: 'WordPress',
+		h2: 'Strona w WordPress',
+		shortText:
+			'WordPress to najpopularniejszy system zarządzania treścią (CMS) na świecie. Używany jest przez miliony stron internetowych, od prostych blogów po zaawansowane portale i sklepy internetowe.',
+	},
 ] as const;

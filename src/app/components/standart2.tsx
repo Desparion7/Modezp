@@ -30,7 +30,7 @@ const Standart2 = () => {
 						/>
 					</div>
 				</div>
-				<p className='tracking-widest text-sm sm:text-lg text-justify  leading-8 sm:mt-8'>
+				<p className='tracking-widest text-sm sm:text-lg text-center  leading-8 sm:mt-8'>
 					<Link
 						href='/blog/rwd'
 						className='text-main-color hover:text-second-color hover:border-b-2 border-main-color'

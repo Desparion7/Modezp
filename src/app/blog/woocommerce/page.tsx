@@ -37,7 +37,7 @@ const page = () => {
 				<h2 className='font-semibold text-xl'>
 					Czym Jest WooCommerce?
 				</h2>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					WooCommerce to darmowy plugin do WordPressa, który pozwala
 					przekształcić Twoją stronę internetową opartą na WordPressie
 					w pełnoprawny sklep internetowy. Dzięki WooCommerce
@@ -51,7 +51,7 @@ const page = () => {
 					Do Czego Służy WooCommerce?
 				</h2>
 				<h3 className='mt-2'>1. Tworzenie Sklepów Internetowych</h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					WooCommerce pozwala na szybkie utworzenie sklepu
 					internetowego bez potrzeby umiejętności programowania.
 					Możesz dodawać produkty, kategorie, opisy, ceny i wiele
@@ -59,7 +59,7 @@ const page = () => {
 					sklep.
 				</p>
 				<h3 className='mt-2'>2. Zarządzanie Produktami</h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Narzędzie to umożliwia łatwe zarządzanie produktem. Możesz
 					dodawać, usuwać i edytować produkty, śledzić dostępność
 					towarów, a także automatycznie generować unikalne numery
@@ -70,28 +70,28 @@ const page = () => {
 				<h2 className='font-semibold text-xl'>
 					Dlaczego Wybrać WooCommerce?
 				</h2>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Darmowe i Open Source: WooCommerce jest darmowym
 					rozszerzeniem WordPressa, co oznacza, że nie musisz ponosić
 					kosztów licencji.
 				</p>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Rozszerzalność: Dzięki dostępnej bazie rozszerzeń i motywów,
 					WooCommerce może być dostosowane do różnych potrzeb
 					biznesowych.
 				</p>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Zintegrowane Płatności: Obsługuje wiele popularnych bramek
 					płatności, co ułatwia klientom dokonywanie zakupów.
 				</p>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Bogata Społeczność: Istnieje ogromna społeczność
 					użytkowników WooCommerce, co oznacza, że zawsze masz dostęp
 					do wsparcia i pomocy.
 				</p>
 			</div>
 			<div className='my-10 text-md xl:mx-40 xl:text-lg '>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					W skrócie, WooCommerce to wszechstronne narzędzie, które
 					pozwala na łatwe tworzenie i zarządzanie sklepem
 					internetowym. Bez względu na to, czy jesteś początkującym

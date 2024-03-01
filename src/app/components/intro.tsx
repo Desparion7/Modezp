@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 import OrangeButton from '@/ui/orange-button';
 import Letter from '@/ui/letter';
 import ParticlesContainer from '@/ui/particles-container';
-import ScrollDownBtn from '@/ui/scroll-down-btn';
 import Link from 'next/link';
 
 const Intro = ({}) => {
@@ -105,12 +104,11 @@ const Intro = ({}) => {
 					transition={{ ease: 'easeOut', duration: 0.5 }}
 					className='relative top-[6vh] sm:top-[12vh] flex justify-center'
 				>
-					<Link href='/konsultacja'>
-						<OrangeButton>Bezpłatna konsultacja</OrangeButton>
+					<Link href='/formularz-zgloszeniowy'>
+						<OrangeButton>Darmowa Wycena</OrangeButton>
 					</Link>
 				</motion.div>
 			</div>
-			<ScrollDownBtn />
 		</section>
 	);
 };

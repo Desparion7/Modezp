@@ -34,7 +34,7 @@ const Standart = () => {
 				<h3 className='hidden sm:block text-xl sm:text-2xl lg:text-3xl mb-3 text-center uppercase text-third-color'>
 					WYGODNE ZARZĄDZANIA STRONĄ
 				</h3>
-				<p className='tracking-widest text-sm text-justify leading-8  sm:text-lg sm:mt-8'>
+				<p className='tracking-widest text-sm text-center leading-8  sm:text-lg sm:mt-8'>
 					Jeśli mówimy o stronach dla firm, blogach lub wizytówkach,
 					popularnym wyborem jest platforma{' '}
 					<Link
@@ -65,9 +65,7 @@ const Standart = () => {
 						(CMS)
 					</Link>
 					, który umożliwia swobodną edycję zawartości na każdej
-					podstronie. Dzięki niemu jesteś w stanie samodzielnie
-					aktualizować dane kontaktowe, dodawać nowe zdjęcia oraz
-					produkty.
+					podstronie.
 				</p>
 			</div>
 		</motion.div>

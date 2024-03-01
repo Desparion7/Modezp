@@ -36,20 +36,20 @@ const page = () => {
 					Rola Zdjęć na Stronach Internetowych
 				</h2>
 				<h3 className='mt-2'>1. Bezpieczeństwo Danych</h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Zdjęcia są często pierwszym elementem, który przyciąga uwagę
 					odwiedzających stronę. Estetyczne i odpowiednio dobrane
 					zdjęcia mogą zachęcić użytkowników do dłuższego pozostawania
 					na stronie.
 				</p>
 				<h3 className='mt-2'>2. Wspieranie Treści</h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Zdjęcia mogą doskonale uzupełniać treść tekstu, pomagając
 					wizualizować przekazywane informacje. Dzięki nim treść staje
 					się bardziej zrozumiała i atrakcyjna.
 				</p>
 				<h3 className='mt-2'>3. Kreowanie Wizerunku Marki</h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Zdjęcia mogą odzwierciedlać osobowość i wartości marki.
 					Dobrze dobrane zdjęcia mogą budować pozytywny wizerunek
 					firmy i wzbudzać zaufanie klientów.
@@ -60,26 +60,26 @@ const page = () => {
 					Jak Wykorzystać Zdjęcia na Stronach Internetowych?
 				</h2>
 				<h3 className='mt-2'>1. Wybór Właściwych Zdjęć </h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Dobierz zdjęcia, które są zgodne z tematyką i przekazem
 					strony. Staraj się unikać zdjęć ogólnikowych i postaw na te,
 					które najlepiej oddają charakter twojej treści.
 				</p>
 				<h3 className='mt-2'>2. Optymalizacja Zdjęć </h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Zadbaj o optymalizację zdjęć pod kątem rozmiaru i formatu.
 					Unikaj ciężkich plików, które mogą spowalniać ładowanie
 					strony.
 				</p>
 				<h3 className='mt-2'>3. Licencje i Prawa Autorskie</h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Upewnij się, że masz odpowiednie prawa do używanych zdjęć,
 					szczególnie jeśli są one używane w celach komercyjnych.
 					Wiele stron oferuje zdjęcia na licencji Creative Commons.
 				</p>
 			</div>
 			<div className='my-10 text-md xl:mx-40 xl:text-lg '>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Efektywne wykorzystanie zdjęć na stronach internetowych może
 					znacząco wpłynąć na przyciągnięcie uwagi użytkowników i
 					budowę pozytywnego wizerunku marki. Dlatego warto poświęcić

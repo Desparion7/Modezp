@@ -74,7 +74,7 @@ const Consultation = () => {
 				</div>
 				<div className=' text-center mb-10'>
 					<h1 className='text-main-color text-center text-2xl mb-5'>
-						Cena strony internetowej już od 1000zł
+						Cena strony internetowej już od 800zł
 					</h1>
 					<p className='text-xl'>
 						Cena strony internetowej zależy od wielu czynników, w

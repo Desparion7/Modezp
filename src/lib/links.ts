@@ -38,7 +38,7 @@ export const linksMobile = [
 		hash: '/blog',
 	},
 	{
-		name: 'Formularz',
+		name: 'Formularz wyceny',
 		hash: '/formularz-zgloszeniowy',
 	},
 	{

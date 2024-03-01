@@ -28,7 +28,7 @@ const page = () => {
 			</div>
 			<div className='mt-5 text-md xl:mx-40 xl:text-lg '>
 				<h2 className='font-semibold text-xl'>Czym Jest SEO?</h2>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					SEO, czyli Search Engine Optimization, to zestaw technik i
 					strategii, których celem jest poprawa widoczności strony
 					internetowej w wynikach organicznych wyszukiwarek, takich
@@ -42,19 +42,19 @@ const page = () => {
 					Dlaczego SEO Jest Takie Istotne?
 				</h2>
 				<h3 className='mt-2'>1. Wyższa Widoczność</h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Optymalizacja SEO sprawia, że twoja strona jest lepiej
 					widoczna w wynikach wyszukiwania. To oznacza, że więcej
 					potencjalnych klientów może znaleźć twoją stronę.
 				</p>
 				<h3 className='mt-2'>2. Zwiększenie Ruchu</h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Dzięki SEO możesz zwiększyć ruch na swojej stronie
 					internetowej. Im wyższa pozycja w wynikach wyszukiwania, tym
 					więcej osób odwiedzi twoją stronę.
 				</p>
 				<h3 className='mt-2'>3. Większa Wiarygodność</h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Strony znajdujące się wysoko w wynikach wyszukiwania uważane
 					są często za bardziej wiarygodne i wartościowe. Dlatego
 					dobre SEO może budować zaufanie do twojej marki.
@@ -65,26 +65,26 @@ const page = () => {
 					Jak Osiągnąć Sukces w SEO?
 				</h2>
 				<h3 className='mt-2'>1. Optymalizacja Treści: </h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Twórz wysokiej jakości treści, bogate w odpowiednie słowa
 					kluczowe.
 				</p>
 				<h3 className='mt-2'>2. Optymalizacja Techniczna</h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Upewnij się, że twoja strona jest zoptymalizowana pod kątem
 					szybkości, bezpieczeństwa i mobilności.
 				</p>
 				<h3 className='mt-2'>3. Budowa Linków:</h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Zbuduj wartościowe linki prowadzące do swojej strony.
 				</p>
 				<h3 className='mt-2'>4. Monitorowanie i Analiza:</h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Śledź wyniki SEO i dostosowuj swoją strategię na bieżąco.
 				</p>
 			</div>
 			<div className='my-10 text-md xl:mx-40 xl:text-lg '>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					SEO to kluczowy element sukcesu online. Dzięki niemu możesz
 					zwiększyć widoczność swojej strony, przyciągnąć więcej ruchu
 					i budować reputację swojej marki. Niezależnie od tego, czy

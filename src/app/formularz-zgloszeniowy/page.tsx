@@ -24,21 +24,21 @@ const FormRegistration = () => {
 	};
 	return (
 		<>
-			<div className='container mx-auto  flex flex-col justify-between text-center mt-10 sm:text-left'>
-				<SectionTitle>Formularz Zgłoszeniowy</SectionTitle>
+			<div className='container mx-auto  flex flex-col justify-between text-center mt-10 sm:text-left '>
+				<SectionTitle>Formularz Wyceny</SectionTitle>
 			</div>
-			<section className='relative container mx-auto pb-32  '>
+			<section className='relative container mx-auto pb-32  bg-[#dcdee1] p-3'>
 				<form
 					onSubmit={handleSubmit(onSubmit)}
 					className='flex flex-col justify-around gap-1 text-sm sm:text-md  text-black'
 				>
 					<p className='text-lg'>
-						Zapraszamy do uzupełnienia krótkiego formularza.
+						Zapraszamy do uzupełnienia krótkiego formularza i
+						otrzymania darmowej wyceny.
 					</p>
 					<p className='text-lg mb-5'>
 						Formularz pozwoli nam zebrać niezbędne dane do
-						rozpoczęcia pracy, a państwu umożliwi w wygodny sposób
-						przekazanie informacji.
+						wycenienia projektu.
 					</p>
 					<h2 className='text-xl my-2 font-semibold'>
 						1. Informacje kontaktowe:

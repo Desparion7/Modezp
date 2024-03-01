@@ -3,7 +3,6 @@ import Intro from './components/intro';
 import Standards from './components/standards';
 import Services from './components/services';
 import Portfolio from './components/portfolio';
-import Description from './components/description';
 import Head from 'next/head';
 
 export default function Home() {
@@ -60,7 +59,6 @@ export default function Home() {
 			<Intro />
 			<Services />
 			<Portfolio />
-			<Description />
 			<Standards />
 			<Contact />
 		</>

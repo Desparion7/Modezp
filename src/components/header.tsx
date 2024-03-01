@@ -244,7 +244,7 @@ const Header = () => {
 									},
 								}}
 							>
-								<Link href='/konsultacja'>
+								<Link href='/formularz-zgloszeniowy'>
 									<motion.button
 										aria-label='menu'
 										whileHover={{
@@ -253,7 +253,7 @@ const Header = () => {
 										}}
 										className='relative bg-button-background text-white  py-2.5 px-6 rounded-3xl  hover:bg-button-background-hover transition-all uppercase'
 									>
-										Darmowa konsultacja
+										Darmowa Wycena
 									</motion.button>
 								</Link>
 							</motion.li>

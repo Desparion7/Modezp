@@ -31,7 +31,7 @@ const page = () => {
 				<h2 className='font-semibold text-xl'>
 					Czym Jest Certyfikat SSL?
 				</h2>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Certyfikat SSL to technologia kryptograficzna, która
 					zapewnia szyfrowane połączenie między przeglądarką
 					użytkownika a serwerem internetowym. Oznacza to, że dane
@@ -44,20 +44,20 @@ const page = () => {
 					Dlaczego Certyfikat SSL Jest Takie Istotny?
 				</h2>
 				<h3 className='mt-2'>1. Bezpieczeństwo Danych</h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Certyfikat SSL chroni dane przesyłane między użytkownikiem a
 					serwerem, co jest kluczowe dla bezpieczeństwa informacji,
 					takich jak dane osobowe czy dane płatnicze.
 				</p>
 				<h3 className='mt-2'>2. Zaufanie Użytkowników</h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Strony internetowe z certyfikatem SSL są oznaczone jako
 					bezpieczne w przeglądarkach internetowych, co buduje
 					zaufanie użytkowników. To może wpłynąć na zwiększenie
 					konwersji i zaufania do twojej marki.
 				</p>
 				<h3 className='mt-2'>3. SEO</h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Wyszukiwarki, takie jak Google, faworyzują strony z
 					certyfikatem SSL, co może wpłynąć na wyższe pozycje w
 					wynikach wyszukiwania.
@@ -68,28 +68,28 @@ const page = () => {
 					Jak Otrzymać Certyfikat SSL?
 				</h2>
 				<h3 className='mt-2'>1. Wybierz Dostawcę: </h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Wybierz dostawcę certyfikatów SSL, taki jak Let&apos;s
 					Encrypt, Comodo, DigiCert itp.
 				</p>
 				<h3 className='mt-2'>2. Zamów Certyfikat: </h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Zamów certyfikat SSL od wybranego dostawcy. Możesz wybrać
 					różne rodzaje certyfikatów, w zależności od swoich potrzeb.
 				</p>
 				<h3 className='mt-2'>3. Zainstaluj Certyfikat:</h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Zainstaluj certyfikat SSL na swoim serwerze internetowym.
 					Może to wymagać pomocy administratora lub dostawcy hostingu.
 				</p>
 				<h3 className='mt-2'>4. Skonfiguruj Stronę:</h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Po zainstalowaniu certyfikatu SSL, skonfiguruj swoją stronę
 					internetową, aby działała przez protokół HTTPS.
 				</p>
 			</div>
 			<div className='my-10 text-md xl:mx-40 xl:text-lg '>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Certyfikat SSL to kluczowy element każdej bezpiecznej strony
 					internetowej. Działa on jak &quot;pieczęć zaufania&quot; dla
 					użytkowników, informując ich, że mogą bezpiecznie korzystać

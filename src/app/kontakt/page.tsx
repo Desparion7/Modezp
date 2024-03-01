@@ -26,7 +26,7 @@ const Contact = () => {
 
 	return (
 		<section className='bg-black relative flex flex-col justify-around  items-center w-[100%] min-h-[91vh] bg-opacity-40'>
-			<div>
+			<div className='mt-10'>
 				<Image
 					src='/background.JPG'
 					alt='backgorund'
@@ -176,7 +176,7 @@ const Contact = () => {
 					</div>
 				</form>
 			</div>
-			<div className=' flex flex-col sm:flex-row gap-3 justify-around mb-20 p-5 text-white  bg-black  w-[90%] lg:w-[80%] shadow-md shadow-main-color'>
+			<div className=' flex flex-col sm:flex-row gap-3 justify-around mb-32 p-5 text-white  bg-black  w-[90%] lg:w-[80%] shadow-md shadow-main-color'>
 				<div>
 					<p>Modezp Mateusz Woś</p>
 					<p>ul. Lipowa 88</p>

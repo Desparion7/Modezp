@@ -30,7 +30,7 @@ const page = () => {
 				<h2 className='font-semibold text-xl'>
 					Czym Jest System Zarządzania Treścią (CMS)?
 				</h2>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					CMS to oprogramowanie, które umożliwia tworzenie, edycję i
 					zarządzanie treścią na stronach internetowych bez
 					konieczności znajomości kodowania. Pozwala to osobom bez
@@ -44,19 +44,19 @@ const page = () => {
 					Dlaczego CMS Jest Takie Istotne?
 				</h2>
 				<h3 className='mt-2'>1. Łatwość Użytkowania</h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					CMS jest przyjazne dla użytkownika i intuicyjne, co sprawia,
 					że zarządzanie treścią staje się prostsze i bardziej
 					dostępne dla wszystkich.
 				</p>
 				<h3 className='mt-2'>2. Szybkość Aktualizacji</h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Dzięki CMS możesz błyskawicznie aktualizować treść na
 					stronie, co jest kluczowe w dynamicznym świecie
 					internetowym.
 				</p>
 				<h3 className='mt-2'>3. Współpraca Zespołowa</h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					CMS umożliwia współpracę wielu osób nad treścią,
 					przydzielanie ról i uprawnień oraz śledzenie historii zmian.
 				</p>
@@ -66,26 +66,26 @@ const page = () => {
 					Popularne Systemy Zarządzania Treścią
 				</h2>
 				<h3 className='mt-2'>1. WordPress</h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					WordPress jest jednym z najpopularniejszych CMS na świecie.
 					Jest prosty w użyciu, oferuje ogromną liczbę wtyczek i
 					motywów, co sprawia, że jest wyborem dla blogerów, firm i
 					osób indywidualnych.
 				</p>
 				<h3 className='mt-2'>2. Joomla!</h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Joomla! to CMS o rozbudowanych możliwościach, który jest
 					często wybierany do bardziej zaawansowanych projektów
 					internetowych.
 				</p>
 				<h3 className='mt-2'>3. Drupal</h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Drupal to potężny CMS, który jest często stosowany w
 					projektach korporacyjnych i instytucjonalnych.
 				</p>
 			</div>
 			<div className='my-10 text-md xl:mx-40 xl:text-lg '>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					System Zarządzania Treścią to narzędzie, które demokratyzuje
 					tworzenie stron internetowych, pozwalając każdemu na
 					dzielenie się swoją treścią online. Niezależnie od tego, czy

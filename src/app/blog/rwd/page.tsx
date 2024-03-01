@@ -30,7 +30,7 @@ const page = () => {
 				<h2 className='font-semibold text-xl'>
 					Czym Jest Responsive Web Design?
 				</h2>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Responsive Web Design to podejście do projektowania stron
 					internetowych, które ma na celu dostosowanie wyglądu i
 					układu strony do różnych rozmiarów ekranów i urządzeń.
@@ -43,17 +43,17 @@ const page = () => {
 				<h2 className='font-semibold text-xl'>
 					Dlaczego RWD Jest Takie Istotne?
 				</h2>
-				<h3 className='mt-2'>
+				<h3 className='mt-2 '>
 					1. Dostępność na Wszystkich Urządzeniach
 				</h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Dzięki RWD Twoja strona jest dostępna na każdym urządzeniu.
 					Bez względu na to, czy ktoś przegląda ją na laptopie,
 					tablecie czy telefonie komórkowym, zawartość pozostaje
 					czytelna i łatwo dostępna.
 				</p>
 				<h3 className='mt-2'>2. Poprawa SEO</h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Responsywne strony internetowe są często lepiej oceniane
 					przez wyszukiwarki, co może przyczynić się do wyższego
 					miejsca w wynikach wyszukiwania. Google faworyzuje strony
@@ -62,7 +62,7 @@ const page = () => {
 				<h3 className='mt-2'>
 					3. Zwiększenie Zadowolenia Użytkowników
 				</h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Dobre wrażenia użytkownika są kluczowe dla sukcesu online.
 					RWD zapewnia użytkownikom spójne doświadczenie niezależnie
 					od urządzenia, co prowadzi do zwiększonej satysfakcji i
@@ -74,23 +74,23 @@ const page = () => {
 					Jak Osiągnąć Responsive Web Design?
 				</h2>
 				<h3 className='mt-2'>1. Elastyczne Układy</h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Wykorzystaj elastyczne jednostki do definiowania rozmiarów
 					elementów, takie jak procenty zamiast pikseli.
 				</p>
 				<h3 className='mt-2'>2. Media Queries</h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Użyj mediów zapytań, aby określić, jakie style CSS mają być
 					stosowane w zależności od szerokości ekranu.
 				</p>
 				<h3 className='mt-2'>3. Testowanie na Różnych Urządzeniach</h3>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Upewnij się, że testujesz swoją stronę na różnych
 					urządzeniach, aby sprawdzić, czy działa poprawnie.
 				</p>
 			</div>
 			<div className='my-10 text-md xl:mx-40 xl:text-lg '>
-				<p className='mt-2'>
+				<p className='mt-2 leading-8'>
 					Responsive Web Design to kluczowy element projektowania
 					stron internetowych w erze mobilnej. Dzięki niemu możesz
 					dotrzeć do większej publiczności i zapewnić użytkownikom

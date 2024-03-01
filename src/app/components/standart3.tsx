@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import { motion, } from 'framer-motion';
+import { motion } from 'framer-motion';
 import styles from './styles.module.css';
 import Link from 'next/link';
 
@@ -34,7 +34,7 @@ const Standart3 = () => {
 				<h3 className='hidden sm:block text-xl sm:text-2xl lg:text-3xl mb-3 text-center uppercase text-third-color'>
 					Optymalizacja
 				</h3>
-				<p className='tracking-widest text-sm sm:text-lg text-justify  leading-8 sm:mt-8'>
+				<p className='tracking-widest text-sm sm:text-lg text-center  leading-8 sm:mt-8'>
 					60% użytkowników rezygnuje z korzystania z Twojej strony,
 					jeśli jej wczytywanie zajmuje więcej niż 5 sekund. Dlatego
 					dokładnie analizujemy i optymalizujemy wszystkie aspekty, w
@@ -44,9 +44,9 @@ const Standart3 = () => {
 						className='text-main-color hover:text-second-color hover:border-b-2 border-main-color'
 					>
 						zdjęcia
-					</Link>, aby zapewnić, że Twoja strona działa z maksymalną
-					prędkością. Naszym celem jest zapewnienie błyskawicznej
-					reakcji strony na potrzeby użytkowników.
+					</Link>
+					, aby zapewnić, że Twoja strona działa z maksymalną
+					prędkością.
 				</p>
 			</div>
 		</motion.div>

@@ -20,14 +20,14 @@ const Footer = () => {
 						Polityka prywatności
 					</Link>
 				</div>
-				<a
+				{/* <a
 					href='https://www.facebook.com/profile.php?id=61556577959946'
 					target='_blank'
 					rel='noopener noreferrer'
 					className='hover:text-main-color transition-colors'
 				>
 					Facebook
-				</a>
+				</a> */}
 				<div className='flex items-center gap-2'>
 					<FaMobileScreen />
 					<p>+48 796 390 226</p>

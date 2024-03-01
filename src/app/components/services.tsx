@@ -32,7 +32,7 @@ export default function Services() {
 
 	return (
 		<section
-			className={`relative container mx-auto flex justify-center items-center w-[100%] xl:h-[65vh] py-10 sm:px-5 text-black min-h-[600px]`}
+			className={`relative container mx-auto flex justify-center items-center w-[100%] xl:h-[65vh] py-10 sm:px-5 text-black min-h-[300px]`}
 			id='second-section'
 		>
 			<div className=' flex flex-col xl:flex-row gap-5 xl:gap-10 xl:h-[100%]'>
@@ -71,13 +71,9 @@ export default function Services() {
 									<p className='text-justify sm:text-left sm:text-md'>
 										Usługa tworzenia stron internetowych,
 										dostosowanych do Twoich potrzeb i
-										budżetu. Strona w Next.js, który jest
-										idealny dla klientów poszukujących
-										zaawansowanych rozwiązań. Dla klientów z
-										mniejszym budżetem lub potrzebujących
-										prostszych rozwiązań, w WordPressie.
+										budżetu. Strony tworzymy w Next.js wykorzystując WordPress jako panel do zarządzania.
 									</p>
-									<p className='text-main-color text-center text-2xl mt-2 xl:mt-5'>
+									<p className='text-main-color text-center text-2xl mt-10 pb-5'>
 										{data.loading
 											? 'Strona już od 800 zł'
 											: `Strona już od ${data?.priceData[0].acf.cena} zł`}
@@ -107,19 +103,17 @@ export default function Services() {
 								<SiNextdotjs className='text-main-color text-3xl mb-2' />
 								<h3 className='text-xl uppercase text-center sm:text-left'>
 									<span className='text-main-color hover:border-b-2 border-main-color'>
-										Przepisanie stron
+										Przeniesienie stron
 									</span>{' '}
 									do Next.js
 								</h3>
 
-								<p className='text-justify sm:text-left sm:text-md'>
-									Oferujemy profesjonalną usługę przepisywania
+								<p className='text-justify sm:text-left sm:text-md mt-2'>
+									Oferujemy profesjonalną usługę przeniesienia
 									stron do nowoczesnego frameworka Next.js.
 									Dzięki zastosowaniu Next.js, zapewniamy
 									lepszą wydajność, zoptymalizowaną SEO oraz
-									ulepszoną obsługę serwerową. Jeśli posiadasz
-									stronę, a chcesz ją usprawnić zapraszamy do
-									kontaktu.
+									ulepszoną obsługę serwerową. 
 								</p>
 								<div className='flex justify-end gap-2 xl:absolute bottom-8 right-8'>
 									<p
