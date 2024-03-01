@@ -7,6 +7,7 @@ export type FormData = {
 	yourToTime?: string;
 	yourEmail: string;
 	yourMessage?: string;
+	// yourFile?: File | File[];
 };
 export type FormRegistration = {
 	yourName: string;
@@ -33,12 +34,12 @@ export type FormRegistration = {
 };
 
 export const sendFormData = async (data: FormData, url: string) => {
-	console.log(data);
 	let formBody = new FormData();
 	for (const [key, value] of Object.entries(data)) {
 		formBody.append(key, value.toString());
 	}
 	formBody.append('_wpcf7_unit_tag', '_wpcf7_unit_tag');
+
 	try {
 		const response = await fetch(url, {
 			method: 'POST',

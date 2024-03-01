@@ -114,6 +114,7 @@ const Contact = () => {
 							<input
 								{...field}
 								type='email'
+								required
 								className='p-2'
 								placeholder='Twój e-mail'
 							/>
@@ -127,6 +128,7 @@ const Contact = () => {
 							<input
 								{...field}
 								type='number'
+								required
 								className='p-2'
 								placeholder='Twój numer telefonu'
 							/>
