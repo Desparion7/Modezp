@@ -7,7 +7,7 @@ const Consultation = () => {
 		<section className='bg-black relative flex flex-col justify-around  items-center w-[100%] min-h-[91vh] bg-opacity-40'>
 			<div>
 				<Image
-					src='/background.JPG'
+					src='/background.jpg'
 					alt='backgorund'
 					sizes='100vw'
 					fill

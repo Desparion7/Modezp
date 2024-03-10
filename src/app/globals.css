@@ -3,23 +3,37 @@
 @tailwind utilities;
 
 :root {
-	--foreground-rgb: 0, 0, 0;
-	--background-start-rgb: 214, 219, 220;
-	--background-end-rgb: 255, 255, 255;
-	--main-color: #e7590a;
-	--second-color: #ec4d1d;
-	--third-color: rgb(18, 18, 18);
-	--button-background: #e03600;
-	--button-background-hover: #ed3700;
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --main-color: #e7590a;
+  --second-color: #ec4d1d;
+  --third-color: rgb(18, 18, 18);
+  --button-background: #e03600;
+  --button-background-hover: #ed3700;
+  --main-bright-color: #f8f1f1;
+  --input-focus: #e7570a48;
 }
 
 @layer utilities {
-	.text-balance {
-		text-wrap: balance;
-	}
-	input[type='number']::-webkit-inner-spin-button,
-	input[type='number']::-webkit-outer-spin-button {
-		-webkit-appearance: none;
-		margin: 0;
-	}
+  .text-balance {
+    text-wrap: balance;
+  }
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+.gradiend {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.75) 70%,
+    rgba(0, 0, 0, 0.75) 25%,
+    rgba(19, 18, 18, 0.1)
+  );
+}
+.clipPath {
+  clip-path: polygon(69% 0, 100% 0%, 100% 100%, 0% 100%);
+  border-radius: 20px; /* Możesz dostosować wartość promienia */
 }
