@@ -3,36 +3,36 @@ export const links = [
     name: 'Strona główna',
     hash: '/',
   },
-  // {
-  // 	name: 'portfolio',
-  // 	hash: '/portfolio',
-  // },
+  {
+  	name: 'realizacje',
+  	hash: '/realizacje',
+  },
   {
     name: 'Kontakt',
     hash: '/kontakt',
   },
-  {
-    name: 'O nas',
-    hash: '/o-nas',
-  },
+  // {
+  //   name: 'O nas',
+  //   hash: '/o-nas',
+  // },
 ] as const;
 export const linksMobile = [
   {
     name: 'Strona główna',
     hash: '/',
   },
-  // {
-  // 	name: 'portfolio',
-  // 	hash: '/portfolio',
-  // },
+  {
+  	name: 'realizacje',
+  	hash: '/realizacje',
+  },
   {
     name: 'Kontakt',
     hash: '/kontakt',
   },
-  {
-    name: 'O nas',
-    hash: '/o-nas',
-  },
+  // {
+  //   name: 'O nas',
+  //   hash: '/o-nas',
+  // },
   {
     name: 'Blog',
     hash: '/blog',

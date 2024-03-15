@@ -44,7 +44,7 @@ const Contact = () => {
 					className='sm:hidden object-cover z-[-3] '
 				/>
 			</div>
-			<div className='relative mx-auto top-[-2vh] flex flex-col 2xl:flex-row gap-10 my-5 p-5 sm:p-10 bg-black opacity-90 text-white w-[90%] lg:w-[80%] shadow-md shadow-main-color'>
+			<div className='relative mx-auto top-[-2vh] flex flex-col 2xl:flex-row gap-10 my-5 p-5 sm:p-10 gradient text-white w-[100%] lg:w-[80%] '>
 				<div className='flex flex-col  2xl:w-[50%]'>
 					<div>
 						<h2 className='text-xl sm:text-2xl text-center mb-5'>
@@ -71,12 +71,12 @@ const Contact = () => {
 							<h2 className='text-xl font-semibold'>
 								Mateusz Woś
 							</h2>
-							<div className='flex items-center text-xl '>
+							<div className='flex items-center text-xl justify-center'>
 								<IoIosPhonePortrait />
 								<a href='tel:+48796390226'>796 390 226</a>
 							</div>
 							<p>Godziny pracy 8:00-18:00</p>
-							<div className='flex items-center gap-2 '>
+							<div className='flex items-center justify-center gap-2 '>
 								<MdOutlineMailOutline />
 								<p className='font-semibold'>
 									modezpw@gmail.com
@@ -87,9 +87,9 @@ const Contact = () => {
 				</div>
 				<form
 					onSubmit={handleSubmit(onSubmit)}
-					className='flex flex-col justify-around gap-1 text-sm sm:text-md 2xl:w-[50%] text-black'
+					className='flex flex-col justify-around gap-2 text-sm sm:text-md 2xl:w-[50%] text-black'
 				>
-					<h2 className='text-white text-xl mb-3'>
+					<h2 className='text-white text-xl mb-3 text-center'>
 						Napisz wiadomość
 					</h2>
 					<Controller
@@ -176,7 +176,7 @@ const Contact = () => {
 					</div>
 				</form>
 			</div>
-			<div className=' flex flex-col sm:flex-row gap-3 justify-around mb-32 p-5 text-white  bg-black  w-[90%] lg:w-[80%] shadow-md shadow-main-color'>
+			<div className=' flex flex-col sm:flex-row gap-3 justify-around mb-32 p-5 text-white  0  w-[100%] lg:w-[80%] gradient '>
 				<div>
 					<p>Modezp Mateusz Woś</p>
 					<p>ul. Lipowa 88</p>

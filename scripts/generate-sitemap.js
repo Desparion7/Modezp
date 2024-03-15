@@ -6,11 +6,10 @@ const pages = [
 	'/',
 	'/o-nas',
 	'/kontakt',
-	'/konsultacja',
 	'/blog',
 	'/polityka-prywatnosci',
-	'/usługi',
-	'/portfolio',
+	'/uslugi',
+	'/realizacje',
 	'/formularz-zgloszeniowy',
 	// Dodaj więcej ścieżek
 ];

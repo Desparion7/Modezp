@@ -29,13 +29,13 @@ const StepCard = ({ title, text, step, style, index }: StepCardType) => {
       }}>
       <div className='w-full flex relative items-center  lg:group-[&:nth-child(3)]:justify-end p-2 lg:p-0'>
         <div className='h-auto w-[70%] lg:w-[400px] xl:w-[500px] flex flex-col items-center justify-center '>
-          <h4
+          <h2
             className={cn(
               'text-main-color text-xl lg:text-3xl font-bold mb-2 lg:mb-4',
               style
             )}>
             {title}
-          </h4>
+          </h2>
           <p className='bg-white px-[10px] py-[15px] lg:text-center shadow-2xl text-sm'>
             {text}
           </p>

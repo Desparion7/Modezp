@@ -22,6 +22,10 @@ module.exports = {
         'main-bright-color': 'var(--main-bright-color)',
         'input-focus': 'var(--input-focus)',
       },
+      screens: {
+				custom321: '321px',
+				custom450: '450px',
+			},
     },
   },
   plugins: [],

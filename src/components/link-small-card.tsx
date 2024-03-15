@@ -16,11 +16,11 @@ const LinkSmallCard = ({ active, title, link }: LinkSmallCardType) => {
   const location = usePathname();
   const isActive = location === link;
   return (
-    <Link href={link} className='relative z-8'>
+    <Link href={link} className='relative z-8 '>
       <motion.div className='group'>
-        <h3
+        <h2
           className={cn(
-            'flex justify-center items-centertext-center text-md group-hover:text-main-color text-sm sm:text-base lg:text-xl duration-75',
+            'flex justify-center items-centertext-center text-md group-hover:text-main-color text-lg sm:text-base lg:text-xl duration-75',
             {
               'text-main-color font-bold': isActive,
             }
@@ -29,7 +29,7 @@ const LinkSmallCard = ({ active, title, link }: LinkSmallCardType) => {
           <span className='ml-2 flex md:hidden items-center justify-center'>
             <FaArrowRightLong />
           </span>
-        </h3>
+        </h2>
       </motion.div>
     </Link>
   );

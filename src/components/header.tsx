@@ -127,10 +127,10 @@ const Header = () => {
                 className={cn(
                   `lg:text-md hover:text-main-color transition-colors`,
                   {
-                    'text-main-color': url === '/o-nas',
+                    'text-main-color': url === '/realizacje',
                   }
                 )}>
-                <Link href='/o-nas'>o nas</Link>
+                <Link href='/realizacje'>realizacje</Link>
               </motion.li>
               <motion.li
                 variants={fadeInAnimationVariants}

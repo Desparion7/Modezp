@@ -13,7 +13,7 @@ const Intro = ({}) => {
   const sentence3 = ' dla Twojego biznesu'.split('');
 
   return (
-    <section className='bg-black relative flex justify-center items-center w-[100%] min-h-[85vh] sm:min-h-[91vh] bg-opacity-40'>
+    <section className='bg-black relative flex justify-center items-center w-[100%] min-h-[86vh] sm:min-h-[91vh] bg-opacity-40'>
       <ParticlesContainer />
       <div className='max-h-[100vh]'>
         <Image

@@ -2,14 +2,13 @@ import Image from 'next/image';
 import React from 'react';
 import SectionTitle from '@/components/section-header';
 import Contact from '@/app/components/contact';
-import ScrollDownBtn from '@/ui/scroll-down-btn';
 import ServicesNav from '../components/services-nav';
 
 const Projects = () => {
   return (
     <div>
       <section
-        className={`relative flex lg:py-10 justify-center items-center w-[100%] bg-black bg-opacity-40 min-h-[91vh] mb-10  text-white p-1 xl:p-0`}>
+        className={`relative flex lg:py-10 justify-center items-center w-[100%] bg-black bg-opacity-40 min-h-[91vh] mb-10  text-white pt-10 xl:p-0`}>
         <div>
           <Image
             src='/background.jpg'
@@ -31,23 +30,20 @@ const Projects = () => {
         <ServicesNav>
           <div className='w-[100%] bg-main-color h-[1px]' />
           <div className='sm:mb-5 py-3'>
-            <h1 className='text-left text-md lg:text-xl my-2'>
+            <h1 className='sm:text-left text-lg lg:text-xl my-2 text-center'>
               Projektowanie{' '}
               <span className='text-main-color font-semibold'>UI</span>{' '}
             </h1>
-            <p className='text-sm lg:text-lg text-start sm:text-justify'>
+            <p className='text-md lg:text-lg text-center sm:text-justify leading-6'>
               Projektowanie interfejsu użytkownika (UI) to proces, który
               wykracza poza samo kreowanie estetycznego wyglądu interfejsu. W
               naszym podejściu, jest to rozwinięcie i uzupełnienie projektowania
               doświadczeń użytkownika(UX). Skuteczne projektowanie UI wymaga nie
-              tylko umiejętności graficznych. Istotne jest również przewidywanie
-              reakcji użytkowników i uzasadnianie każdego podjętego wyboru
-              projektowego.
+              tylko umiejętności graficznych.
             </p>
           </div>
         </ServicesNav>
 
-        <ScrollDownBtn />
       </section>
       <section
         className='relative container mx-auto pb-20 min-h-[65vh]'

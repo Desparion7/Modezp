@@ -63,9 +63,9 @@ const EndingSection = () => {
 			>
 				<div className='  relative mt-[100px]  lg:mt-[100px] grid grid-cols-1 lg:grid-cols-2 px-2 gap-5 lg:gap-0 '>
 					<div className=' relative  lg:max-w-[500px] flex flex-col gap-1 lg:gap-4 text-center lg:text-start'>
-						<h4 className='text-main-color font-bold text-lg lg:text-3xl mb-2'>
+						<h2 className='text-main-color font-bold text-lg lg:text-3xl mb-2'>
 							WEB DESIGN & DEVELOPMENT
-						</h4>
+						</h2>
 						<p className='text-base lg:text-xl '>
 							Nowoczesne podejście połączone z praktycznością
 							gwarantuje, że Państwa witryna będzie doskonale

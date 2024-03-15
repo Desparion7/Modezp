@@ -9,7 +9,7 @@ const Logo = () => {
   return (
     <div>
       <section
-        className={`relative flex lg:py-10 justify-center items-center w-[100%] bg-black bg-opacity-40 min-h-[91vh] mb-10  text-white p-1 xl:p-0`}>
+        className={`relative flex lg:py-10 justify-center items-center w-[100%] bg-black bg-opacity-40 min-h-[91vh] mb-10  text-white pt-10 xl:p-0`}>
         <div>
           <Image
             src='/background.jpg'
@@ -32,11 +32,11 @@ const Logo = () => {
           {' '}
           <div className='w-[100%] bg-main-color h-[1px]' />
           <div className='sm:mb-5 py-3'>
-            <h1 className='text-left text-md lg:text-xl my-2'>
+            <h1 className='text-center sm:text-left text-lg lg:text-xl my-2'>
               Projektowanie{' '}
               <span className='text-main-color font-semibold'>Logo</span>{' '}
             </h1>
-            <p className='text-sm lg:text-lg text-start sm:text-justify'>
+            <p className='text-md lg:text-lg text-center sm:text-justify leading-6'>
               Twoja firma może się wyróżnić na rynku nie tylko dzięki doskonałym
               produktom, ale także poprzez unikatowe logo. Jego projekt składa
               się z trzech kluczowych elementów: sygnetu, logotypu i claimu,
@@ -45,8 +45,6 @@ const Logo = () => {
             </p>
           </div>
         </ServicesNav>
-
-        <ScrollDownBtn />
       </section>
       <section className='relative container mx-auto pb-5 ' id='second-section'>
         <div className='w-[100%] md:w-[50%] sm:px-5 flex flex-col justify-between text-center sm:text-left'>
