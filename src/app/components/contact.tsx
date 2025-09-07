@@ -32,12 +32,12 @@ const Contact = () => {
 		>
 			<div>
 				<Image
-					src='/internet.PNG'
+					src='/rzeszow.jpg'
 					alt='backgorund'
 					sizes='100vw'
 					fill
 					className='object-cover z-[-3] '
-					loading="lazy"
+					loading='lazy'
 				/>
 			</div>
 			<div className='flex flex-col lg:flex-row gap-5'>
@@ -54,7 +54,7 @@ const Contact = () => {
 								src='/contactphoto2.jpg'
 								width={250}
 								height={250}
-								className='absolute w-[150px] h-[150px] top-[-70px] rounded-[50%] aspect-auto border-2 border-orange-600'
+								className='absolute w-[150px] h-[150px] top-[-70px] rounded-[50%] aspect-auto border-2 border-red-600'
 								alt='osoba do kontaktu'
 							/>
 						</div>
@@ -63,17 +63,22 @@ const Contact = () => {
 								Mateusz Woś
 							</h3>
 							<p className='sm:text-2xl font-semibold text-center'>
-								Przemyślmy i ustalmy strategię działania!
+								Nie zwlekaj zacznijmy działać!
 							</p>
 							<div className='flex items-center text-xl sm:text-2xl font-semibold'>
 								<IoIosPhonePortrait />
 								<a href='tel:+48796390226'>796 390 226</a>
 							</div>
-							<p>Godziny pracy 8:00-18:00</p>
+							<p className=' font-semibold text-center'>
+								Jeśli nie odbieram, prawdopodobnie prowadzę
+								szkolenie.
+							</p>
+
+							<p>Proszę napisać SMS - oddzwonie</p>
 							<div className='flex items-center gap-2 text-md sm:text-xl font-semibold'>
 								<MdOutlineMailOutline />
 								<p className='font-semibold'>
-									modezpw@gmail.com
+									elo.naukajazdy@gmail.com
 								</p>
 							</div>
 						</div>
@@ -105,7 +110,7 @@ const Contact = () => {
 							/>
 						</div>
 						<div className='flex flex-col sm:flex-row gap-2'>
-							<p>Szukam firmy, która pomoże mi</p>{' '}
+							<p>Szukam OSK, w celu</p>{' '}
 							<Controller
 								name='yourTopic'
 								control={control}
@@ -121,33 +126,16 @@ const Contact = () => {
 											Wybierz z listy
 										</option>
 										<option value='stworzyć stronę www'>
-											Stworzyć stronę www
+											Kursu prawa jazdy kat.B
 										</option>
 										<option value='przenieść stronę na next.js'>
-											Przenieść stronę na next.js
+											Jazd doszkalające przed egzaminem
 										</option>
 										<option value='stworzyć logo'>
-											Stworzyć logo
+											Jazd doszkalające
 										</option>
 										<option value='inny'>Inny</option>
 									</select>
-								)}
-							/>
-						</div>
-						<div className='flex flex-col sm:flex-row gap-2'>
-							<p>Chcę na to przeznaczyć </p>{' '}
-							<Controller
-								name='yourAmount'
-								control={control}
-								defaultValue=''
-								rules={{ required: true }}
-								render={({ field }) => (
-									<input
-										{...field}
-										type='text'
-										className='bg-third-color border-b-2 border-sky-900 p-1 focus:border-main-color focus:border-2 focus:outline-none'
-										placeholder='3 000 zł'
-									/>
 								)}
 							/>
 						</div>
@@ -211,22 +199,6 @@ const Contact = () => {
 								)}
 							/>
 						</div>
-						<div className='flex flex-col sm:flex-row gap-2'>
-							<p>lub na adres mailowy</p>{' '}
-							<Controller
-								name='yourEmail'
-								control={control}
-								defaultValue=''
-								render={({ field }) => (
-									<input
-										{...field}
-										type='email'
-										className='bg-third-color border-b-2 border-sky-900 p-1 focus:border-main-color focus:border-2 focus:outline-none'
-										placeholder='email'
-									/>
-								)}
-							/>
-						</div>
 						<div className='flex mt-5'>
 							<motion.button
 								whileHover={{
@@ -234,7 +206,7 @@ const Contact = () => {
 									transition: { duration: 0.1 },
 								}}
 								type='submit'
-								className='bg-button-background outline-none text-white text-md lg:text-lg py-2 px-4 rounded-3xl hover:bg-orange-600 transition-all hover:scale-2'
+								className='bg-button-background outline-none text-white text-md lg:text-lg py-2 px-4 rounded-3xl hover:bg-red-800 transition-all hover:scale-2'
 							>
 								Wyślij wiadomość
 							</motion.button>

@@ -1,9 +1,8 @@
-import Contact from './components/contact';
-import Intro from './components/intro';
-import Standards from './components/standards';
-import Services from './components/services';
-import Portfolio from './components/portfolio';
 import Head from 'next/head';
+import Intro from './components/intro';
+import Services from './components/services';
+import Contact from './components/contact';
+import Standards from './components/standards';
 
 export default function Home() {
 	return (
@@ -13,7 +12,7 @@ export default function Home() {
 					{JSON.stringify({
 						'@context': 'https://schema.org',
 						'@type': 'ProfessionalService',
-						name: 'Modezp Mateusz Woś - Tworzenie Stron Internetowych',
+						name: 'Nauka Jazdy ELO Mateusz Woś - Ośrodek Szkolenia Kierowców',
 						image: 'https://modezp.com/logo.jpg',
 						'@id': '',
 						url: 'https://modezp.com/',
@@ -21,15 +20,9 @@ export default function Home() {
 						openingHoursSpecification: [
 							{
 								'@type': 'OpeningHoursSpecification',
-								dayOfWeek: [
-									'Monday',
-									'Tuesday',
-									'Wednesday',
-									'Thursday',
-									'Friday',
-								],
-								opens: '08:00',
-								closes: '16:00',
+								dayOfWeek: ['Monday', 'Wednesday'],
+								opens: '09:00',
+								closes: '11:00',
 							},
 						],
 						sameAs: [
@@ -42,15 +35,9 @@ export default function Home() {
 						services: [
 							{
 								'@type': 'Service',
-								name: 'Projektowanie stron WWW',
+								name: 'Ośrodek Szkolenia Kierowców',
 								description:
-									'Profesjonalne projektowanie i tworzenie stron internetowych dostosowanych do potrzeb Twojej firmy.',
-							},
-							{
-								'@type': 'Service',
-								name: 'Optymalizacja SEO',
-								description:
-									'Pełna optymalizacja SEO, która pomoże Twojej stronie osiągnąć wyższe pozycje w wynikach wyszukiwania.',
+									'Profesjonalny Ośrodek Szkolenia Kierowców – prawo jazdy w Rzeszowie.',
 							},
 						],
 					})}
@@ -58,7 +45,6 @@ export default function Home() {
 			</Head>
 			<Intro />
 			<Services />
-			<Portfolio />
 			<Standards />
 			<Contact />
 		</>

@@ -46,7 +46,25 @@ const MobileMenu = ({ handleToggleMenu, menuVisible }: MobileMenuProps) => {
 										</Link>
 									</li>
 								))}
+								<li className='mt-5'>
+									<Link
+										href='/formularz-zgloszeniowy'
+										onClick={handleCloseMenu}
+									>
+										<motion.button
+											aria-label='menu'
+											whileHover={{
+												scale: 1.05,
+												transition: { duration: 0.1 },
+											}}
+											className='relative bg-button-background text-white  py-2.5 px-6 rounded-3xl  hover:bg-button-background-hover transition-all uppercase'
+										>
+											Zapisz się na kurs
+										</motion.button>
+									</Link>
+								</li>
 							</ul>
+
 							<div className='flex justify-center'>
 								<Image
 									src='/logo.png'

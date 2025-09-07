@@ -1,35 +1,12 @@
 'use client';
-import { GiWireframeGlobe } from 'react-icons/gi';
+import { FaCar } from 'react-icons/fa';
 import { FaArrowRightLong } from 'react-icons/fa6';
-import { FaPaintBrush } from 'react-icons/fa';
-import { SiNextdotjs } from 'react-icons/si';
+import { GiSteeringWheel } from 'react-icons/gi';
+import { IoCarSportSharp } from 'react-icons/io5';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { useMemo, useState } from 'react';
-interface PriceDataItem {
-	acf: {
-		cena: number; // lub string, jeśli cena jest przechowywana jako tekst
-	};
-}
-interface DataState {
-	priceData: PriceDataItem[];
-	loading: boolean;
-}
 
 export default function Services() {
-	const [data, setData] = useState<DataState>({
-		priceData: [],
-		loading: true,
-	});
-
-	useMemo(async () => {
-		const response = await fetch(
-			'https://modezp.com/wp/wp-json/wp/v2/price?acf_format=standard&_fields=id,title,cena,acf'
-		);
-		const priceData = await response.json();
-		setData({ priceData, loading: false });
-	}, []);
-
 	return (
 		<section
 			className={`relative container mx-auto flex justify-center items-center w-[100%] xl:h-[65vh] py-10 sm:px-5 text-black min-h-[300px]`}
@@ -38,20 +15,23 @@ export default function Services() {
 			<div className=' flex flex-col xl:flex-row gap-5 xl:gap-10 xl:h-[100%]'>
 				<div className='flex flex-col gap-3 xl:w-[30%] xl:py-20 py-5 p-3'>
 					<h2 className='uppercase text-xl md:text-3xl'>
-						Nasze <span className='text-main-color'>usługi</span>{' '}
+						Nauka Jazdy{' '}
+						<span className='text-main-color font-semibold'>
+							Elo
+						</span>{' '}
 					</h2>
 					<p className='text-md md:text-lg text-justify'>
-						Tworzymy nowoczesne strony internetowe, które nie tylko
-						zachwycają estetyką, ale również są zoptymalizowane pod
-						kątem urządzeń mobilnych, umożliwiają łatwą samodzielną
-						edycję. W dzisiejszych czasach posiadanie własnej strony
-						internetowej nie jest jedynie formalnością - staje się
-						kluczowym elementem sukcesu biznesowego.
+						Oferuje profesjonalne kursy prawa jazdy, które
+						przygotują Cię nie tylko do egzaminu, ale też do
+						bezpiecznej i pewnej jazdy na drodze. Doświadczeni
+						instruktorzy, elastyczny grafik oraz nowoczesne metody
+						nauczania gwarantują szybkie i skuteczne zdobycie
+						uprawnień oraz pewność za kierownicą.
 					</p>
 				</div>
 				<div className='flex flex-col xl:flex-row xl:w-[70%] gap-5 text-white'>
 					<div className='xl:w-[33%]'>
-						<Link href='/uslugi/strona-internetowa'>
+						<Link href='/cennik'>
 							<motion.div
 								className='relative flex flex-col w-[100%] h-[100%] gap-3 bg-third-color  p-4'
 								transition={{ ease: 'easeOut', duration: 0.5 }}
@@ -61,22 +41,23 @@ export default function Services() {
 								}}
 							>
 								<div>
-									<GiWireframeGlobe className='text-main-color text-3xl mb-2' />
+									<FaCar className='text-main-color text-3xl mb-2' />
 									<h3 className='text-xl uppercase text-center sm:text-left'>
 										<span className='text-main-color hover:border-b-2 border-main-color'>
-											strony
+											Kurs kategorii B
 										</span>{' '}
-										internetowe
 									</h3>
 									<p className='text-justify sm:text-left sm:text-md'>
-										Usługa tworzenia stron internetowych,
-										dostosowanych do Twoich potrzeb i
-										budżetu. Strony tworzymy w Next.js wykorzystując WordPress jako panel do zarządzania.
+										Kompleksowy kurs przygotowujący do
+										zdobycia prawa jazdy kategorii B — od
+										teorii po praktyczne jazdy. Program
+										dopasowany do Twoich potrzeb, prowadzony
+										przez doświadczonych instruktorów,
+										zapewniający pewność i bezpieczeństwo na
+										drodze.
 									</p>
 									<p className='text-main-color text-center text-2xl mt-10 pb-5'>
-										{data.loading
-											? 'Strona już od 800 zł'
-											: `Strona już od ${data?.priceData[0].acf.cena} zł`}
+										Cenna już od 2990 zł
 									</p>
 									<div className='flex justify-end gap-2 xl:absolute bottom-8 right-8'>
 										<p
@@ -99,21 +80,23 @@ export default function Services() {
 								transition: { duration: 0.1 },
 							}}
 						>
-							<Link href='/uslugi/strona-internetowa/next-js'>
-								<SiNextdotjs className='text-main-color text-3xl mb-2' />
+							<Link href='/cennik'>
+								<IoCarSportSharp className='text-main-color text-3xl mb-2' />
 								<h3 className='text-xl uppercase text-center sm:text-left'>
 									<span className='text-main-color hover:border-b-2 border-main-color'>
-										Przeniesienie stron
+										Kurs kategorii B - przyśpieszony
 									</span>{' '}
-									do Next.js
 								</h3>
 
 								<p className='text-justify sm:text-left sm:text-md mt-2'>
-									Oferujemy profesjonalną usługę przeniesienia
-									stron do nowoczesnego frameworka Next.js.
-									Dzięki zastosowaniu Next.js, zapewniamy
-									lepszą wydajność, zoptymalizowaną SEO oraz
-									ulepszoną obsługę serwerową. 
+									Kurs przyspieszony trwa około 4 tygodni,
+									jednak czas jego realizacji może ulec
+									zmianie w zależności od ewentualnych
+									modyfikacji organizacyjnych zgłoszonych
+									przez kursanta.
+								</p>
+								<p className='text-main-color text-center text-2xl mt-10 pb-5'>
+									Cenna już od 3200 zł
 								</p>
 								<div className='flex justify-end gap-2 xl:absolute bottom-8 right-8'>
 									<p
@@ -127,7 +110,7 @@ export default function Services() {
 						</motion.div>
 					</div>
 					<div className='w-[100%] xl:w-[33%]'>
-						<Link href='/uslugi/logo'>
+						<Link href='/cennik'>
 							<motion.div
 								className='relative flex flex-col w-[100%] h-[100%] gap-3 bg-third-color p-4'
 								transition={{ ease: 'easeOut', duration: 0.5 }}
@@ -136,21 +119,24 @@ export default function Services() {
 									transition: { duration: 0.1 },
 								}}
 							>
-								<FaPaintBrush className='text-main-color text-3xl mb-2' />
+								<GiSteeringWheel className='text-main-color text-3xl mb-2' />
 
 								<h3 className='text-xl uppercase text-center sm:text-left '>
 									<span className='text-main-color hover:border-b-2 border-main-color'>
-										logo
+										Jazdy doszkalające dla kursantów kat. B
 									</span>{' '}
-									firmy
 								</h3>
 
 								<p className='text-justify sm:text-left sm:text-md'>
-									Tworzymy unikalne i zgodne z wizją marki
-									logo dla firm. Nasze projekty łączą
-									kreatywność z profesjonalizmem, pomagając w
-									budowaniu rozpoznawalności i pozytywnego
-									wizerunku Twojego biznesu.
+									Indywidualne zajęcia praktyczne, które
+									pomogą Ci poprawić umiejętności i pewność za
+									kierownicą. Idealne dla osób
+									przygotowujących się do egzaminu lub
+									chcących podnieść swoje kwalifikacje po
+									zdobyciu prawa jazdy.
+								</p>
+								<p className='text-main-color text-center text-2xl mt-10 pb-5'>
+									Cenna już od 100 zł/h
 								</p>
 								<div className='flex justify-end gap-2 xl:absolute bottom-8 right-8'>
 									<p

@@ -13,5 +13,5 @@ export default function cloudinaryLoader({
 		`w_${width}`,
 		`q_${quality || 'auto'}`,
 	];
-	return `https://modezp.com/${src}`;
+	return `http://localhost:3000/${src}`;
 }

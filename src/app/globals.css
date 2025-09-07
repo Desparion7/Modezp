@@ -6,11 +6,11 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --main-color: #e7590a;
+  --main-color: #e70a0a;
   --second-color: #ec4d1d;
   --third-color: rgb(18, 18, 18);
-  --button-background: #e03600;
-  --button-background-hover: #ed3700;
+  --button-background: #e00000;
+  --button-background-hover: #940000;
   --main-bright-color: #f8f1f1;
   --input-focus: #e7570a48;
 }
